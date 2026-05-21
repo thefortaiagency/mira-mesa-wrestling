@@ -10,12 +10,12 @@ const programs = [
 ];
 
 const quickLinks = [
-  { label: "About", href: "/about" },
+  { label: "Coaches", href: "/about" },
   { label: "Calendar", href: "/calendar" },
   { label: "History", href: "/history" },
   { label: "Photos", href: "/photos" },
   { label: "Resources", href: "/resources" },
-  { label: "MMWC", href: "/mmwc" },
+  { label: "Programs", href: "/mmwc" },
   { label: "Contact", href: "/contact" },
 ];
 

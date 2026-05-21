@@ -19,11 +19,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mmw.fort-solutions.com"),
   title: {
-    default: "Mira Mesa Wrestling — Marauders Wrestling, San Diego",
+    default: "Mira Mesa Wrestling — San Diego",
     template: "%s | Mira Mesa Wrestling",
   },
   description:
-    "Mira Mesa Wrestling — 2014 & 2024 Boys CIF Champions, 2022 Girls San Diego Section Masters Champions, 14 consecutive League Championships. Boys & Girls high school wrestling plus youth (Fall Guys), middle/high school summer, adult/veteran/masters training through Mira Mesa Wrestling Club.",
+    "Mira Mesa Wrestling — 2014 & 2024 Boys CIF Champions, 2022 Girls San Diego Section Masters Champions, 15 consecutive Boys League Championships, 4 consecutive Girls Conference Championships. Boys & Girls high school wrestling plus youth (Fall Guys), middle/high school summer, adult/veteran/masters training through Mira Mesa Wrestling Club.",
   keywords: [
     "Mira Mesa Wrestling",
     "Mira Mesa High School Wrestling",
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
     "California CIF Wrestling",
     "Boys CIF Champions 2024",
     "Girls Wrestling San Diego",
-    "Marauders Wrestling",
     "Mira Mesa Wrestling Club",
     "MMWC",
     "Adult Wrestling San Diego",
@@ -46,9 +45,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Mira Mesa Wrestling",
-    title: "Mira Mesa Wrestling — Marauders Wrestling, San Diego",
+    title: "Mira Mesa Wrestling — San Diego",
     description:
-      "Boys & Girls CIF Champions. 14 consecutive League titles. Youth through adult wrestling at Mira Mesa.",
+      "2× Boys CIF Champions. Girls Masters Champions. 15 consecutive Boys League titles. Youth through adult wrestling at Mira Mesa.",
   },
 };
 
@@ -56,7 +55,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SportsTeam",
   name: "Mira Mesa Wrestling",
-  alternateName: "Mira Mesa Marauders Wrestling",
+  alternateName: "Mira Mesa High School Wrestling",
   sport: "Wrestling",
   description:
     "Boys and Girls wrestling program at Mira Mesa High School, San Diego, California. Multiple CIF and League champions across both teams.",
@@ -83,8 +82,10 @@ const jsonLd = {
     "2024 Boys CIF Champions",
     "2014 Boys CIF Champions",
     "2022 Girls San Diego Section Masters Champions",
-    "14 Consecutive League Championships",
-    "3 Consecutive Girls Conference Championships",
+    "15 Consecutive Boys League Championships",
+    "4 Consecutive Girls Conference Championships",
+    "3 Consecutive Girls League Championships",
+    "3 Consecutive Middle School Championships",
   ],
   parentOrganization: {
     "@type": "SportsOrganization",

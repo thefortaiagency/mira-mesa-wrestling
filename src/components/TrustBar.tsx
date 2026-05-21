@@ -19,7 +19,7 @@ export function TrustBar() {
     <section className="bg-slate-50 border-b border-slate-200">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-8">
         <p className="text-xs text-slate-500 font-heading font-semibold tracking-wider uppercase text-center mb-6">
-          Marauder Wrestling — by the numbers
+          Mira Mesa Wrestling — by the numbers
         </p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}

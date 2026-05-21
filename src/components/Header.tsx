@@ -6,13 +6,13 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { label: "About", href: "/about" },
+  { label: "Coaches", href: "/about" },
   { label: "Calendar", href: "/calendar" },
   { label: "History", href: "/history" },
   { label: "Photos", href: "/photos" },
   { label: "Resources", href: "/resources" },
-  { label: "MMWC", href: "/mmwc" },
-  { label: "Masters", href: "/masters" },
+  { label: "Programs", href: "/mmwc" },
+  { label: "Adults", href: "/masters" },
 ];
 
 export function Header() {

@@ -16,7 +16,7 @@ export default function PhotosPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
           <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Photos</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
-            Marauder wrestling, in pictures.
+            Mira Mesa Wrestling, in pictures.
           </h1>
           <p className="mt-5 text-xl text-slate-300 max-w-2xl">
             Match photos, team shots, championship moments. New albums each season.
