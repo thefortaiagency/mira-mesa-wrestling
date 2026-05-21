@@ -1,0 +1,127 @@
+import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://mmw.fort-solutions.com"),
+  title: {
+    default: "Mira Mesa Wrestling — Marauders Wrestling, San Diego",
+    template: "%s | Mira Mesa Wrestling",
+  },
+  description:
+    "Mira Mesa Wrestling — 2014 & 2024 Boys CIF Champions, 2022 Girls San Diego Section Masters Champions, 14 consecutive League Championships. Boys & Girls high school wrestling plus youth (Fall Guys), middle/high school summer, adult/veteran/masters training through Mira Mesa Wrestling Club.",
+  keywords: [
+    "Mira Mesa Wrestling",
+    "Mira Mesa High School Wrestling",
+    "MMHS Wrestling",
+    "San Diego Wrestling",
+    "California CIF Wrestling",
+    "Boys CIF Champions 2024",
+    "Girls Wrestling San Diego",
+    "Marauders Wrestling",
+    "Mira Mesa Wrestling Club",
+    "MMWC",
+    "Adult Wrestling San Diego",
+    "Veteran Wrestling San Diego",
+    "Masters Wrestling Training",
+    "Fall Guys Wrestling",
+    "Youth Wrestling San Diego",
+    "Coach Craig VanDyke",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Mira Mesa Wrestling",
+    title: "Mira Mesa Wrestling — Marauders Wrestling, San Diego",
+    description:
+      "Boys & Girls CIF Champions. 14 consecutive League titles. Youth through adult wrestling at Mira Mesa.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  name: "Mira Mesa Wrestling",
+  alternateName: "Mira Mesa Marauders Wrestling",
+  sport: "Wrestling",
+  description:
+    "Boys and Girls wrestling program at Mira Mesa High School, San Diego, California. Multiple CIF and League champions across both teams.",
+  url: "https://mmw.fort-solutions.com",
+  email: "MiraMesaWrestling@gmail.com",
+  location: {
+    "@type": "Place",
+    name: "Mira Mesa High School",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "San Diego",
+      addressRegion: "CA",
+      addressCountry: "US",
+    },
+  },
+  coach: {
+    "@type": "Person",
+    name: "Craig VanDyke",
+    jobTitle: "Head Coach (Boys and Girls)",
+    description:
+      "19 years coaching. Team USA Veteran National Team Assistant Coach (Freestyle World Champions 2021–2024, Greco-Roman World Champions 2022 & 2023). Boys CIF Championships 2014 & 2024. 11 CIF trophies. Girls Masters Championship 2022.",
+  },
+  award: [
+    "2024 Boys CIF Champions",
+    "2014 Boys CIF Champions",
+    "2022 Girls San Diego Section Masters Champions",
+    "14 Consecutive League Championships",
+    "3 Consecutive Girls Conference Championships",
+  ],
+  parentOrganization: {
+    "@type": "SportsOrganization",
+    name: "Mira Mesa Wrestling Club",
+    alternateName: "MMWC",
+    description:
+      "501(c)(3) supporting Mira Mesa wrestling. Offers training for ages 5–60: Fall Guys Youth Wrestling, MMWC Middle/High School Summer, MMWC Adult/Veteran/Masters year-round.",
+    taxID: "92-4020180",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "9450 Mira Mesa Blvd. #309",
+      addressLocality: "San Diego",
+      addressRegion: "CA",
+      postalCode: "92126",
+      addressCountry: "US",
+    },
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${jakarta.variable} ${inter.variable}`} style={{ textRendering: "optimizeLegibility" }}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className="min-h-screen flex flex-col antialiased">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
