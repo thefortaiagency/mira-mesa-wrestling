@@ -5,7 +5,7 @@ import { Trophy, Globe, Users, Zap, CheckCircle2, ExternalLink } from "lucide-re
 export const metadata: Metadata = {
   title: "Adult / Veteran / Masters Wrestling Training in San Diego",
   description:
-    "MMWC adult, veteran, and masters wrestling training in San Diego for ages 18-60. Coached by Team USA Veteran National Team Assistant Coach Craig VanDyke — Freestyle World Champions 2021, 2022, 2023, 2024. Year-round Folkstyle, Freestyle, and Greco-Roman. $75/month.",
+    "MMWC adult, veteran, and masters wrestling training in San Diego for ages 18-60. Coached by Team USA Veteran National Team Assistant Coach Craig VanDyke — Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Year-round Freestyle, Greco-Roman, and Folkstyle (Collegiate). Sundays & Wednesdays. $100/month.",
   keywords: [
     "Adult Wrestling San Diego",
     "Veteran Wrestling San Diego",
@@ -26,7 +26,7 @@ const trainingFAQ = [
   },
   {
     q: "Why train at MMWC specifically?",
-    a: "Coach VanDyke is an active Team USA Veteran National Team Assistant Coach — meaning he's coaching at the highest level of adult international wrestling. Freestyle World Champions 2021, 2022, 2023, 2024. Greco-Roman World Champions 2022 and 2023. The technique you get is the technique the team is actually winning Worlds with.",
+    a: "Coach VanDyke is an active Team USA Veteran National Team Assistant Coach — meaning he's coaching at the highest level of adult international wrestling. Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Greco-Roman World Champions 2022 and 2023. The technique you get is the technique the team is actually winning Worlds with.",
   },
   {
     q: "I haven't wrestled in years (or ever). Can I start?",
@@ -81,9 +81,9 @@ export default function MastersPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: Users, label: "Age range", value: "18 - 60" },
-              { icon: Zap, label: "Cost", value: "$75 / month" },
-              { icon: Globe, label: "Season", value: "Year-round" },
-              { icon: Trophy, label: "Styles", value: "Folk · Free · Greco" },
+              { icon: Zap, label: "Cost", value: "$100 / month" },
+              { icon: Globe, label: "Schedule", value: "Year-round · Sun & Wed" },
+              { icon: Trophy, label: "Styles", value: "Freestyle · Greco-Roman · Folkstyle (Collegiate)" },
             ].map((s) => {
               const Icon = s.icon;
               return (
@@ -119,7 +119,7 @@ export default function MastersPage() {
               <p className="mt-4 text-slate-700 leading-relaxed text-lg">
                 MMWC is run as a coached program. Coach VanDyke is currently on
                 the Team USA Veteran National Team coaching staff — Freestyle
-                World Champions <strong>2021, 2022, 2023, and 2024</strong>;
+                World Champions <strong>2021, 2022, 2023, 2024, and 2025</strong>;
                 Greco-Roman World Champions <strong>2022 and 2023</strong>. The
                 technique you drill is the technique that&apos;s winning World
                 titles right now.
@@ -127,7 +127,7 @@ export default function MastersPage() {
               <ul className="mt-8 space-y-3">
                 {[
                   "Active Team USA Veteran coaching staff",
-                  "All three styles: Folkstyle, Freestyle, Greco-Roman",
+                  "All three styles: Freestyle, Greco-Roman, Folkstyle (Collegiate)",
                   "Year-round training (not just seasonal)",
                   "Beginner-friendly — scaled to who's in the room",
                   "Competition prep for USA Wrestling Veteran events through Worlds",
@@ -148,10 +148,10 @@ export default function MastersPage() {
                 </span>
                 <h3 className="mt-3 text-2xl font-heading font-extrabold">MMWC Adult Training</h3>
                 <dl className="mt-6 space-y-4">
-                  <Row label="Schedule" value="Year-round" />
-                  <Row label="Tuition" value="$75 / month" />
+                  <Row label="Schedule" value="Year-round · Sundays & Wednesdays" />
+                  <Row label="Tuition" value="$100 / month" />
                   <Row label="Ages" value="18 - 60" />
-                  <Row label="Styles" value="Folkstyle · Freestyle · Greco-Roman" />
+                  <Row label="Styles" value="Freestyle · Greco-Roman · Folkstyle (Collegiate)" />
                   <Row label="Required" value="Current USA Wrestling card" />
                   <Row label="Location" value="Mira Mesa High School wrestling room, San Diego" />
                   <Row label="Coach" value="Craig VanDyke — Team USA Veteran asst." />

@@ -76,7 +76,7 @@ const jsonLd = {
     name: "Craig VanDyke",
     jobTitle: "Head Coach (Boys and Girls)",
     description:
-      "19 years coaching. Team USA Veteran National Team Assistant Coach (Freestyle World Champions 2021–2024, Greco-Roman World Champions 2022 & 2023). Boys CIF Championships 2014 & 2024. 11 CIF trophies. Girls Masters Championship 2022.",
+      "19 years coaching. Team USA Veteran National Team Assistant Coach (Freestyle World Champions 2021–2025, Greco-Roman World Champions 2022 & 2023). Boys CIF Championships 2014 & 2024. 11 CIF trophies. Girls Masters Championship 2022.",
   },
   award: [
     "2024 Boys CIF Champions",

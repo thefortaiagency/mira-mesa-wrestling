@@ -29,7 +29,7 @@ export function About() {
             </div>
             <div className="absolute -bottom-6 right-4 lg:right-8 bg-white rounded-xl shadow-2xl p-5 ring-1 ring-black/5">
               <p className="text-blue-700 font-heading font-bold text-2xl">Team USA</p>
-              <p className="text-slate-600 text-sm mt-1">Veteran World Champions Coach · '21 '22 '23 '24</p>
+              <p className="text-slate-600 text-sm mt-1">Veteran World Champions Coach · '21 '22 '23 '24 '25</p>
             </div>
           </motion.div>
 
@@ -65,7 +65,7 @@ export function About() {
             <div className="grid sm:grid-cols-2 gap-5 mt-10 mb-10">
               {[
                 { icon: Trophy, title: "15 League Titles in a row", desc: "75-0 Boys · 12-0 Girls dual meet record" },
-                { icon: Globe, title: "Team USA-coached", desc: "Veteran Freestyle World Champs '21–'24" },
+                { icon: Globe, title: "Team USA-coached", desc: "Veteran Freestyle World Champs '21–'25" },
                 { icon: Calendar, title: "Year-round wrestling", desc: "Fall, Spring, Summer, plus high school season" },
                 { icon: Users, title: "Open enrollment", desc: "Freshmen, Sophomores, and youth always welcome" },
               ].map((item) => {

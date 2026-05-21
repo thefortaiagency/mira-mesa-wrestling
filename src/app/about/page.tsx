@@ -18,7 +18,7 @@ const currentStaff = [
       "Years coaching: 19",
       "Years at Mira Mesa: 13",
       "Team USA Veteran National Team Assistant Coach",
-      "Freestyle World Champions: '21, '22, '23, '24",
+      "Freestyle World Champions: '21, '22, '23, '24, '25",
       "Greco-Roman World Champions: '22, '23",
       "Girls City Conference Coach of the Year (2×)",
       "Boys League Coach of the Year",
