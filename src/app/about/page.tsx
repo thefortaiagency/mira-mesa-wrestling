@@ -6,7 +6,7 @@ import { Trophy, Globe, ShieldCheck } from "lucide-react";
 export const metadata: Metadata = {
   title: "About — Coaches & Program",
   description:
-    "Meet the Mira Mesa Wrestling coaching staff led by Head Coach Craig VanDyke — Team USA Veteran National Team Assistant Coach. Plus the head-coach lineage that built the Marauder program since 1981.",
+    "Meet the Mira Mesa Wrestling coaching staff led by Head Coach Craig VanDyke — Team USA Veteran National Team Co-Head Coach. Plus the head-coach lineage that built the Marauder program since 1981.",
 };
 
 const currentStaff = [
@@ -15,25 +15,25 @@ const currentStaff = [
     role: "Head Coach — Boys and Girls",
     photo: "/images/staff/craig.jpg",
     bullets: [
-      "Years coaching: 19",
-      "Years at Mira Mesa: 13",
-      "Team USA Veteran National Team Assistant Coach",
+      "Years coaching: 20",
+      "Years at Mira Mesa: 14",
+      "Team USA Veteran National Team Co-Head Coach",
       "Freestyle World Champions: '21, '22, '23, '24, '25",
       "Greco-Roman World Champions: '22, '23",
       "Girls City Conference Coach of the Year (2×)",
       "Boys League Coach of the Year",
       "Boys CIF Championships: 2014 & 2024",
-      "11 CIF trophies",
+      "13 CIF trophies",
       "Girls Masters Championship 2022",
     ],
   },
-  { name: "Eric Velasco", role: "JV Head Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 22", "1994 MMHS Alumni", "Fall Guys Head Coach since 2010"] },
-  { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 17", "Years at Mira Mesa: 9.5", "Fall Guys Wrestling Coach"] },
-  { name: "Dean Brown", role: "Assistant Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 19", "Years at Mira Mesa: 7", "Former MMHS Head Coach 2009-2012"] },
-  { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 3", "2011 MMHS Alumni"] },
-  { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 14", "Fall Guys Coach", "1999 MMHS Alumni"] },
-  { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 3"] },
-  { name: "Frank Criger", role: "Assistant Coach", photo: "/images/staff/frank.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 2"] },
+  { name: "Eric Velasco", role: "JV Head Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "1994 MMHS Alumni", "Fall Guys Head Coach since 2010"] },
+  { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 18", "Years at Mira Mesa: 10.5", "Fall Guys Wrestling Coach"] },
+  { name: "Dean Brown", role: "Assistant Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012"] },
+  { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni"] },
+  { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni"] },
+  { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4"] },
+  { name: "Frank Criger", role: "Assistant Coach", photo: "/images/staff/frank.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 3"] },
 ];
 
 const headCoaches = [

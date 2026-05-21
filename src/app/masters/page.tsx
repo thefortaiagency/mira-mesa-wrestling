@@ -5,7 +5,7 @@ import { Trophy, Globe, Users, Zap, CheckCircle2, ExternalLink } from "lucide-re
 export const metadata: Metadata = {
   title: "Adult / Veteran / Masters Wrestling Training in San Diego",
   description:
-    "MMWC adult, veteran, and masters wrestling training in San Diego for ages 18-60. Coached by Team USA Veteran National Team Assistant Coach Craig VanDyke — Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Year-round Freestyle, Greco-Roman, and Folkstyle (Collegiate). Sundays & Wednesdays. $100/month.",
+    "MMWC adult, veteran, and masters wrestling training in San Diego for ages 18-60. Coached by Team USA Veteran National Team Co-Head Coach Craig VanDyke — Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Year-round Freestyle, Greco-Roman, and Folkstyle (Collegiate). Sundays & Wednesdays. $100/month.",
   keywords: [
     "Adult Wrestling San Diego",
     "Veteran Wrestling San Diego",
@@ -26,7 +26,7 @@ const trainingFAQ = [
   },
   {
     q: "Why train at MMWC specifically?",
-    a: "Coach VanDyke is an active Team USA Veteran National Team Assistant Coach — meaning he's coaching at the highest level of adult international wrestling. Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Greco-Roman World Champions 2022 and 2023. The technique you get is the technique the team is actually winning Worlds with.",
+    a: "Coach VanDyke is an active Team USA Veteran National Team Co-Head Coach — meaning he's coaching at the highest level of adult international wrestling. Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Greco-Roman World Champions 2022 and 2023. The technique you get is the technique the team is actually winning Worlds with.",
   },
   {
     q: "I haven't wrestled in years (or ever). Can I start?",

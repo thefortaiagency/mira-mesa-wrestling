@@ -59,7 +59,7 @@ export function About() {
               501(c)(3) — runs year-round programming for ages 5 to 60: Fall Guys
               for youth, summer training for middle and high schoolers, and the
               adult/veteran/masters club coached by an active Team USA Veteran
-              National Team Assistant Coach.
+              National Team Co-Head Coach.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-5 mt-10 mb-10">
