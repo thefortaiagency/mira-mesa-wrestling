@@ -48,8 +48,8 @@ export function About() {
 
             <p className="mt-6 text-slate-700 leading-relaxed text-lg">
               Mira Mesa Wrestling has been a force in San Diego wrestling for four
-              decades. Head Coach Craig VanDyke (since 2012) has added 13 League
-              Titles, 12 Conference Titles, a Girls Masters Championship, and two
+              decades. Head Coach Craig VanDyke (since 2012) has added 15 League
+              Titles, 14 Conference Titles, a Girls Masters Championship, and two
               CIF Championships to a legacy that started with Noel Hall in 1981 and
               was built by Hall of Famer Jon Talbott from 1984-2009.
             </p>
@@ -64,7 +64,7 @@ export function About() {
 
             <div className="grid sm:grid-cols-2 gap-5 mt-10 mb-10">
               {[
-                { icon: Trophy, title: "14 League Titles in a row", desc: "70-0 dual meet record" },
+                { icon: Trophy, title: "15 League Titles in a row", desc: "75-0 Boys · 12-0 Girls dual meet record" },
                 { icon: Globe, title: "Team USA-coached", desc: "Veteran Freestyle World Champs '21–'24" },
                 { icon: Calendar, title: "Year-round wrestling", desc: "Fall, Spring, Summer, plus high school season" },
                 { icon: Users, title: "Open enrollment", desc: "Freshmen, Sophomores, and youth always welcome" },

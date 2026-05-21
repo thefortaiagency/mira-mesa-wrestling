@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Medal, Award, Crown, Star } from "lucide-react";
+import { Trophy, Medal, Award, Crown, Star, Flame, Shield, GraduationCap } from "lucide-react";
 
 const stats = [
-  { value: "14×", label: "League Titles (Boys)", icon: Trophy },
-  { value: "12×", label: "Conference Titles (Boys)", icon: Crown },
-  { value: "2×", label: "CIF Champions (Boys)", icon: Medal },
-  { value: "3×", label: "Girls Conference (in a row)", icon: Star },
-  { value: "70–0", label: "Boys Dual Meet Record", icon: Award },
+  { value: "15×", label: "Boys League Titles", icon: Trophy },
+  { value: "14×", label: "Boys Conference Titles", icon: Crown },
+  { value: "2×", label: "Boys CIF Champions", icon: Medal },
+  { value: "75–0", label: "Boys Dual Meet Record", icon: Award },
+  { value: "4×", label: "Girls Conference Titles", icon: Star },
+  { value: "3×", label: "Girls League Titles", icon: Flame },
+  { value: "12–0", label: "Girls Dual Meet Record", icon: Shield },
+  { value: "3×", label: "MS Championships", icon: GraduationCap },
 ];
 
 export function TrustBar() {
@@ -22,7 +25,7 @@ export function TrustBar() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4"
+          className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-6 lg:gap-4"
         >
           {stats.map((s) => {
             const Icon = s.icon;

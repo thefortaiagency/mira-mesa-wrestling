@@ -55,10 +55,11 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl"
           >
-            14 consecutive Boys League Championships. 70-0 dual meet record. 2014
-            &amp; 2024 Boys CIF Champions. 2022 Girls San Diego Section Masters
-            Champions. 3 straight Girls Conference titles. The Marauders compete
-            year-round — boys, girls, youth, adult.
+            15 Consecutive Boys League Championships, 4 Consecutive Girls
+            Conference Championships, 3 Consecutive Middle School Championships.
+            Boys CIF Champions (2014, 2024), Girls Masters Champions (2022).
+            Mira Mesa Wrestling trains year round for all ages: Youth, Middle
+            School, High School and Adult.
           </motion.p>
 
           <motion.div
