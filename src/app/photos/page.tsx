@@ -12,9 +12,9 @@ export default function PhotosPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">Photos</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Photos</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
             Marauder wrestling, in pictures.
           </h1>
@@ -26,8 +26,8 @@ export default function PhotosPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-50 mb-6">
-            <Camera className="w-8 h-8 text-red-600" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 mb-6">
+            <Camera className="w-8 h-8 text-blue-700" />
           </div>
           <h2 className="text-2xl font-heading font-bold text-slate-900">
             Album links coming back soon.
@@ -63,7 +63,7 @@ export default function PhotosPage() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors text-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors text-sm"
             >
               Submit a photo
             </Link>

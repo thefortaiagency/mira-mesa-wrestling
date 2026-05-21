@@ -64,9 +64,9 @@ export default function ResourcesPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">Resources</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Resources</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
             For wrestlers, families, and the wrestling-curious.
           </h1>
@@ -81,7 +81,7 @@ export default function ResourcesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-3xl mb-12">
-            <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">Health & Hygiene</span>
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Health & Hygiene</span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
               Stay on the mat — clean skin, intact ears.
             </h2>
@@ -90,8 +90,8 @@ export default function ResourcesPage() {
             {healthSection.map((h) => {
               const Icon = h.icon;
               return (
-                <div key={h.title} className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-red-200 hover:shadow-md transition-all">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
+                <div key={h.title} className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-md transition-all">
+                  <div className="w-12 h-12 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="mt-5 font-heading font-bold text-slate-900 text-lg">{h.title}</h3>
@@ -108,7 +108,7 @@ export default function ResourcesPage() {
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-3xl mb-12">
-            <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">Wrestling Sites</span>
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Wrestling Sites</span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
               The sites Marauders actually use.
             </h2>
@@ -122,14 +122,14 @@ export default function ResourcesPage() {
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-red-300 hover:shadow-md transition-all"
+                  className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-yellow-300 hover:shadow-md transition-all"
                 >
-                  <div className="w-11 h-11 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
+                  <div className="w-11 h-11 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="mt-5 font-heading font-bold text-slate-900 text-base flex items-center gap-1.5">
                     {l.title}
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-red-500 transition-colors" />
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-yellow-400 transition-colors" />
                   </h3>
                   <p className="mt-2 text-slate-600 text-sm leading-relaxed">{l.description}</p>
                 </a>
@@ -142,7 +142,7 @@ export default function ResourcesPage() {
       {/* Classic Matches */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">Watch</span>
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Watch</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
             Classic matches every wrestler should know.
           </h2>
@@ -155,9 +155,9 @@ export default function ResourcesPage() {
             {classicMatches.map((m) => (
               <li
                 key={m}
-                className="flex items-center gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-red-200 hover:shadow-sm transition-all"
+                className="flex items-center gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-sm transition-all"
               >
-                <div className="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
                   <PlayCircle className="w-5 h-5" />
                 </div>
                 <span className="font-heading font-semibold text-slate-900">{m}</span>
@@ -170,7 +170,7 @@ export default function ResourcesPage() {
       {/* Football crossover + community articles */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">Reading</span>
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Reading</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
             Wrestling makes you a better everything.
           </h2>
@@ -185,7 +185,7 @@ export default function ResourcesPage() {
                 key={title}
                 className="flex items-center gap-4 p-5 rounded-xl border border-slate-200 bg-white"
               >
-                <div className="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
                   <Heart className="w-5 h-5" />
                 </div>
                 <span className="font-heading font-semibold text-slate-900">{title}</span>
@@ -199,7 +199,7 @@ export default function ResourcesPage() {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
           >
             Have a resource to add? Email Coach Craig
           </Link>

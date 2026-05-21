@@ -26,7 +26,7 @@ export function FloatingCTA() {
       </Link>
       <Link
         href="/donation"
-        className="flex-1 py-3 px-4 bg-red-600 text-white font-heading font-semibold text-sm rounded-lg text-center hover:bg-red-700 transition-colors"
+        className="flex-1 py-3 px-4 bg-blue-700 text-white font-heading font-semibold text-sm rounded-lg text-center hover:bg-blue-800 transition-colors"
       >
         Donate
       </Link>

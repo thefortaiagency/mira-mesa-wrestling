@@ -18,9 +18,9 @@ export default function CalendarPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">Calendar</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Calendar</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
             Practices, matches, tournaments.
           </h1>
@@ -35,7 +35,7 @@ export default function CalendarPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div className="flex items-center gap-3">
-              <CalendarDays className="w-6 h-6 text-red-600" />
+              <CalendarDays className="w-6 h-6 text-blue-700" />
               <h2 className="font-heading font-bold text-slate-900 text-xl">
                 MMW Master Calendar
               </h2>
@@ -44,7 +44,7 @@ export default function CalendarPage() {
               href="https://calendar.google.com/calendar/u/0/r?cid=MiraMesaWrestling@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-red-600 font-heading font-semibold hover:text-red-700 text-sm"
+              className="inline-flex items-center gap-2 text-blue-700 font-heading font-semibold hover:text-blue-800 text-sm"
             >
               Add to your Google Calendar
               <ExternalLink className="w-4 h-4" />
@@ -78,7 +78,7 @@ export default function CalendarPage() {
           <p className="text-slate-600 mb-6">Questions about a specific event?</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
           >
             Email Coach Craig
           </Link>

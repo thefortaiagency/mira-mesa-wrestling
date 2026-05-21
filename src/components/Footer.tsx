@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Trophy } from "lucide-react";
+import Image from "next/image";
 
 const programs = [
   { label: "Boys & Girls HS Wrestling", href: "/about" },
@@ -23,14 +23,14 @@ export function Footer() {
   return (
     <footer className="bg-slate-950">
       {/* CTA strip */}
-      <div className="bg-red-600">
+      <div className="bg-blue-700">
         <div className="max-w-[1400px] mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <h3 className="text-lg font-heading font-bold text-white">
             Support the Marauders — MMWC is a 501(c)(3).
           </h3>
           <Link
             href="/donation"
-            className="px-6 py-2.5 bg-white text-red-600 rounded-lg font-heading font-semibold hover:bg-slate-100 transition-colors text-sm"
+            className="px-6 py-2.5 bg-white text-blue-700 rounded-lg font-heading font-semibold hover:bg-slate-100 transition-colors text-sm"
           >
             Donate
           </Link>
@@ -42,9 +42,13 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-red-600/10 border border-red-500/20 flex items-center justify-center">
-                <Trophy className="w-5 h-5 text-red-400" />
-              </div>
+              <Image
+                src="/images/mm-logo.png"
+                alt="Mira Mesa Marauders logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-white font-heading font-semibold text-lg">
                 Mira Mesa Wrestling
               </span>
@@ -64,7 +68,7 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((l) => (
                 <li key={l.label}>
-                  <Link href={l.href} className="text-slate-400 hover:text-red-300 transition-colors text-sm">
+                  <Link href={l.href} className="text-slate-400 hover:text-yellow-300 transition-colors text-sm">
                     {l.label}
                   </Link>
                 </li>
@@ -80,7 +84,7 @@ export function Footer() {
             <ul className="space-y-3">
               {programs.map((l) => (
                 <li key={l.label}>
-                  <Link href={l.href} className="text-slate-400 hover:text-red-300 transition-colors text-sm">
+                  <Link href={l.href} className="text-slate-400 hover:text-yellow-300 transition-colors text-sm">
                     {l.label}
                   </Link>
                 </li>
@@ -96,7 +100,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li>
                 <span className="text-white/40 text-xs uppercase tracking-wider block mb-1">Email</span>
-                <a href="mailto:MiraMesaWrestling@gmail.com" className="hover:text-red-300 transition-colors">
+                <a href="mailto:MiraMesaWrestling@gmail.com" className="hover:text-yellow-300 transition-colors">
                   MiraMesaWrestling@gmail.com
                 </a>
               </li>
@@ -116,11 +120,22 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/5">
-        <div className="max-w-[1400px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+        <div className="max-w-[1400px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <span>&copy; {new Date().getFullYear()} Mira Mesa Wrestling. All rights reserved.</span>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="hover:text-red-300 transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-red-300 transition-colors">Terms</Link>
+            <span className="text-slate-500">
+              Built by{" "}
+              <a href="https://thefortaiagency.ai" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-300 transition-colors font-medium">
+                The Fort AI Agency
+              </a>
+              {" "}&times;{" "}
+              <a href="https://aimpactnexus.ai" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-300 transition-colors font-medium">
+                AImpact Nexus
+              </a>
+            </span>
+            <span className="hidden sm:inline w-px h-3 bg-slate-700" />
+            <Link href="/privacy-policy" className="hover:text-yellow-300 transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-yellow-300 transition-colors">Terms</Link>
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Trophy } from "lucide-react";
 
 const navItems = [
   { label: "About", href: "/about" },
@@ -45,9 +45,14 @@ export function Header() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-red-600/10 flex items-center justify-center group-hover:bg-red-600/20 transition-colors">
-              <Trophy className="w-5 h-5 text-red-600" />
-            </div>
+            <Image
+              src="/images/mm-logo.png"
+              alt="Mira Mesa Marauders logo"
+              width={44}
+              height={44}
+              className="w-11 h-11 object-contain"
+              priority
+            />
             <div>
               <span className="text-slate-900 font-heading font-bold text-lg tracking-tight">
                 Mira Mesa Wrestling
@@ -75,7 +80,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link
               href="/donation"
-              className="hidden sm:inline-flex px-6 py-2.5 bg-red-600 text-white font-heading font-semibold text-sm rounded-lg hover:bg-red-700 transition-colors"
+              className="hidden sm:inline-flex px-6 py-2.5 bg-blue-700 text-white font-heading font-semibold text-sm rounded-lg hover:bg-blue-800 transition-colors"
             >
               Donate
             </Link>
@@ -134,7 +139,7 @@ export function Header() {
                 <Link
                   href="/donation"
                   onClick={() => setIsOpen(false)}
-                  className="mt-2 px-6 py-3.5 bg-red-600 text-white font-heading font-semibold text-center rounded-lg hover:bg-red-700 transition-colors"
+                  className="mt-2 px-6 py-3.5 bg-blue-700 text-white font-heading font-semibold text-center rounded-lg hover:bg-blue-800 transition-colors"
                 >
                   Donate
                 </Link>

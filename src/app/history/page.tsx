@@ -46,15 +46,15 @@ function ResultRow({ year, result, tier }: { year: string; result: string; tier:
   return (
     <div
       className={`flex items-center justify-between gap-4 p-4 rounded-lg border ${
-        isChamp ? "bg-red-50 border-red-200" : "bg-white border-slate-200"
+        isChamp ? "bg-blue-50 border-blue-200" : "bg-white border-slate-200"
       }`}
     >
-      <span className={`font-heading font-bold text-lg ${isChamp ? "text-red-700" : "text-slate-700"}`}>
+      <span className={`font-heading font-bold text-lg ${isChamp ? "text-blue-800" : "text-slate-700"}`}>
         {year}
       </span>
       <span
         className={`font-heading font-semibold text-sm tracking-wider uppercase ${
-          isChamp ? "text-red-700" : "text-slate-500"
+          isChamp ? "text-blue-800" : "text-slate-500"
         }`}
       >
         {result}
@@ -71,7 +71,7 @@ function TitleStrip({ years, color = "slate" }: { years: string[]; color?: "red"
           key={y}
           className={`text-center font-heading font-bold text-sm py-2 rounded-lg ${
             color === "red"
-              ? "bg-red-600 text-white"
+              ? "bg-blue-700 text-white"
               : "bg-slate-100 text-slate-800"
           }`}
         >
@@ -86,9 +86,9 @@ export default function HistoryPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
             The trophy case.
           </h1>
@@ -104,7 +104,7 @@ export default function HistoryPage() {
           {/* Boys CIF */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Medal className="w-7 h-7 text-red-600" />
+              <Medal className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys CIF</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -115,7 +115,7 @@ export default function HistoryPage() {
           {/* Girls Masters */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Crown className="w-7 h-7 text-red-600" />
+              <Crown className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Masters</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -126,7 +126,7 @@ export default function HistoryPage() {
           {/* Girls CIF */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Medal className="w-7 h-7 text-red-600" />
+              <Medal className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls CIF</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -137,7 +137,7 @@ export default function HistoryPage() {
           {/* Boys Conference */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Award className="w-7 h-7 text-red-600" />
+              <Award className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys Conference</h2>
               <span className="text-sm text-slate-500 ml-2">{boysConference.length} titles</span>
             </div>
@@ -148,7 +148,7 @@ export default function HistoryPage() {
           {/* Girls Conference */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Award className="w-7 h-7 text-red-600" />
+              <Award className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Conference</h2>
               <span className="text-sm text-slate-500 ml-2">{girlsConference.length} titles (3 in a row)</span>
             </div>
@@ -159,7 +159,7 @@ export default function HistoryPage() {
           {/* Girls League */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Star className="w-7 h-7 text-red-600" />
+              <Star className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Western League</h2>
             </div>
             <TitleStrip years={girlsLeague} />
@@ -168,7 +168,7 @@ export default function HistoryPage() {
           {/* Boys League */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Trophy className="w-7 h-7 text-red-600" />
+              <Trophy className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys League</h2>
               <span className="text-sm text-slate-500 ml-2">{boysLeague.length} titles — 14 consecutive</span>
             </div>
@@ -190,7 +190,7 @@ export default function HistoryPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
           >
             Request the Individual Results sheet
           </Link>

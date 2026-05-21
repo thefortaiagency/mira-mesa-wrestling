@@ -28,7 +28,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/15 text-red-300 text-xs font-heading font-semibold tracking-wider uppercase border border-red-500/25">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700/15 text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase border border-yellow-400/25">
               <Trophy className="w-3.5 h-3.5" />
               2024 Boys CIF Champions
             </span>
@@ -41,7 +41,7 @@ export function Hero() {
             className="mt-8 text-5xl sm:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-[1.05]"
           >
             Be part of the{" "}
-            <span className="text-red-500">tradition</span>.
+            <span className="text-yellow-400">tradition</span>.
           </motion.h1>
 
           <motion.p
@@ -64,7 +64,7 @@ export function Hero() {
           >
             <Link
               href="/contact"
-              className="px-8 py-4 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors flex items-center gap-3 text-lg shadow-lg shadow-red-500/25"
+              className="px-8 py-4 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors flex items-center gap-3 text-lg shadow-lg shadow-yellow-400/25"
             >
               Join the Team
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

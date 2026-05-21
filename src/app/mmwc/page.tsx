@@ -62,9 +62,9 @@ export default function MMWCPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">MMWC</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">MMWC</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
             Mira Mesa Wrestling Club.
           </h1>
@@ -83,14 +83,14 @@ export default function MMWCPage() {
               <div
                 key={p.id}
                 id={p.id}
-                className="grid lg:grid-cols-3 gap-8 items-start p-8 rounded-2xl border border-slate-200 bg-white hover:border-red-200 hover:shadow-lg transition-all scroll-mt-24"
+                className="grid lg:grid-cols-3 gap-8 items-start p-8 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-lg transition-all scroll-mt-24"
               >
                 <div className="lg:col-span-1">
-                  <div className="w-14 h-14 rounded-xl bg-red-50 text-red-600 flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
                     <Icon className="w-7 h-7" />
                   </div>
                   <h2 className="mt-5 text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
-                  <p className="mt-2 text-red-600 font-heading font-medium">{p.age}</p>
+                  <p className="mt-2 text-blue-700 font-heading font-medium">{p.age}</p>
                 </div>
                 <div className="lg:col-span-2">
                   <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm">
@@ -118,7 +118,7 @@ export default function MMWCPage() {
                         href={p.extra.href}
                         target={p.extra.href.startsWith("http") ? "_blank" : undefined}
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-red-600 font-heading font-semibold text-sm hover:text-red-700"
+                        className="inline-flex items-center gap-2 text-blue-700 font-heading font-semibold text-sm hover:text-blue-800"
                       >
                         {p.extra.label}
                         <ExternalLink className="w-4 h-4" />
@@ -143,17 +143,17 @@ export default function MMWCPage() {
       {/* Board */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">Board</span>
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Board</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
             MMWC Executive Board
           </h2>
           <div className="mt-8 space-y-4">
             <div className="bg-white p-6 rounded-xl border border-slate-200">
-              <p className="text-red-600 font-heading font-semibold text-sm tracking-wider uppercase">President</p>
+              <p className="text-blue-700 font-heading font-semibold text-sm tracking-wider uppercase">President</p>
               <p className="mt-1 text-slate-900 font-heading font-bold text-xl">Matthew Vallebo</p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-slate-200">
-              <p className="text-red-600 font-heading font-semibold text-sm tracking-wider uppercase">Secretary</p>
+              <p className="text-blue-700 font-heading font-semibold text-sm tracking-wider uppercase">Secretary</p>
               <p className="mt-1 text-slate-900 font-heading font-bold text-xl">Kristine Lee</p>
             </div>
           </div>

@@ -16,19 +16,19 @@ export function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-red-700 to-red-950 p-12 flex flex-col justify-center shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-blue-800 to-blue-950 p-12 flex flex-col justify-center shadow-2xl">
               <div className="relative z-10 space-y-8">
                 <div className="w-16 h-16 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center">
-                  <Trophy className="w-8 h-8 text-red-200" />
+                  <Trophy className="w-8 h-8 text-blue-200" />
                 </div>
                 <blockquote className="text-2xl text-white font-heading font-medium leading-tight">
                   &ldquo;Mira Mesa Wrestling builds lifelong success in young men and women through the ancient sport of wrestling.&rdquo;
                 </blockquote>
-                <p className="text-red-200 font-heading">Craig VanDyke · Head Coach</p>
+                <p className="text-blue-200 font-heading">Craig VanDyke · Head Coach</p>
               </div>
             </div>
             <div className="absolute -bottom-6 right-4 lg:right-8 bg-white rounded-xl shadow-2xl p-5 ring-1 ring-black/5">
-              <p className="text-red-600 font-heading font-bold text-2xl">Team USA</p>
+              <p className="text-blue-700 font-heading font-bold text-2xl">Team USA</p>
               <p className="text-slate-600 text-sm mt-1">Veteran World Champions Coach · '21 '22 '23 '24</p>
             </div>
           </motion.div>
@@ -39,7 +39,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-red-600 text-sm font-heading font-semibold tracking-wider uppercase">
+            <span className="text-blue-700 text-sm font-heading font-semibold tracking-wider uppercase">
               About the Program
             </span>
             <h2 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-slate-900 leading-tight">
@@ -72,8 +72,8 @@ export function About() {
                 const Icon = item.icon;
                 return (
                   <div key={item.title} className="flex gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center shrink-0 mt-0.5">
-                      <Icon className="w-5 h-5 text-red-600" />
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center shrink-0 mt-0.5">
+                      <Icon className="w-5 h-5 text-blue-700" />
                     </div>
                     <div>
                       <h4 className="text-slate-900 font-heading font-semibold text-base">{item.title}</h4>

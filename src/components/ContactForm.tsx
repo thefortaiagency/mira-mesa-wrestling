@@ -45,12 +45,12 @@ export function ContactForm() {
   if (status === "ok") {
     return (
       <div className="bg-white border border-slate-200 p-8 md:p-10 rounded-2xl text-center shadow-sm">
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-red-100 mb-4">
-          <CheckCircle2 className="w-7 h-7 text-red-600" />
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-100 mb-4">
+          <CheckCircle2 className="w-7 h-7 text-blue-700" />
         </div>
         <h3 className="text-2xl font-heading font-bold text-slate-900">Got it — Craig will be in touch.</h3>
         <p className="mt-3 text-slate-600">
-          Your message went straight to <a href="mailto:MiraMesaWrestling@gmail.com" className="text-red-600 font-semibold">MiraMesaWrestling@gmail.com</a>. Craig responds within one business day.
+          Your message went straight to <a href="mailto:MiraMesaWrestling@gmail.com" className="text-blue-700 font-semibold">MiraMesaWrestling@gmail.com</a>. Craig responds within one business day.
         </p>
       </div>
     );
@@ -63,16 +63,16 @@ export function ContactForm() {
     >
       <div className="grid sm:grid-cols-2 gap-5">
         <Field name="name" label="Your name" required />
-        <Field name="company" label="Company / school / jurisdiction" required />
+        <Field name="company" label="Your role" required placeholder="Parent · Wrestler · Donor · Other" />
       </div>
       <div className="grid sm:grid-cols-2 gap-5">
         <Field name="email" label="Email" type="email" required />
-        <Field name="phone" label="Phone" type="tel" />
+        <Field name="phone" label="Phone (optional)" type="tel" />
       </div>
       <Field
         name="role"
-        label="Your role"
-        placeholder="e.g., Property Owner · Facilities · Legal · Carrier"
+        label="Athlete grade / age (if applicable)"
+        placeholder="e.g., 9th grade · Ages 5-14 Fall Guys · Adult"
       />
 
       <div>
@@ -80,29 +80,29 @@ export function ContactForm() {
           htmlFor="message"
           className="block text-sm font-heading font-semibold text-slate-800 mb-2"
         >
-          Describe the site or your question
+          Your message
         </label>
         <textarea
           id="message"
           name="message"
           required
           rows={5}
-          placeholder="Address (or city/state), antenna count if known, what you need — annual study, lease review, dispute, training, etc."
-          className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
+          placeholder="Joining the team, asking about Fall Guys, MMWC adult training, donations, anything else — Coach Craig will get back to you within one business day."
+          className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-yellow-400 focus:ring-2 focus:ring-blue-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
         />
       </div>
 
       {status === "error" && (
-        <div className="flex items-start gap-3 p-4 rounded-lg bg-red-50 border border-red-200">
-          <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-          <p className="text-sm text-red-800">{errorMessage}</p>
+        <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 border border-amber-200">
+          <AlertCircle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+          <p className="text-sm text-amber-900">{errorMessage}</p>
         </div>
       )}
 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-500 transition-colors shadow-lg shadow-red-500/25 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors shadow-lg shadow-blue-700/25 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === "sending" ? (
           <>
@@ -110,12 +110,12 @@ export function ContactForm() {
             Sending...
           </>
         ) : (
-          "Send to Craig"
+          "Send to Coach Craig"
         )}
       </button>
 
       <p className="text-xs text-slate-500">
-        Initial intake call is free. Your information stays with OSC Engineering — never shared.
+        Your information stays with Mira Mesa Wrestling — never shared.
       </p>
     </form>
   );
@@ -137,7 +137,7 @@ function Field({
   return (
     <div>
       <label htmlFor={name} className="block text-sm font-heading font-semibold text-slate-800 mb-2">
-        {label} {required && <span className="text-red-600">*</span>}
+        {label} {required && <span className="text-blue-700">*</span>}
       </label>
       <input
         id={name}
@@ -145,7 +145,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
+        className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-yellow-400 focus:ring-2 focus:ring-blue-200 outline-none transition-colors text-slate-900 placeholder-slate-400"
       />
     </div>
   );

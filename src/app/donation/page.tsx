@@ -12,9 +12,9 @@ export default function DonationPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">Donate</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Donate</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
             Help young athletes live their dreams.
           </h1>
@@ -118,10 +118,10 @@ function DonateCard({
   return (
     <div
       className={`p-8 rounded-2xl border bg-white flex flex-col ${
-        featured ? "border-red-300 ring-2 ring-red-100 shadow-md" : "border-slate-200 hover:border-red-200 hover:shadow-md"
+        featured ? "border-yellow-300 ring-2 ring-blue-100 shadow-md" : "border-slate-200 hover:border-blue-200 hover:shadow-md"
       } transition-all`}
     >
-      <div className="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
+      <div className="w-12 h-12 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
         <Icon className="w-6 h-6" />
       </div>
       <h3 className="mt-5 font-heading font-bold text-slate-900 text-lg">{title}</h3>
@@ -136,7 +136,7 @@ function DonateCard({
           href={href}
           target={external ? "_blank" : undefined}
           rel={external ? "noopener noreferrer" : undefined}
-          className="mt-auto pt-5 inline-flex items-center gap-1 text-red-600 font-heading font-semibold text-sm hover:text-red-700"
+          className="mt-auto pt-5 inline-flex items-center gap-1 text-blue-700 font-heading font-semibold text-sm hover:text-blue-800"
         >
           {cta}
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

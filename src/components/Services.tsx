@@ -72,7 +72,7 @@ export function Services() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <span className="inline-block text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
+          <span className="inline-block text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">
             Programs
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl font-heading font-extrabold text-slate-900 leading-tight">
@@ -95,9 +95,9 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="group p-8 rounded-2xl border border-slate-200 hover:border-red-300 hover:shadow-lg transition-all bg-white flex flex-col"
+                className="group p-8 rounded-2xl border border-slate-200 hover:border-yellow-300 hover:shadow-lg transition-all bg-white flex flex-col"
               >
-                <div className="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center group-hover:bg-red-100 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
                   <Icon className="w-6 h-6" />
                 </div>
                 <p className="mt-4 text-xs text-slate-500 font-heading font-semibold tracking-wider uppercase">
@@ -107,7 +107,7 @@ export function Services() {
                 <p className="mt-3 text-slate-600 leading-relaxed text-sm flex-1">{p.description}</p>
                 <Link
                   href={p.href}
-                  className="mt-5 inline-flex items-center gap-1 text-red-600 font-heading font-semibold text-sm hover:text-red-700"
+                  className="mt-5 inline-flex items-center gap-1 text-blue-700 font-heading font-semibold text-sm hover:text-blue-800"
                 >
                   {p.cta}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -13,9 +13,9 @@ export default function ContactPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">Contact</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Contact</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
             Reach Coach Craig.
           </h1>
@@ -55,21 +55,21 @@ export default function ContactPage() {
                 external
               />
 
-              <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
+              <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
                 <h3 className="font-heading font-bold text-slate-900">Fall Guys Youth Wrestling</h3>
                 <p className="mt-2 text-sm text-slate-700">
                   Separate intake email for Fall Guys (ages 5-14):
                 </p>
                 <a
                   href="mailto:FallGuysWrestling@gmail.com"
-                  className="mt-2 inline-block text-red-600 font-semibold"
+                  className="mt-2 inline-block text-blue-700 font-semibold"
                 >
                   FallGuysWrestling@gmail.com
                 </a>
               </div>
 
               <div className="text-center pt-2">
-                <Link href="/donation" className="text-red-600 font-heading font-semibold hover:text-red-700">
+                <Link href="/donation" className="text-blue-700 font-heading font-semibold hover:text-blue-800">
                   Want to donate instead? Donation options →
                 </Link>
               </div>
@@ -99,7 +99,7 @@ function ContactCard({
   return (
     <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
       <div className="flex items-start gap-4">
-        <div className="w-11 h-11 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
+        <div className="w-11 h-11 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
           <Icon className="w-5 h-5" />
         </div>
         <div className="flex-1">
@@ -110,7 +110,7 @@ function ContactCard({
                 href={primaryHref}
                 target={external ? "_blank" : undefined}
                 rel={external ? "noopener noreferrer" : undefined}
-                className="text-slate-900 font-semibold hover:text-red-600"
+                className="text-slate-900 font-semibold hover:text-blue-700"
               >
                 {primary}
               </a>

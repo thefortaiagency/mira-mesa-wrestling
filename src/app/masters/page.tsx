@@ -46,9 +46,9 @@ export default function MastersPage() {
   return (
     <>
       <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-red-400 text-sm font-heading font-semibold tracking-wider uppercase">Adult · Veteran · Masters</span>
+          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Adult · Veteran · Masters</span>
           <h1 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight max-w-4xl">
             Train under a Team USA coach.
           </h1>
@@ -58,7 +58,7 @@ export default function MastersPage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/contact"
-              className="px-7 py-3.5 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors"
+              className="px-7 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
             >
               Start training
             </Link>
@@ -88,7 +88,7 @@ export default function MastersPage() {
               const Icon = s.icon;
               return (
                 <div key={s.label} className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                  <Icon className="w-7 h-7 text-red-600" />
+                  <Icon className="w-7 h-7 text-blue-700" />
                   <p className="mt-4 text-xs text-slate-500 font-heading font-semibold tracking-wider uppercase">
                     {s.label}
                   </p>
@@ -105,7 +105,7 @@ export default function MastersPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">
+              <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">
                 Why MMWC for adults
               </span>
               <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
@@ -133,7 +133,7 @@ export default function MastersPage() {
                   "Competition prep for USA Wrestling Veteran events through Worlds",
                 ].map((b) => (
                   <li key={b} className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                     <span className="text-slate-700">{b}</span>
                   </li>
                 ))}
@@ -141,9 +141,9 @@ export default function MastersPage() {
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-950/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-transparent to-transparent" />
               <div className="relative z-10">
-                <span className="text-xs text-red-300 font-heading font-semibold tracking-wider uppercase">
+                <span className="text-xs text-yellow-300 font-heading font-semibold tracking-wider uppercase">
                   At a glance
                 </span>
                 <h3 className="mt-3 text-2xl font-heading font-extrabold">MMWC Adult Training</h3>
@@ -158,7 +158,7 @@ export default function MastersPage() {
                 </dl>
                 <Link
                   href="/contact"
-                  className="mt-8 inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-red-600 text-white font-heading font-semibold rounded-lg hover:bg-red-700 transition-colors"
+                  className="mt-8 inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
                 >
                   Start training
                 </Link>
@@ -171,7 +171,7 @@ export default function MastersPage() {
       {/* FAQ */}
       <section className="py-20 bg-slate-50 border-t border-slate-200">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-red-600 tracking-wider uppercase">FAQ</span>
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">FAQ</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
             Common questions about adult wrestling.
           </h2>
