@@ -27,9 +27,9 @@ const currentStaff = [
       "Girls Masters Championship 2022",
     ],
   },
-  { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012"] },
+  { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach"] },
   { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 18", "Years at Mira Mesa: 10.5", "Fall Guys Wrestling Coach"] },
-  { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni"] },
+  { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni", "Masters Placer"] },
   { name: "Fazil Bagirov", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 2"] },
   { name: "Isaac Pumarejo", role: "Fall Guys Head Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 20", "Fall Guys Head Coach 2025-present", "Team Puma Head Coach"] },
   { name: "Devhante Hayes", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 1", "2022 MMHS Alumni", "2× CIF Champion", "Masters Finalist", "State Placer"] },
@@ -38,6 +38,7 @@ const currentStaff = [
   { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024"] },
   { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni"] },
   { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4"] },
+  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "1998 MMHS Alumni"] },
 ];
 
 const headCoaches = [
