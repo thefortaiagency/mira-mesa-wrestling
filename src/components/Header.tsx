@@ -29,11 +29,11 @@ export function Header() {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-xs">
+            <a href="https://www.facebook.com/MiraMesaWrestling" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-xs">
               Facebook
             </a>
             <span className="w-px h-3 bg-slate-700" />
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-xs">
+            <a href="https://www.instagram.com/miramesawrestling/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-xs">
               Instagram
             </a>
           </div>

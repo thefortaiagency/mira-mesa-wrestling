@@ -44,7 +44,7 @@ export default function PhotosPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3 justify-center">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/MiraMesaWrestling"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-heading font-semibold rounded-lg hover:bg-slate-800 transition-colors text-sm"
@@ -53,7 +53,7 @@ export default function PhotosPage() {
               <ExternalLink className="w-4 h-4" />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/miramesawrestling/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-heading font-semibold rounded-lg hover:bg-slate-800 transition-colors text-sm"
