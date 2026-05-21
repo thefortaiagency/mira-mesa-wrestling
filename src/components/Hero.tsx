@@ -7,18 +7,23 @@ import { Trophy } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-slate-950">
+    <section className="relative min-h-[90vh] flex flex-col justify-end lg:justify-center overflow-hidden bg-slate-950">
+      {/* Mobile: image fills the top half, copy stacks underneath.
+          Desktop: image is full-bleed background with copy overlaid on the left. */}
       <div className="absolute inset-0">
         <Image
           src="/images/hero.jpg"
-          alt="Mira Mesa Wrestling — wrestlers competing on the mat"
+          alt="Mira Mesa Wrestling — wrestler in Marauder blue & gold singlet at championship pose"
           fill
-          className="object-cover object-right"
+          className="object-cover object-[80%_center] lg:object-right"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-transparent to-slate-950/70" />
+        {/* Mobile gradient: dark fade from bottom up to keep text legible without hiding the wrestler. */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/0 lg:hidden" />
+        {/* Desktop gradient: left-to-right so text on the left is legible but wrestler stays visible. */}
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/10" />
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-b from-slate-950/30 via-transparent to-slate-950/60" />
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-24 relative z-10 w-full">
