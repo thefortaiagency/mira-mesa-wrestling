@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Users, Sparkles, GraduationCap, Heart, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "MMWC — Mira Mesa Wrestling Club",
   description:
-    "Mira Mesa Wrestling Club (MMWC) — 501(c)(3) supporting wrestling for ages 5-60. Fall Guys youth wrestling, summer MS/HS training, adult/veteran/masters year-round, and the free Marauder Machine for Wangenheim & Challenger middle schoolers.",
+    "Mira Mesa Wrestling Club (MMWC) — 501(c)(3) supporting wrestling for ages 5-60. Fall Guys youth wrestling, summer high school training, adult/veteran/masters year-round, and the free Marauder Machine for Wangenheim & Challenger middle schoolers.",
 };
 
 const programs = [
@@ -25,14 +26,14 @@ const programs = [
   },
   {
     id: "mshs",
-    name: "MMWC Middle School & High School",
-    age: "Mira Mesa MS / HS attendees",
+    name: "MMWC High School Summer",
+    age: "Mira Mesa HS attendees",
     season: "Summer",
     cost: "$200",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
-    required: "MMHS / MM Middle School enrollment",
+    required: "MMHS enrollment",
     icon: GraduationCap,
-    extra: { label: "Club membership includes USA Wrestling card for HS students", href: null },
+    extra: { label: "Club membership includes USA Wrestling card", href: null },
   },
   {
     id: "marauder-machine",
@@ -47,10 +48,10 @@ const programs = [
   },
   {
     id: "fall-guys",
-    name: "Fall Guys Youth Wrestling",
+    name: "MMWC Fall Guys Youth Wrestling",
     age: "Ages 5-14",
-    season: "Fall, Spring, Summer sessions",
-    cost: "Varies by season",
+    season: "Year-round · 4 sessions annually",
+    cost: "$125 / month · $300 / session",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Contact for current enrollment",
     icon: Sparkles,
@@ -64,14 +65,40 @@ export default function MMWCPage() {
       <section className="relative py-20 bg-slate-950 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">MMWC</span>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Mira Mesa Wrestling Club.
-          </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-3xl">
-            The 501(c)(3) supporting wrestling at Mira Mesa — Tax ID 92-4020180.
-            Training opportunities from age 5 to age 60.
-          </p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+            <Image
+              src="/images/mmwc-logo.png"
+              alt="MMWC — Mira Mesa Wrestling Club logo"
+              width={140}
+              height={140}
+              priority
+              className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-contain shrink-0 drop-shadow-[0_4px_24px_rgba(250,204,21,0.35)]"
+            />
+            <div>
+              <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">MMWC</span>
+              <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
+                Mira Mesa Wrestling Club.
+              </h1>
+              <p className="mt-5 text-xl text-slate-300 max-w-3xl">
+                The 501(c)(3) supporting wrestling at Mira Mesa — Tax ID 92-4020180.
+                Training opportunities from age 5 to age 60.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brand banner divider */}
+      <section className="bg-slate-950 py-10 border-y border-blue-900/40 overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 flex justify-center">
+          <Image
+            src="/images/mmwc-banner.png"
+            alt="MMWC banner — Mira Mesa Wrestling Club"
+            width={1920}
+            height={649}
+            className="w-full max-w-3xl h-auto object-contain"
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
         </div>
       </section>
 

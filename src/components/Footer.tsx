@@ -4,7 +4,7 @@ import Image from "next/image";
 const programs = [
   { label: "Boys & Girls HS Wrestling", href: "/about" },
   { label: "Fall Guys Youth (5-14)", href: "/mmwc#fall-guys" },
-  { label: "MMWC Summer (MS/HS)", href: "/mmwc" },
+  { label: "MMWC High School Summer", href: "/mmwc#mshs" },
   { label: "Adult / Veteran / Masters", href: "/masters" },
   { label: "Marauder Machine", href: "/mmwc#marauder-machine" },
 ];
