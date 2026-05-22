@@ -31,6 +31,17 @@
     letter-spacing: -0.025em;
   }
 
+  /* Subtle default hover on any anchor without its own hover styling — adds
+     an underline + slight color lift so links feel responsive site-wide. */
+  a {
+    transition: color 150ms ease, text-decoration-color 150ms ease;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
   ::-webkit-scrollbar {
     width: 6px;
   }
