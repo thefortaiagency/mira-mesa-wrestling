@@ -5,7 +5,7 @@ import { Trophy, Globe, Users, Zap, CheckCircle2, ExternalLink } from "lucide-re
 export const metadata: Metadata = {
   title: "Adult / Veteran / Masters Wrestling Training in San Diego",
   description:
-    "MMWC adult, veteran, and masters wrestling training in San Diego for ages 18-60. Coached by Team USA Veteran National Team Co-Head Coach Craig VanDyke — Veteran Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Year-round Freestyle, Greco-Roman, and Folkstyle (Collegiate). Sundays & Wednesdays. $100/month.",
+    "MMWC adult, veteran, and masters wrestling training in San Diego for ages 18-60. Coached by Team USA Veteran National Team Co-Head Coach Craig VanDyke — Veteran Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Year-round Freestyle, Greco-Roman, and Folkstyle (Collegiate). Sundays & Wednesdays plus Thursday open mat. $100/month.",
   keywords: [
     "Adult Wrestling San Diego",
     "Veteran Wrestling San Diego",
@@ -82,7 +82,7 @@ export default function MastersPage() {
             {[
               { icon: Users, label: "Age range", value: "18 - 60" },
               { icon: Zap, label: "Cost", value: "$100 / month" },
-              { icon: Globe, label: "Schedule", value: "Year-round · Sun & Wed" },
+              { icon: Globe, label: "Schedule", value: "Sun & Wed · Thu Open Mat" },
               { icon: Trophy, label: "Styles", value: "Freestyle · Greco-Roman · Folkstyle (Collegiate)" },
             ].map((s) => {
               const Icon = s.icon;
@@ -148,14 +148,14 @@ export default function MastersPage() {
                 </span>
                 <h3 className="mt-3 text-2xl font-heading font-extrabold">MMWC Adult Training</h3>
                 <dl className="mt-6 space-y-4">
-                  <Row label="Schedule" value="Year-round · Sundays & Wednesdays" />
+                  <Row label="Schedule" value="Year-round · Sundays & Wednesdays · Thursday Open Mat" />
                   <Row label="Tuition" value="$100 / month" />
                   <Row label="Ages" value="18 - 60" />
                   <Row label="Styles" value="Freestyle · Greco-Roman · Folkstyle (Collegiate)" />
                   <Row label="Required" value="Current USA Wrestling card" />
                   <Row label="Location" value="Mira Mesa High School wrestling room, San Diego" />
                   <Row label="Head Coach" value="Craig VanDyke — Team USA Veteran Co-Head Coach" />
-                  <Row label="Coach" value="Isaac Pumarejo — Team Puma Head Coach" />
+                  <Row label="Coach" value="Isaac Pumarejo" />
                 </dl>
                 <Link
                   href="/contact"

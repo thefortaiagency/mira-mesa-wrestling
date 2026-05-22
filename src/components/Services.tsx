@@ -36,7 +36,7 @@ const programs = [
     title: "MMWC Adult / Veteran / Masters",
     age: "Ages 18–60",
     description:
-      "Year-round training (Sundays & Wednesdays) in Freestyle, Greco-Roman, and Folkstyle (Collegiate). $100/month. Current USA Wrestling membership required. Coached by Team USA Veteran Co-Head Coach Craig VanDyke.",
+      "Year-round training (Sundays & Wednesdays, plus Thursday open mat) in Freestyle, Greco-Roman, and Folkstyle (Collegiate). $100/month. Current USA Wrestling membership required. Coached by Team USA Veteran Co-Head Coach Craig VanDyke.",
     icon: Users,
     cta: "Train with us",
     href: "/masters",
