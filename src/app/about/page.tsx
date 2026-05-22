@@ -103,12 +103,12 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentStaff.map((c) => (
               <div key={c.name} className="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <div className="relative aspect-[4/3] bg-slate-200">
+                <div className="relative aspect-[4/5] bg-slate-200">
                   <Image
                     src={c.photo}
                     alt={`${c.name} — ${c.role}`}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   />
                 </div>
