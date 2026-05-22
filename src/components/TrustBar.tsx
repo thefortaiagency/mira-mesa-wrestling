@@ -7,10 +7,10 @@ const stats = [
   { value: "15×", label: "Boys League Titles", icon: Trophy },
   { value: "14×", label: "Boys Conference Titles", icon: Crown },
   { value: "2×", label: "Boys CIF Champions", icon: Medal },
-  { value: "75–0", label: "Boys Dual Meet Record", icon: Award },
+  { value: "75–0", label: "Boys League Dual Streak", icon: Award },
   { value: "4×", label: "Girls Conference Titles", icon: Star },
   { value: "3×", label: "Girls League Titles", icon: Flame },
-  { value: "12–0", label: "Girls Dual Meet Record", icon: Shield },
+  { value: "12–0", label: "Girls League Dual Streak", icon: Shield },
   { value: "3×", label: "MS Championships", icon: GraduationCap },
 ];
 

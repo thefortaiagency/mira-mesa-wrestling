@@ -198,7 +198,7 @@ export default function HistoryPage() {
             </div>
             <TitleStrip years={boysLeague} />
             <p className="mt-3 text-xs text-slate-500">
-              Mira Mesa has competed in both leagues over time — Western (1978), Eastern (1980-1988, 1993-2018), then Western again (2019-present).
+              Mira Mesa has competed in both leagues over time — Western (1978), Eastern (1980-2018), then Western again (2019-present).
             </p>
           </div>
         </div>

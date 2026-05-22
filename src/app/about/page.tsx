@@ -86,7 +86,13 @@ export default function AboutPage() {
               <ShieldCheck className="w-8 h-8 text-blue-700 shrink-0 mt-1" />
               <div>
                 <h3 className="font-heading font-bold text-slate-900">GRACE Philosophy</h3>
-                <p className="text-slate-600 text-sm mt-1">Gratitude · Respect · Awareness · Communication · Embrace</p>
+                <dl className="mt-2 space-y-1.5 text-xs text-slate-600 leading-snug">
+                  <div><dt className="inline font-heading font-bold text-slate-900">G — Gratitude:</dt> each morning for another day and the many opportunities that come with it</div>
+                  <div><dt className="inline font-heading font-bold text-slate-900">R — Respect:</dt> for your opponent, the officials, the sport, yourself, and to those who pour into us</div>
+                  <div><dt className="inline font-heading font-bold text-slate-900">A — Awareness</dt></div>
+                  <div><dt className="inline font-heading font-bold text-slate-900">C — Communication</dt></div>
+                  <div><dt className="inline font-heading font-bold text-slate-900">E — Embrace</dt></div>
+                </dl>
               </div>
             </div>
           </div>

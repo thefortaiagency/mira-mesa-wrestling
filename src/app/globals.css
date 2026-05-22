@@ -11,6 +11,21 @@
   --color-foreground: var(--foreground);
   --font-heading: var(--font-jakarta);
   --font-body: var(--font-inter);
+
+  /* Marauder Royal Blue palette — overrides Tailwind's default blue scale so
+     every bg-blue-* / text-blue-* utility ties back to the school's official
+     royal blue (#1e40af) instead of Tailwind's bluer/indigo default. */
+  --color-blue-50: #eef2ff;
+  --color-blue-100: #dbe5ff;
+  --color-blue-200: #b8c8ff;
+  --color-blue-300: #8aa4ff;
+  --color-blue-400: #5476ee;
+  --color-blue-500: #2f55d4;
+  --color-blue-600: #1f47bf;
+  --color-blue-700: #1e40af;
+  --color-blue-800: #1a3a96;
+  --color-blue-900: #142d72;
+  --color-blue-950: #0c1d4a;
 }
 
 @layer base {
