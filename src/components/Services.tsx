@@ -2,68 +2,18 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Users, Sparkles, GraduationCap, Trophy, Heart, Calendar } from "lucide-react";
 
-const programs = [
-  {
-    title: "Boys & Girls High School Wrestling",
-    age: "Mira Mesa HS · Grades 9-12",
-    description:
-      "The varsity programs. Freshmen and Sophomores welcome; Juniors and Seniors try out for a roster spot. PE clothes and wrestling shoes required.",
-    icon: Trophy,
-    cta: "Join the team",
-    href: "/contact",
-  },
-  {
-    title: "Fall Guys Youth Wrestling",
-    age: "Ages 5–14",
-    description:
-      "Folkstyle, Freestyle, and Greco-Roman year-round in Fall, Spring, and Summer sessions. The pipeline that's built CIF champions for decades.",
-    icon: Sparkles,
-    cta: "Fall Guys details",
-    href: "/mmwc#fall-guys",
-  },
-  {
-    title: "MMWC Middle / High School Summer",
-    age: "Mira Mesa MS & HS attendees",
-    description:
-      "Summer training for current Mira Mesa students. All three styles. Includes a USA Wrestling card for HS students. $200.",
-    icon: GraduationCap,
-    cta: "Sign up",
-    href: "/mmwc",
-  },
-  {
-    title: "MMWC Adult / Veteran / Masters",
-    age: "Ages 18–60",
-    description:
-      "Year-round Technique & Tactics on Sundays and Wednesdays (plus Thursday open mat). Freestyle, Greco-Roman, and Folkstyle (Collegiate). $100/month. Current USA Wrestling membership required. Coached by Team USA Veteran Co-Head Coach Craig VanDyke.",
-    icon: Users,
-    cta: "Train with us",
-    href: "/masters",
-  },
-  {
-    title: "Marauder Machine",
-    age: "Wangenheim & Challenger Middle School students",
-    description:
-      "Free middle school program running February through May. Building the next class of Mira Mesa wrestlers.",
-    icon: Heart,
-    cta: "More info",
-    href: "/mmwc#marauder-machine",
-  },
-  {
-    title: "Schedule & Calendar",
-    age: "Live Google Calendar",
-    description:
-      "Practices, dual meets, tournaments, CIF dates. Updated in real-time — what's on Coach's calendar is what's on the site.",
-    icon: Calendar,
-    cta: "See calendar",
-    href: "/calendar",
-  },
+const programChips = [
+  "Boys & Girls High School",
+  "Fall Guys Youth (5-14)",
+  "MMWC High School Summer",
+  "Marauder Machine (Middle School)",
+  "Adult · Veteran · Masters (18-60)",
 ];
 
 export function Services() {
   return (
-    <section id="programs" className="py-24 bg-white">
+    <section id="programs" className="py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -85,39 +35,32 @@ export function Services() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {programs.map((p, i) => {
-            const Icon = p.icon;
-            return (
-              <motion.div
-                key={p.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="group p-8 rounded-2xl border border-slate-200 hover:border-yellow-300 hover:shadow-lg transition-all bg-white flex flex-col"
-              >
-                <div className="w-12 h-12 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
-                  <Icon className="w-6 h-6" />
-                </div>
-                <p className="mt-4 text-xs text-slate-500 font-heading font-semibold tracking-wider uppercase">
-                  {p.age}
-                </p>
-                <h3 className="mt-2 text-xl font-heading font-bold text-slate-900">{p.title}</h3>
-                <p className="mt-3 text-slate-600 leading-relaxed text-sm flex-1">{p.description}</p>
-                <Link
-                  href={p.href}
-                  className="mt-5 inline-flex items-center gap-1 text-blue-700 font-heading font-semibold text-sm hover:text-blue-800"
-                >
-                  {p.cta}
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </Link>
-              </motion.div>
-            );
-          })}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-8 flex flex-wrap gap-2"
+        >
+          {programChips.map((p) => (
+            <span
+              key={p}
+              className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-sm font-heading font-medium"
+            >
+              {p}
+            </span>
+          ))}
+        </motion.div>
+
+        <Link
+          href="/mmwc"
+          className="mt-10 inline-flex items-center gap-3 px-8 py-4 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors text-lg"
+        >
+          See all programs
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </Link>
       </div>
     </section>
   );
