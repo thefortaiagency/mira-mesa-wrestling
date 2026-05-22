@@ -62,24 +62,35 @@ const programs = [
 export default function MMWCPage() {
   return (
     <>
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+      <section className="relative bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/programs-hero.jpg"
+            alt="Coach Craig coaching at the 2025 California State Games"
+            fill
+            priority
+            className="object-cover object-[center_30%]"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/30 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-15% via-slate-950/55 to-slate-950/10" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-12 relative z-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-7">
             <Image
               src="/images/mmwc-logo.png"
               alt="MMWC — Mira Mesa Wrestling Club logo"
-              width={140}
-              height={140}
+              width={120}
+              height={120}
               priority
-              className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-contain shrink-0 drop-shadow-[0_4px_24px_rgba(250,204,21,0.35)]"
+              className="w-20 h-20 sm:w-24 sm:h-24 object-contain shrink-0 drop-shadow-[0_4px_24px_rgba(250,204,21,0.35)]"
             />
             <div>
               <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">MMWC</span>
-              <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
+              <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight">
                 Mira Mesa Wrestling Club.
               </h1>
-              <p className="mt-5 text-xl text-slate-300 max-w-3xl">
+              <p className="mt-3 text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
                 The 501(c)(3) supporting wrestling at Mira Mesa — Tax ID 92-4020180.
                 Training opportunities from age 5 to age 60.
               </p>
