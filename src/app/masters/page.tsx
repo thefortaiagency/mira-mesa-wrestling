@@ -205,7 +205,7 @@ export default function MastersPage() {
               </div>
               <p className="font-heading font-extrabold text-2xl text-slate-900 leading-tight">Veteran Team USA history</p>
               <p className="mt-3 text-slate-600 text-sm leading-relaxed">
-                Full Veteran Team USA results, year by year — World Championships, Pan-American results, roster history.
+                Full Veteran Team USA results, year by year — World Championships, roster history.
               </p>
               <a
                 href="https://docs.google.com/spreadsheets/d/1ZH3lkpdzPuQppYZyBvBTwUUz7DhbNm7fmab1rU9UdDc/edit?pli=1&gid=0#gid=0"
