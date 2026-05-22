@@ -102,13 +102,13 @@ export default function HistoryPage() {
             alt="Mira Mesa claims its first CIF championship — 2014 U-T San Diego front page"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-left-top"
             sizes="100vw"
           />
           {/* Newspaper photo is busy — heavy dark gradient on the left so text reads cleanly,
               softer fade to the right so the headline "MIRA MESA CLAIMS ITS FIRST CHAMPIONSHIP" remains visible. */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/30 lg:hidden" />
-          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/20" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-15% via-slate-950/55 to-slate-950/0" />
         </div>
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-8 md:gap-12">
