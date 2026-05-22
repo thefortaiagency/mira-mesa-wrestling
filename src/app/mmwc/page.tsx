@@ -11,17 +11,6 @@ export const metadata: Metadata = {
 
 const programs = [
   {
-    id: "high-school",
-    name: "Mira Mesa High School Wrestling",
-    age: "Mira Mesa HS · Grades 9-12",
-    season: "November - February (CIF season)",
-    cost: "Fundraisers",
-    styles: "Folkstyle (Collegiate)",
-    required: "Mira Mesa HS enrollment",
-    icon: Trophy,
-    extra: { label: "Boys & Girls varsity teams — try out for a roster spot", href: null },
-  },
-  {
     id: "adult",
     name: "MMWC Adult Training",
     age: "Ages 18-60",
@@ -34,6 +23,28 @@ const programs = [
       label: "Purchase USA Card",
       href: "https://www.usawmembership.com/",
     },
+  },
+  {
+    id: "fall-guys",
+    name: "MMWC Fall Guys Youth Wrestling",
+    age: "Ages 5-14",
+    season: "Year-round · 4 sessions annually",
+    cost: "$125 / month · $300 / session",
+    styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
+    required: "Contact for current enrollment",
+    icon: Sparkles,
+    extra: { label: "Fall Guys Wrestling", href: "mailto:FallGuysWrestling@gmail.com" },
+  },
+  {
+    id: "high-school",
+    name: "Mira Mesa High School Wrestling",
+    age: "Mira Mesa HS · Grades 9-12",
+    season: "November - February (CIF season)",
+    cost: "Fundraisers",
+    styles: "Folkstyle (Collegiate)",
+    required: "Mira Mesa HS enrollment",
+    icon: Trophy,
+    extra: { label: "Boys & Girls varsity teams — try out for a roster spot", href: null },
   },
   {
     id: "mshs",
@@ -50,37 +61,26 @@ const programs = [
     id: "marauder-machine",
     name: "Marauder Machine",
     age: "Middle School (Wangenheim & Challenger)",
-    season: "February - May",
+    season: "March - May",
     cost: "Free",
     styles: "Folkstyle (Collegiate)",
     required: "Wangenheim or Challenger Middle School enrollment",
     icon: Heart,
     extra: { label: "Building the next class of Mira Mesa wrestlers", href: null },
   },
-  {
-    id: "fall-guys",
-    name: "MMWC Fall Guys Youth Wrestling",
-    age: "Ages 5-14",
-    season: "Year-round · 4 sessions annually",
-    cost: "$125 / month · $300 / session",
-    styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
-    required: "Contact for current enrollment",
-    icon: Sparkles,
-    extra: { label: "Fall Guys Wrestling", href: "mailto:FallGuysWrestling@gmail.com" },
-  },
 ];
 
 export default function MMWCPage() {
   return (
     <>
-      <section className="relative bg-slate-950 overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center bg-slate-950 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/programs-hero.jpg"
             alt="Coach Craig coaching at the 2025 California State Games"
             fill
             priority
-            className="object-cover object-[center_55%]"
+            className="object-cover object-[center_20%]"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/30 lg:hidden" />
@@ -125,7 +125,7 @@ export default function MMWCPage() {
                     <Icon className="w-7 h-7" />
                   </div>
                   <h2 className="mt-5 text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
-                  {p.id !== "marauder-machine" && (
+                  {p.id !== "marauder-machine" && p.id !== "high-school" && (
                     <Image
                       src="/images/mmwc-banner.png"
                       alt="MMWC"
