@@ -44,11 +44,11 @@ const boysLeague = [
 
 const individualResults: { label: string; href?: string }[] = [
   { label: "League", href: "https://docs.google.com/spreadsheets/d/14IALu23h9ej6QM2IPNXVfKYrDAcbH_85SbajILIN3uU/edit?gid=1360555423#gid=1360555423" },
-  { label: "City" },
-  { label: "CIF" },
-  { label: "Masters" },
-  { label: "State" },
-  { label: "National Qualifiers" },
+  { label: "SD City Conference", href: "https://docs.google.com/spreadsheets/d/1OWj5mReKdLsAII9rGBTCRA9o620f9oSpu77E9KiCH7A/edit?gid=1360555423#gid=1360555423" },
+  { label: "CIF", href: "https://docs.google.com/spreadsheets/d/1VkYn176SvsAloL9L30MFchDgUdzby5DdUHjqAPC8tlY/edit?gid=567104251#gid=567104251" },
+  { label: "Masters", href: "https://docs.google.com/spreadsheets/d/1CH83yadfvSbOeKsWtwlHm9bYkNYFkfTvNGThwai7n0o/edit?gid=1360555423#gid=1360555423" },
+  { label: "State", href: "https://docs.google.com/spreadsheets/d/1X8akDsIvI1y-cNP5zwXM7tq1utSACxwvP-RlszvNcLQ/edit?gid=1360555423#gid=1360555423" },
+  { label: "National Qualifiers", href: "https://docs.google.com/spreadsheets/d/1VIZqkUNVw1mEZnQFlOqFSjqLi5yHK-jVZiVzwqbTFYM/edit?gid=1360555423#gid=1360555423" },
 ];
 
 function ResultRow({ year, result, tier }: { year: string; result: string; tier: string }) {
