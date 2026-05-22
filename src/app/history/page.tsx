@@ -102,7 +102,7 @@ export default function HistoryPage() {
             alt="Mira Mesa claims its first CIF championship — 2014 U-T San Diego front page"
             fill
             priority
-            className="object-cover object-left-top"
+            className="object-cover object-[0%_25%]"
             sizes="100vw"
           />
           {/* Newspaper photo is busy — heavy dark gradient on the left so text reads cleanly,
