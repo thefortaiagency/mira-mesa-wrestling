@@ -109,7 +109,7 @@ export default function MastersPage() {
                 Why MMWC for adults
               </span>
               <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-                Coached by an active Team USA assistant.
+                Coached by Team USA Veteran&apos;s Co-Head Coach.
               </h2>
               <p className="mt-6 text-slate-700 leading-relaxed text-lg">
                 Most adult wrestling rooms in Southern California are open mats —
@@ -118,9 +118,9 @@ export default function MastersPage() {
               </p>
               <p className="mt-4 text-slate-700 leading-relaxed text-lg">
                 MMWC is run as a coached program. Coach VanDyke is currently on
-                the Team USA Veteran National Team coaching staff — Freestyle
-                World Champions <strong>2021, 2022, 2023, 2024, and 2025</strong>;
-                Greco-Roman World Champions <strong>2022 and 2023</strong>. The
+                the Team USA Veteran National Team coaching staff — Veteran
+                Freestyle World Champions <strong>2021, 2022, 2023, 2024, and 2025</strong>;
+                Veteran Greco-Roman World Champions <strong>2022 and 2023</strong>. The
                 technique you drill is the technique that&apos;s winning World
                 titles right now.
               </p>
@@ -154,7 +154,7 @@ export default function MastersPage() {
                   <Row label="Styles" value="Freestyle · Greco-Roman · Folkstyle (Collegiate)" />
                   <Row label="Required" value="Current USA Wrestling card" />
                   <Row label="Location" value="Mira Mesa High School wrestling room, San Diego" />
-                  <Row label="Coach" value="Craig VanDyke — Team USA Veteran asst." />
+                  <Row label="Coach" value="Craig VanDyke — Team USA Veteran Co-Head Coach" />
                 </dl>
                 <Link
                   href="/contact"
@@ -162,6 +162,49 @@ export default function MastersPage() {
                 >
                   Start training
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MMWC Adult Program History */}
+      <section className="py-16 bg-white border-t border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">History</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+            MMWC Adult Program History
+          </h2>
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-700 to-blue-900 text-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <Trophy className="w-7 h-7 text-yellow-300" />
+                <span className="text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase">Masters Nationals</span>
+              </div>
+              <p className="font-heading font-extrabold text-3xl leading-tight">2 Masters National Champions</p>
+              <ul className="mt-5 space-y-2 text-blue-50">
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
+                  Ryan Pearl
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
+                  Ron Dombkowski
+                </li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Globe className="w-7 h-7 text-blue-700" />
+                <span className="text-blue-700 text-xs font-heading font-semibold tracking-wider uppercase">Team USA</span>
+              </div>
+              <p className="font-heading font-extrabold text-2xl text-slate-900 leading-tight">Veteran Team USA history</p>
+              <p className="mt-3 text-slate-600 text-sm leading-relaxed">
+                Full Veteran Team USA results, year by year — World Championships, Pan-American results, roster history.
+              </p>
+              <div className="mt-5 inline-flex items-center justify-between gap-3 px-5 py-3 bg-white rounded-lg border border-dashed border-slate-300 text-slate-500 text-sm font-heading font-semibold">
+                <span>Link coming</span>
+                <ExternalLink className="w-4 h-4" />
               </div>
             </div>
           </div>
