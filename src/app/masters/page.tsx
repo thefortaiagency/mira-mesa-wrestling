@@ -154,7 +154,8 @@ export default function MastersPage() {
                   <Row label="Styles" value="Freestyle · Greco-Roman · Folkstyle (Collegiate)" />
                   <Row label="Required" value="Current USA Wrestling card" />
                   <Row label="Location" value="Mira Mesa High School wrestling room, San Diego" />
-                  <Row label="Coach" value="Craig VanDyke — Team USA Veteran Co-Head Coach" />
+                  <Row label="Head Coach" value="Craig VanDyke — Team USA Veteran Co-Head Coach" />
+                  <Row label="Coach" value="Isaac Pumarejo — Team Puma Head Coach" />
                 </dl>
                 <Link
                   href="/contact"
@@ -192,6 +193,10 @@ export default function MastersPage() {
                   Ron Dombkowski
                 </li>
               </ul>
+              <div className="mt-6 pt-4 border-t border-blue-400/30">
+                <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">All Americans</p>
+                <p className="mt-1 text-sm text-blue-50">Steve Vaughan (2×)</p>
+              </div>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-4">
