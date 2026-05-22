@@ -23,6 +23,7 @@ const currentStaff = [
       "Girls City Conference Coach of the Year (2×)",
       "Boys League Coach of the Year",
       "Boys CIF Championships: 2014 & 2024",
+      "8 CIF Runner-Up finishes (5 Boys, 3 Girls)",
       "13 CIF trophies",
       "Girls Masters Championship 2022",
     ],
@@ -35,8 +36,8 @@ const currentStaff = [
   { name: "Devhante Hayes", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 1", "2022 MMHS Alumni", "2× CIF Champion", "Masters Finalist", "CA State Placer"] },
   { name: "Noah Lester", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 2", "2015 MMHS Alumni", "Masters Placer", "CIF Finalist"] },
   { name: "Waseem Elhamad", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "2014 MMHS Alumni", "Masters Champion", "2× CIF Champion"] },
-  { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024"] },
-  { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni"] },
+  { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024", "CIF Placer"] },
+  { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni", "CIF Finalist"] },
   { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4"] },
   { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "1998 MMHS Alumni"] },
 ];
@@ -44,9 +45,9 @@ const currentStaff = [
 const headCoaches = [
   { years: "1981-1983", name: "Noel Hall", note: "2 League Titles" },
   { years: "1983-1984", name: "Mike Bakewell", note: "" },
-  { years: "1984-2009", name: "Jon Talbott", note: "2007 National Wrestling Hall of Fame · 7 League · 9 Conference · 1 CIF Runner-up (2005)" },
+  { years: "1984-2009", name: "Jon Talbott", note: "2007 National Wrestling Hall of Fame · 2025 California Hall of Fame Inductee (Lifetime Service Award) · 7 League · 9 Conference · 1 CIF Runner-up (2005)" },
   { years: "2009-2012", name: "Dean Brown", note: "2 League · 2 Conference · Coached State Finalist Gabi Musallam" },
-  { years: "2012-Present", name: "Craig VanDyke", note: "15 League · 14 Conference · 1 SDS Masters · 2 CIF Titles · 7 CIF Runner-up" },
+  { years: "2012-Present", name: "Craig VanDyke", note: "15 League · 14 Conference · 1 SDS Masters · 2 CIF Titles · 8 CIF Runner-up (5 Boys, 3 Girls)" },
 ];
 
 export default function AboutPage() {

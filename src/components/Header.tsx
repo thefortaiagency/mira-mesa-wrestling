@@ -44,7 +44,7 @@ export function Header() {
       <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group hover:no-underline">
             <Image
               src="/images/mm-logo.png"
               alt="Mira Mesa Marauders logo"
@@ -69,7 +69,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-3 py-2 text-sm text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-50 transition-colors font-medium"
+                className="px-3 py-2 text-sm text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-50 transition-colors font-medium decoration-slate-300 underline-offset-4"
               >
                 {item.label}
               </Link>
@@ -124,7 +124,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors font-medium"
+                    className="px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors font-medium decoration-slate-300 underline-offset-4"
                   >
                     {item.label}
                   </Link>
