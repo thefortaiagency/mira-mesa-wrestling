@@ -59,10 +59,10 @@ export default function AboutPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
           <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">About</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            The Marauder coaching staff.
+            Mira Mesa Coaching Staff
           </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-2xl">
-            Decades of mat experience, Team USA pedigree, and Mira Mesa alumni who came back to coach the room they grew up in.
+          <p className="mt-5 text-xl text-slate-300 max-w-3xl">
+            Mira Mesa Wrestling has many well educated, caring, and devoted coaches who believe in sharing their experience, wisdom and knowledge with the next generation. We are more than a team — we are a family.
           </p>
         </div>
       </section>
