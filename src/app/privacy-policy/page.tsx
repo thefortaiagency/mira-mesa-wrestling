@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
       <p>
         You can request a copy of your information, or ask us to delete it, by
         emailing{" "}
-        <a href="mailto:MiraMesaWrestling@gmail.com">MiraMesaWrestling@gmail.com</a>.
+        <a href="mailto:MiraMesaWrestling@gmail.com" className="text-blue-700 hover:text-blue-800">MiraMesaWrestling@gmail.com</a>.
       </p>
 
       <p className="text-sm text-slate-500 mt-12">Last updated: {new Date().getFullYear()}</p>

@@ -50,7 +50,7 @@ export function ContactForm() {
         </div>
         <h3 className="text-2xl font-heading font-bold text-slate-900">Got it — Craig will be in touch.</h3>
         <p className="mt-3 text-slate-600">
-          Your message went straight to <a href="mailto:MiraMesaWrestling@gmail.com" className="text-blue-700 font-semibold">MiraMesaWrestling@gmail.com</a>. Craig responds within one business day.
+          Your message went straight to <a href="mailto:MiraMesaWrestling@gmail.com" className="text-blue-700 font-semibold hover:text-blue-800">MiraMesaWrestling@gmail.com</a>. Craig responds within one business day.
         </p>
       </div>
     );
