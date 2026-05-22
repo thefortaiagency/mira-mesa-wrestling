@@ -22,24 +22,23 @@ const currentStaff = [
       "Girls Masters Championship 2022",
       "Boys CIF Championships: 2014 & 2024",
       "8 CIF Runner-Up finishes (5 Boys, 3 Girls)",
-      "13 CIF trophies",
       "Team USA Veteran National Team Co-Head Coach",
       "Veteran Freestyle World Champions: '21, '22, '23, '24, '25",
       "Veteran Greco-Roman World Champions: '22, '23",
     ],
   },
-  { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach"] },
+  { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach", { text: "Published Author", href: "https://www.amazon.com/Huh-what-Dean-F-Brown/dp/B0DBGXVDMB" }] },
   { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 18", "Years at Mira Mesa: 10.5", "Fall Guys Wrestling Coach"] },
-  { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni", "Masters Placer"] },
-  { name: "Fazil Bagirov", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 2", "MMWC Freestyle Coach"] },
-  { name: "Isaac Pumarejo", role: "Fall Guys Head Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 20", "Fall Guys Head Coach 2025-present", "Team Puma Head Coach", "2× CA State Placer"] },
+  { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni", "Masters Placer", "US Navy Veteran"] },
+  { name: "Fazil Bagirov", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 2", "MMWC Freestyle Coach", "2× International Tana Cup Silver Medalist"] },
+  { name: "Isaac Pumarejo", role: "Fall Guys Head Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 30", "Fall Guys Head Coach 2025-present", "Team Puma Head Coach", "2× CA State Placer"] },
   { name: "Devhante Hayes", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 1", "2022 MMHS Alumni", "2× CIF Champion", "Masters Finalist", "CA State Placer"] },
   { name: "Noah Lester", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 2", "2015 MMHS Alumni", "Masters Placer", "CIF Finalist"] },
   { name: "Waseem Elhamad", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "2014 MMHS Alumni", "Masters Champion", "2× CIF Champion"] },
   { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024", "CIF Placer"] },
   { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni", "CIF Finalist"] },
   { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4"] },
-  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "1998 MMHS Alumni"] },
+  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "1998 MMHS Alumni", "US Army"] },
 ];
 
 const headCoaches = [
@@ -116,12 +115,26 @@ export default function AboutPage() {
                   <h3 className="font-heading font-bold text-slate-900 text-lg">{c.name}</h3>
                   <p className="text-blue-700 font-heading font-medium text-sm mt-1">{c.role}</p>
                   <ul className="mt-4 space-y-1.5 text-slate-700 text-sm">
-                    {c.bullets.map((b, i) => (
-                      <li key={i} className="flex gap-2">
-                        <span className="text-yellow-400 shrink-0">•</span>
-                        <span>{b}</span>
-                      </li>
-                    ))}
+                    {c.bullets.map((b, i) => {
+                      const isLink = typeof b !== "string";
+                      return (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-yellow-400 shrink-0">•</span>
+                          {isLink ? (
+                            <a
+                              href={b.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-700 hover:text-blue-800"
+                            >
+                              {b.text}
+                            </a>
+                          ) : (
+                            <span>{b}</span>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
