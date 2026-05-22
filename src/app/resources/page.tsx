@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ExternalLink,
-  Activity,
   ShieldAlert,
-  Trophy,
   PlayCircle,
-  BookOpen,
   Stethoscope,
   Heart,
+  Newspaper,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -45,10 +43,21 @@ const healthSection = [
 ];
 
 const wrestlingLinks = [
-  { icon: Trophy, title: "USA Wrestling", description: "National governing body for amateur wrestling in the US.", href: "https://www.themat.com/" },
-  { icon: PlayCircle, title: "FloWrestling", description: "Live streaming, news, and rankings for all levels of wrestling.", href: "https://www.flowrestling.org/" },
-  { icon: Trophy, title: "CIF San Diego Section", description: "Section governing body for San Diego high school athletics.", href: "https://www.cifsds.org/" },
-  { icon: BookOpen, title: "USAW Veteran / Masters", description: "Adult competitive wrestling division (35+).", href: "https://www.themat.com/page/show/9163301-veterans" },
+  { title: "USA Wrestling", description: "National governing body for amateur wrestling in the US.", href: "https://www.themat.com/", domain: "themat.com" },
+  { title: "FloWrestling", description: "Live streaming, news, and rankings for all levels of wrestling.", href: "https://www.flowrestling.org/", domain: "flowrestling.org" },
+  { title: "CIF San Diego Section", description: "Section governing body for San Diego high school athletics.", href: "https://www.cifsds.org/", domain: "cifsds.org" },
+  { title: "USAW Veteran / Masters", description: "Adult competitive wrestling division (35+).", href: "https://www.themat.com/page/show/9163301-veterans", domain: "themat.com" },
+  { title: "Aether VTC", description: "Virtual training and visualization for wrestlers.", href: "https://www.aethervtc.ai", domain: "aethervtc.ai" },
+  { title: "Grit n Gut", description: "Mindset, nutrition, and conditioning for combat athletes.", href: "https://gritngut.com", domain: "gritngut.com" },
+];
+
+const newsArticles = [
+  {
+    title: "Precin, Nunn earn gold; U.S. tops Freestyle team ranking at Veteran World Championships",
+    source: "TheMat.com (USA Wrestling)",
+    date: "October 9, 2025",
+    href: "https://www.themat.com/news/2025/october/09/precin-nunn-earn-gold-u-s-tops-freestyle-team-ranking-at-veteran-world-championships",
+  },
 ];
 
 const classicMatches = [
@@ -78,69 +87,110 @@ export default function ResourcesPage() {
       </section>
 
       {/* Health & Hygiene */}
-      <section className="py-20 bg-white">
+      <section className="py-14 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl mb-8">
             <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Health & Hygiene</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+            <h2 className="mt-3 text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
               Stay on the mat — clean skin, intact ears.
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {healthSection.map((h) => {
               const Icon = h.icon;
               return (
-                <div key={h.title} className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-md transition-all">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
-                    <Icon className="w-6 h-6" />
+                <li key={h.title} className="flex items-start gap-3 p-4 rounded-xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-sm transition-all">
+                  <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
+                    <Icon className="w-4.5 h-4.5" />
                   </div>
-                  <h3 className="mt-5 font-heading font-bold text-slate-900 text-lg">{h.title}</h3>
-                  <p className="mt-3 text-slate-600 text-sm leading-relaxed">{h.description}</p>
-                  <p className="mt-3 text-xs text-slate-400 italic">Document link — pending upload</p>
-                </div>
+                  <div className="min-w-0">
+                    <h3 className="font-heading font-bold text-slate-900 text-sm leading-snug">{h.title}</h3>
+                    <p className="mt-1 text-slate-500 text-xs italic">Document link — pending upload</p>
+                  </div>
+                </li>
               );
             })}
+          </ul>
+        </div>
+      </section>
+
+      {/* Wrestling Resources */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Wrestling Resources</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Wrestling resources.
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {wrestlingLinks.map((l) => (
+              <a
+                key={l.title}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-yellow-300 hover:shadow-md transition-all hover:no-underline"
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src={`https://www.google.com/s2/favicons?domain=${l.domain}&sz=64`}
+                    alt=""
+                    width={32}
+                    height={32}
+                    className="w-8 h-8 rounded-md bg-slate-100 object-contain"
+                    loading="lazy"
+                  />
+                  <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-1.5">
+                    {l.title}
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-yellow-400 transition-colors" />
+                  </h3>
+                </div>
+                <p className="mt-3 text-slate-600 text-sm leading-relaxed">{l.description}</p>
+                <p className="mt-3 text-xs text-slate-400 font-mono">{l.domain}</p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Wrestling Links */}
-      <section className="py-20 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <div className="max-w-3xl mb-12">
-            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Wrestling Sites</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              The sites Marauders actually use.
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {wrestlingLinks.map((l) => {
-              const Icon = l.icon;
-              return (
-                <a
-                  key={l.title}
-                  href={l.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-yellow-300 hover:shadow-md transition-all"
-                >
-                  <div className="w-11 h-11 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <h3 className="mt-5 font-heading font-bold text-slate-900 text-base flex items-center gap-1.5">
-                    {l.title}
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-yellow-400 transition-colors" />
+      {/* News & Media */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">News & Media</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+            Press the program is in.
+          </h2>
+          <p className="mt-4 text-slate-600 leading-relaxed">
+            Articles, results write-ups, and coverage involving Mira Mesa Wrestling and the staff.
+          </p>
+          <ul className="mt-10 space-y-3">
+            {newsArticles.map((n) => (
+              <a
+                key={n.href}
+                href={n.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-md transition-all hover:no-underline"
+              >
+                <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 mt-0.5">
+                  <Newspaper className="w-5 h-5" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-heading font-semibold text-slate-900 leading-snug flex items-start gap-2">
+                    <span>{n.title}</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-700 transition-colors shrink-0 mt-1" />
                   </h3>
-                  <p className="mt-2 text-slate-600 text-sm leading-relaxed">{l.description}</p>
-                </a>
-              );
-            })}
-          </div>
+                  <p className="mt-1 text-xs text-slate-500">{n.source} &middot; {n.date}</p>
+                </div>
+              </a>
+            ))}
+          </ul>
         </div>
       </section>
 
       {/* Classic Matches */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Watch</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
@@ -168,7 +218,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Football crossover + community articles */}
-      <section className="py-20 bg-slate-50 border-y border-slate-200">
+      <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Reading</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
