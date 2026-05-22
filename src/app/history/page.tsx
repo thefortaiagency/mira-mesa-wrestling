@@ -43,7 +43,7 @@ const boysLeague = [
 ];
 
 const individualResults: { label: string; href?: string }[] = [
-  { label: "League" },
+  { label: "League", href: "https://docs.google.com/spreadsheets/d/14IALu23h9ej6QM2IPNXVfKYrDAcbH_85SbajILIN3uU/edit?gid=1360555423#gid=1360555423" },
   { label: "City" },
   { label: "CIF" },
   { label: "Masters" },
@@ -206,9 +206,8 @@ export default function HistoryPage() {
       <section className="py-20 bg-slate-50 border-t border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="max-w-2xl mb-10">
-            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Individual Results</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              By tournament.
+            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Individual Results
             </h2>
             <p className="mt-4 text-slate-600 leading-relaxed">
               Full Marauder individual results, year by year, by event.
