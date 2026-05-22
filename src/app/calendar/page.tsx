@@ -8,11 +8,9 @@ export const metadata: Metadata = {
     "Mira Mesa Wrestling practice schedule, dual meets, tournaments, and CIF dates. Live Google Calendar — what's on Coach Craig's calendar is what's on the page.",
 };
 
-// Google Calendar embed for MiraMesaWrestling@gmail.com.
-// Coach: update this to the public Google Calendar ID Craig wants displayed.
-// The embed URL is: https://calendar.google.com/calendar/embed?src=<CAL_ID>&ctz=America/Los_Angeles
+// "Wrestling Team" — the public Google Calendar Craig maintains for the program.
 const CALENDAR_EMBED_URL =
-  "https://calendar.google.com/calendar/embed?src=MiraMesaWrestling%40gmail.com&ctz=America%2FLos_Angeles&mode=AGENDA&showTitle=0&showPrint=0&showCalendars=0&showTz=0";
+  "https://calendar.google.com/calendar/embed?src=69f7uqmgp62uciabmgdr7cdf14%40group.calendar.google.com&ctz=America%2FLos_Angeles&mode=AGENDA&showTitle=0&showPrint=0&showCalendars=0&showTz=0";
 
 export default function CalendarPage() {
   return (
