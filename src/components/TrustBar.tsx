@@ -30,7 +30,7 @@ export function TrustBar() {
           {stats.map((s) => {
             const Icon = s.icon;
             return (
-              <div key={s.label} className="flex items-center gap-3 justify-center">
+              <div key={s.label} className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-blue-700/10 flex items-center justify-center text-blue-700 shrink-0">
                   <Icon className="w-5 h-5" />
                 </div>

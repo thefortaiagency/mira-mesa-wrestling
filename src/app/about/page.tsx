@@ -72,7 +72,7 @@ export default function AboutPage() {
               <Trophy className="w-8 h-8 text-blue-700 shrink-0 mt-1" />
               <div>
                 <h3 className="font-heading font-bold text-slate-900">Championship Program</h3>
-                <p className="text-slate-600 text-sm mt-1">14 consecutive Boys League titles. 70-0 dual record.</p>
+                <p className="text-slate-600 text-sm mt-1">15 consecutive Boys League titles. 75-0 Boys · 12-0 Girls dual records.</p>
               </div>
             </div>
             <div className="flex gap-4">
