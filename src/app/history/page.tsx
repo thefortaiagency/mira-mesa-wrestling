@@ -186,6 +186,7 @@ export default function HistoryPage() {
               <span className="text-sm text-slate-500 ml-2">{girlsLeague.length} titles — {girlsLeague.length} consecutive</span>
             </div>
             <TitleStrip years={girlsLeague} />
+            <p className="mt-3 text-xs text-slate-500">*2024 Inaugural Year</p>
           </div>
 
           {/* Boys League */}
@@ -197,7 +198,7 @@ export default function HistoryPage() {
             </div>
             <TitleStrip years={boysLeague} />
             <p className="mt-3 text-xs text-slate-500">
-              Mira Mesa transitioned from Eastern League (1993-2018) to Western League (2019-present).
+              Mira Mesa has competed in both leagues over time — Western (1978), Eastern (1980-1988, 1993-2018), then Western again (2019-present).
             </p>
           </div>
         </div>

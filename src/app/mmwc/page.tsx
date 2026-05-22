@@ -153,12 +153,21 @@ export default function MMWCPage() {
                     ) : p.extra?.label ? (
                       <span className="text-slate-600 text-sm italic">{p.extra.label}</span>
                     ) : null}
-                    <Link
-                      href="/contact"
-                      className="ml-auto inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white font-heading font-semibold text-sm rounded-lg hover:bg-slate-800 transition-colors"
-                    >
-                      Contact Coach Craig
-                    </Link>
+                    {p.id === "adult" ? (
+                      <Link
+                        href="/masters"
+                        className="ml-auto inline-flex items-center gap-2 px-5 py-2.5 bg-blue-700 text-white font-heading font-semibold text-sm rounded-lg hover:bg-blue-800 transition-colors"
+                      >
+                        Learn More
+                      </Link>
+                    ) : (
+                      <Link
+                        href="/contact"
+                        className="ml-auto inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white font-heading font-semibold text-sm rounded-lg hover:bg-slate-800 transition-colors"
+                      >
+                        Contact Coach Craig
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>

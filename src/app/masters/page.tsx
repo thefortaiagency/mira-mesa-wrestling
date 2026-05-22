@@ -26,7 +26,7 @@ const trainingFAQ = [
   },
   {
     q: "Why train at MMWC specifically?",
-    a: "Coach VanDyke is an active Team USA Veteran National Team Co-Head Coach — meaning he's coaching at the highest level of adult international wrestling. Veteran Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Veteran Greco-Roman World Champions 2022 and 2023. The technique you get is the technique the team is actually winning Worlds with.",
+    a: "Coach Craig is an active Team USA Veteran National Team Co-Head Coach — meaning he's coaching at the highest level of adult international wrestling. Veteran Freestyle World Champions 2021, 2022, 2023, 2024, 2025. Veteran Greco-Roman World Champions 2022 and 2023. The technique you get is the technique the team is actually winning Worlds with.",
   },
   {
     q: "I haven't wrestled in years (or ever). Can I start?",
@@ -117,7 +117,7 @@ export default function MastersPage() {
                 doesn&apos;t evolve.
               </p>
               <p className="mt-4 text-slate-700 leading-relaxed text-lg">
-                MMWC is run as a coached program. Coach VanDyke is currently on
+                MMWC is run as a coached program. Coach Craig is currently on
                 the Team USA Veteran National Team coaching staff — Veteran
                 Freestyle World Champions <strong>2021, 2022, 2023, 2024, and 2025</strong>;
                 Veteran Greco-Roman World Champions <strong>2022 and 2023</strong>. The
