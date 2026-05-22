@@ -28,7 +28,7 @@ const currentStaff = [
       "Veteran Greco-Roman World Champions: '22, '23",
     ],
   },
-  { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach", { text: "Published Author", href: "https://www.amazon.com/Huh-what-Dean-F-Brown/dp/B0DBGXVDMB" }] },
+  { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "BS HPER, MS Educational Technology, Secondary Teaching Credential", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach", { text: "Published Author", href: "https://www.amazon.com/Huh-what-Dean-F-Brown/dp/B0DBGXVDMB" }] },
   { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 18", "Years at Mira Mesa: 10.5", "BA English Literature, Secondary Teaching Credential", "Fall Guys Wrestling Coach"] },
   { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni", "Masters Placer", "US Navy Veteran"] },
   { name: "Fazil Bagirov", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 2", "MMWC Freestyle Coach", "2× International Tana Cup Silver Medalist"] },
