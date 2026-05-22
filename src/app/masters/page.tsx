@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const trainingFAQ = [
   {
     q: "What is Veteran / Masters wrestling?",
-    a: "USA Wrestling Veteran (also called Masters in some federations) is the adult competitive division for wrestlers age 35 and up, with weight classes and age-group brackets through age 60+. It's organized internationally by United World Wrestling. MMWC's adult program prepares wrestlers for local, national (USAW Veteran Nationals), and World-level events.",
+    a: "USA Wrestling Veteran is the UWW competitive division for wrestlers age 35 and up, with weight classes and age-group brackets through age 60+. It's organized internationally by United World Wrestling. Masters is a term used nationally for wrestlers aged 25-60. MMWC's adult program prepares wrestlers for local, national (USAW Masters Nationals), and World-level events.",
   },
   {
     q: "Why train at MMWC specifically?",
