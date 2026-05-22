@@ -6,12 +6,12 @@ const letters = [
   {
     letter: "G",
     title: "Gratitude",
-    description: "For the opportunity, the teammates, the coaches, the family that made it possible.",
+    description: "Each morning for another day and the many opportunities that come with it.",
   },
   {
     letter: "R",
     title: "Respect",
-    description: "For your opponent, the officials, the sport itself, and the work others put in.",
+    description: "For your opponent, the officials, the sport, yourself, and to those who pour into us.",
   },
   {
     letter: "A",
