@@ -17,6 +17,7 @@ const currentStaff = [
     bullets: [
       "Years coaching: 20",
       "Years at Mira Mesa: 14",
+      "Bachelor of Architecture",
       "Boys League Coach of the Year",
       "Girls City Conference Coach of the Year (2×)",
       "Girls Masters Championship 2022",
@@ -28,17 +29,18 @@ const currentStaff = [
     ],
   },
   { name: "Dean Brown", role: "JV Head Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 20", "Years at Mira Mesa: 8", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach", { text: "Published Author", href: "https://www.amazon.com/Huh-what-Dean-F-Brown/dp/B0DBGXVDMB" }] },
-  { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 18", "Years at Mira Mesa: 10.5", "Fall Guys Wrestling Coach"] },
+  { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 18", "Years at Mira Mesa: 10.5", "BA English Literature, Secondary Teaching Credential", "Fall Guys Wrestling Coach"] },
   { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 15", "Fall Guys Coach", "1999 MMHS Alumni", "Masters Placer", "US Navy Veteran"] },
   { name: "Fazil Bagirov", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 2", "MMWC Freestyle Coach", "2× International Tana Cup Silver Medalist"] },
   { name: "Isaac Pumarejo", role: "Fall Guys Head Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 30", "Fall Guys Head Coach 2025-present", "Team Puma Head Coach", "2× CA State Placer"] },
   { name: "Devhante Hayes", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 1", "2022 MMHS Alumni", "2× CIF Champion", "Masters Finalist", "CA State Placer"] },
   { name: "Noah Lester", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 2", "2015 MMHS Alumni", "Masters Placer", "CIF Finalist"] },
   { name: "Waseem Elhamad", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "2014 MMHS Alumni", "Masters Champion", "2× CIF Champion"] },
-  { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024", "CIF Placer"] },
+  { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "BS Criminal Justice", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024", "CIF Placer"] },
   { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni", "CIF Finalist"] },
-  { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4"] },
-  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "1998 MMHS Alumni", "US Army"] },
+  { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4", "Doctor of Pharmacy, MBA, BS Pharmacy Studies, BA Economics"] },
+  { name: "Frank Criger", role: "Assistant Coach", photo: "/images/staff/frank.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 3", "BS Biomedical Engineering, MBA"] },
+  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "BA Sociology, MBA", "1998 MMHS Alumni", "Retired US Army Major"] },
 ];
 
 const headCoaches = [
