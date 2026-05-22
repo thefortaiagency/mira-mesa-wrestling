@@ -54,16 +54,31 @@ const headCoaches = [
 export default function AboutPage() {
   return (
     <>
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">About</span>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Mira Mesa Coaching Staff
-          </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-3xl">
-            Mira Mesa Wrestling has many well educated, caring, and devoted coaches who believe in sharing their experience, wisdom and knowledge with the next generation. We are more than a team — we are a family.
-          </p>
+      <section className="relative min-h-[60vh] flex items-center bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/about-hero.jpg"
+            alt="Mira Mesa Wrestling coaching staff"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          {/* Mobile: bottom-up dark fade so text at bottom is legible.
+              Desktop: left-to-right dark fade so text on the left stays readable while coaches stay visible. */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/0 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/10" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
+          <div className="max-w-2xl">
+            <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">About</span>
+            <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
+              Mira Mesa Coaching Staff
+            </h1>
+            <p className="mt-5 text-lg sm:text-xl text-slate-300 leading-relaxed">
+              Mira Mesa Wrestling has many well educated, caring, and devoted coaches who believe in sharing their experience, wisdom and knowledge with the next generation. We are more than a team — we are a family.
+            </p>
+          </div>
         </div>
       </section>
 
