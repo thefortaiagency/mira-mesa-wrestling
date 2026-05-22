@@ -202,10 +202,15 @@ export default function MastersPage() {
               <p className="mt-3 text-slate-600 text-sm leading-relaxed">
                 Full Veteran Team USA results, year by year — World Championships, Pan-American results, roster history.
               </p>
-              <div className="mt-5 inline-flex items-center justify-between gap-3 px-5 py-3 bg-white rounded-lg border border-dashed border-slate-300 text-slate-500 text-sm font-heading font-semibold">
-                <span>Link coming</span>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1ZH3lkpdzPuQppYZyBvBTwUUz7DhbNm7fmab1rU9UdDc/edit?pli=1&gid=0#gid=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center justify-between gap-3 px-5 py-3 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all text-blue-700 text-sm font-heading font-semibold"
+              >
+                <span>Open the history sheet</span>
                 <ExternalLink className="w-4 h-4" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
