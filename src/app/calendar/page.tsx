@@ -5,7 +5,7 @@ import { ExternalLink, CalendarDays } from "lucide-react";
 export const metadata: Metadata = {
   title: "Calendar — Schedule",
   description:
-    "Mira Mesa Wrestling practice schedule, dual meets, tournaments, and CIF dates. Live Google Calendar — what's on Coach VanDyke's calendar is what's on the page.",
+    "Mira Mesa Wrestling practice schedule, dual meets, tournaments, and CIF dates. Live Google Calendar — what's on Coach Craig's calendar is what's on the page.",
 };
 
 // Google Calendar embed for MiraMesaWrestling@gmail.com.
@@ -25,7 +25,7 @@ export default function CalendarPage() {
             Practices, matches, tournaments.
           </h1>
           <p className="mt-5 text-xl text-slate-300 max-w-2xl">
-            Live from Coach VanDyke&apos;s Google Calendar. Updates here in real-time —
+            Live from Coach Craig&apos;s Google Calendar. Updates here in real-time —
             no separate website calendar to keep in sync.
           </p>
         </div>

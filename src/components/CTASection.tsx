@@ -20,7 +20,7 @@ export function CTASection() {
 
           <p className="mt-6 text-slate-400 text-xl max-w-xl mx-auto leading-relaxed">
             Freshmen and Sophomores always welcome. Bring PE clothes and wrestling shoes —
-            Coach VanDyke will take it from there.
+            Coach Craig will take it from there.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
