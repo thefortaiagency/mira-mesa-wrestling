@@ -160,7 +160,7 @@ export default function HistoryPage() {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <Award className="w-7 h-7 text-blue-700" />
-              <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys Conference</h2>
+              <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys San Diego City Conference</h2>
               <span className="text-sm text-slate-500 ml-2">{boysConference.length} titles</span>
             </div>
             <TitleStrip years={boysConference} color="red" />
@@ -171,7 +171,7 @@ export default function HistoryPage() {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <Award className="w-7 h-7 text-blue-700" />
-              <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Conference</h2>
+              <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls San Diego City Conference</h2>
               <span className="text-sm text-slate-500 ml-2">{girlsConference.length} titles — {girlsConference.length} consecutive</span>
             </div>
             <TitleStrip years={girlsConference} color="red" />
