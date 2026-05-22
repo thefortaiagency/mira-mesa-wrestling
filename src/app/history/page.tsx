@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Trophy, Medal, Award, Star, Crown } from "lucide-react";
+import Image from "next/image";
+import { Trophy, Medal, Award, Star, Crown, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "History — Championships & Titles",
   description:
-    "Mira Mesa Wrestling championship history. Boys CIF Champions 2014 & 2024. Girls Masters Champions 2022. 14 consecutive Boys League titles. Full record by team, year, and event.",
+    "Mira Mesa Wrestling championship history. Boys CIF Champions 2014 & 2024. Girls Masters Champions 2022. 15 consecutive Boys League titles. 2026 Boys League + Conference, Girls League + Conference + CIF Runner-up. Full record by team, year, and event.",
 };
 
 const boysCIF = [
@@ -25,20 +25,30 @@ const girlsMasters = [
 ];
 
 const girlsCIF = [
+  { year: "2026", result: "RUNNER-UP", tier: "runner" },
   { year: "2022", result: "RUNNER-UP", tier: "runner" },
   { year: "2021", result: "RUNNER-UP", tier: "runner" },
 ];
 
 const boysConference = [
-  "2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2009","2005","2002","1996","1994","1993","1992","1991",
+  "2026","2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2009","2005","2002","1996","1994","1993","1992","1991",
 ];
 
-const girlsConference = ["2025","2024","2023"];
+const girlsConference = ["2026","2025","2024","2023"];
 
-const girlsLeague = ["2025","2024"];
+const girlsLeague = ["2026","2025","2024"];
 
 const boysLeague = [
-  "2025","2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2010","2009","2003","1996","1995","1993",
+  "2026","2025","2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2010","2009","2003","1996","1995","1993",
+];
+
+const individualResults: { label: string; href?: string }[] = [
+  { label: "League" },
+  { label: "City" },
+  { label: "CIF" },
+  { label: "Masters" },
+  { label: "State" },
+  { label: "National Qualifiers" },
 ];
 
 function ResultRow({ year, result, tier }: { year: string; result: string; tier: string }) {
@@ -88,14 +98,26 @@ export default function HistoryPage() {
       <section className="relative py-20 bg-slate-950 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            The trophy case.
-          </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-2xl">
-            Mira Mesa Wrestling has been collecting hardware since 1981. Boys, Girls,
-            CIF, Masters, Conference, League — every banner earned.
-          </p>
+          <div className="flex flex-col-reverse md:flex-row md:items-center gap-8 md:gap-12">
+            <div className="flex-1">
+              <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
+              <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
+                The trophy case.
+              </h1>
+              <p className="mt-5 text-xl text-slate-300 max-w-2xl">
+                Mira Mesa Wrestling has been collecting hardware since 1981. Boys, Girls,
+                CIF, Masters, Conference, League — every banner earned.
+              </p>
+            </div>
+            <Image
+              src="/images/mm-logo.png"
+              alt="Mira Mesa Marauders logo"
+              width={240}
+              height={240}
+              priority
+              className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain shrink-0 drop-shadow-[0_4px_32px_rgba(250,204,21,0.35)]"
+            />
+          </div>
         </div>
       </section>
 
@@ -150,7 +172,7 @@ export default function HistoryPage() {
             <div className="flex items-center gap-3 mb-8">
               <Award className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Conference</h2>
-              <span className="text-sm text-slate-500 ml-2">{girlsConference.length} titles (3 in a row)</span>
+              <span className="text-sm text-slate-500 ml-2">{girlsConference.length} titles ({girlsConference.length} in a row)</span>
             </div>
             <TitleStrip years={girlsConference} color="red" />
             <p className="mt-3 text-xs text-slate-500">*2023 Inaugural Tournament</p>
@@ -170,7 +192,7 @@ export default function HistoryPage() {
             <div className="flex items-center gap-3 mb-8">
               <Trophy className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys League</h2>
-              <span className="text-sm text-slate-500 ml-2">{boysLeague.length} titles — 14 consecutive</span>
+              <span className="text-sm text-slate-500 ml-2">{boysLeague.length} titles — 15 consecutive</span>
             </div>
             <TitleStrip years={boysLeague} />
             <p className="mt-3 text-xs text-slate-500">
@@ -180,20 +202,41 @@ export default function HistoryPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <p className="text-slate-600 mb-2">
-            Individual results — League, City, CIF, Masters, State, National Qualifiers — are maintained in a live Google Sheet by Coach VanDyke.
-          </p>
-          <p className="text-slate-500 text-sm mb-6">
-            (Coach: drop the sheet URL with Craig and we&apos;ll embed it here.)
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
-          >
-            Request the Individual Results sheet
-          </Link>
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-2xl mb-10">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Individual Results</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              By tournament.
+            </h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Full Marauder individual results, year by year, by event.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {individualResults.map((r) =>
+              r.href ? (
+                <a
+                  key={r.label}
+                  href={r.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-3 p-5 bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all"
+                >
+                  <span className="font-heading font-bold text-slate-900 text-lg">{r.label}</span>
+                  <ExternalLink className="w-5 h-5 text-blue-700 group-hover:translate-x-0.5 transition-transform" />
+                </a>
+              ) : (
+                <div
+                  key={r.label}
+                  className="flex items-center justify-between gap-3 p-5 bg-white rounded-xl border border-dashed border-slate-300"
+                >
+                  <span className="font-heading font-bold text-slate-700 text-lg">{r.label}</span>
+                  <span className="text-xs font-heading font-semibold text-slate-400 tracking-wider uppercase">Link coming</span>
+                </div>
+              )
+            )}
+          </div>
         </div>
       </section>
     </>
