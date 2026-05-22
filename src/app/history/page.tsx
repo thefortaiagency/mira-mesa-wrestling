@@ -39,7 +39,7 @@ const girlsConference = ["2026","2025","2024","2023"];
 const girlsLeague = ["2026","2025","2024"];
 
 const boysLeague = [
-  "2026","2025","2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2010","2009","2003","1996","1995","1993",
+  "2026","2025","2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2010","2009","2003","1996","1995","1993","1988","1986","1983","1980","1978",
 ];
 
 const individualResults: { label: string; href?: string }[] = [
@@ -172,7 +172,7 @@ export default function HistoryPage() {
             <div className="flex items-center gap-3 mb-8">
               <Award className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Conference</h2>
-              <span className="text-sm text-slate-500 ml-2">{girlsConference.length} titles ({girlsConference.length} in a row)</span>
+              <span className="text-sm text-slate-500 ml-2">{girlsConference.length} titles — {girlsConference.length} consecutive</span>
             </div>
             <TitleStrip years={girlsConference} color="red" />
             <p className="mt-3 text-xs text-slate-500">*2023 Inaugural Tournament</p>
@@ -183,6 +183,7 @@ export default function HistoryPage() {
             <div className="flex items-center gap-3 mb-8">
               <Star className="w-7 h-7 text-blue-700" />
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Western League</h2>
+              <span className="text-sm text-slate-500 ml-2">{girlsLeague.length} titles — {girlsLeague.length} consecutive</span>
             </div>
             <TitleStrip years={girlsLeague} />
           </div>
