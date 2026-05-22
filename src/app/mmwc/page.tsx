@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Users, Sparkles, GraduationCap, Heart, ExternalLink } from "lucide-react";
+import { Users, Sparkles, GraduationCap, Heart, ExternalLink, Trophy } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "MMWC — Mira Mesa Wrestling Club",
@@ -10,6 +10,17 @@ export const metadata: Metadata = {
 };
 
 const programs = [
+  {
+    id: "high-school",
+    name: "Mira Mesa High School Wrestling",
+    age: "Mira Mesa HS · Grades 9-12",
+    season: "November - February (CIF season)",
+    cost: "Fundraisers",
+    styles: "Folkstyle (Collegiate)",
+    required: "Mira Mesa HS enrollment",
+    icon: Trophy,
+    extra: { label: "Boys & Girls varsity teams — try out for a roster spot", href: null },
+  },
   {
     id: "adult",
     name: "MMWC Adult Training",
@@ -29,7 +40,7 @@ const programs = [
     name: "MMWC High School Summer",
     age: "Mira Mesa HS attendees",
     season: "Summer",
-    cost: "$200",
+    cost: "$220 · includes camp week",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "MMHS enrollment",
     icon: GraduationCap,
