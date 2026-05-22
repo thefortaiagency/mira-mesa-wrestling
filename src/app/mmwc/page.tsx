@@ -14,7 +14,7 @@ const programs = [
     id: "adult",
     name: "MMWC Adult Training",
     age: "Ages 18-60",
-    season: "Year-round · Sundays & Wednesdays · Thursday Open Mat",
+    season: "Year-round · Sundays & Wednesdays — Technique & Tactics (plus Thursday Open Mat)",
     cost: "$100 / month",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Current USA Wrestling Membership",
