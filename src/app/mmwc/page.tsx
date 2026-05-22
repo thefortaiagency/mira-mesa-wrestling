@@ -69,7 +69,7 @@ export default function MMWCPage() {
             alt="Coach Craig coaching at the 2025 California State Games"
             fill
             priority
-            className="object-cover object-[center_30%]"
+            className="object-cover object-[center_55%]"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/30 lg:hidden" />
@@ -99,20 +99,6 @@ export default function MMWCPage() {
         </div>
       </section>
 
-      {/* Brand banner divider */}
-      <section className="bg-slate-950 py-10 border-y border-blue-900/40 overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 flex justify-center">
-          <Image
-            src="/images/mmwc-banner.png"
-            alt="MMWC banner — Mira Mesa Wrestling Club"
-            width={1920}
-            height={649}
-            className="w-full max-w-3xl h-auto object-contain"
-            sizes="(max-width: 768px) 100vw, 768px"
-          />
-        </div>
-      </section>
-
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-12">
           {programs.map((p) => {
@@ -128,6 +114,16 @@ export default function MMWCPage() {
                     <Icon className="w-7 h-7" />
                   </div>
                   <h2 className="mt-5 text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
+                  {p.id !== "marauder-machine" && (
+                    <Image
+                      src="/images/mmwc-banner.png"
+                      alt="MMWC"
+                      width={1920}
+                      height={649}
+                      className="mt-3 w-40 h-auto object-contain"
+                      sizes="160px"
+                    />
+                  )}
                   <p className="mt-2 text-blue-700 font-heading font-medium">{p.age}</p>
                 </div>
                 <div className="lg:col-span-2">
