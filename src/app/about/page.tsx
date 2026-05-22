@@ -61,7 +61,7 @@ export default function AboutPage() {
             alt="Mira Mesa Wrestling coaching staff"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-top"
             sizes="100vw"
           />
           {/* Mobile: bottom-up dark fade so text at bottom is legible.
