@@ -95,16 +95,29 @@ function TitleStrip({ years, color = "slate" }: { years: string[]; color?: "red"
 export default function HistoryPage() {
   return (
     <>
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
+      <section className="relative min-h-[60vh] flex items-center bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/history-hero.jpg"
+            alt="Mira Mesa claims its first CIF championship — 2014 U-T San Diego front page"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          {/* Newspaper photo is busy — heavy dark gradient on the left so text reads cleanly,
+              softer fade to the right so the headline "MIRA MESA CLAIMS ITS FIRST CHAMPIONSHIP" remains visible. */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/30 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/20" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-8 md:gap-12">
-            <div className="flex-1">
+            <div className="flex-1 max-w-2xl">
               <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
-              <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
+              <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
                 The trophy case.
               </h1>
-              <p className="mt-5 text-xl text-slate-300 max-w-2xl">
+              <p className="mt-5 text-xl text-slate-300 leading-relaxed">
                 Mira Mesa Wrestling has been collecting hardware since 1981. Boys, Girls,
                 CIF, Masters, Conference, League — every banner earned.
               </p>
@@ -115,7 +128,7 @@ export default function HistoryPage() {
               width={240}
               height={240}
               priority
-              className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain shrink-0 drop-shadow-[0_4px_32px_rgba(250,204,21,0.35)]"
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain shrink-0 drop-shadow-[0_4px_32px_rgba(250,204,21,0.45)]"
             />
           </div>
         </div>
