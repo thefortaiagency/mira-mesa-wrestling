@@ -39,7 +39,7 @@ export default function CalendarPage() {
               </h2>
             </div>
             <a
-              href="https://calendar.google.com/calendar/u/0/r?cid=MiraMesaWrestling@gmail.com"
+              href="https://calendar.google.com/calendar/u/0/r?cid=69f7uqmgp62uciabmgdr7cdf14@group.calendar.google.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-blue-700 font-heading font-semibold hover:text-blue-800 text-sm"
@@ -60,14 +60,6 @@ export default function CalendarPage() {
               title="Mira Mesa Wrestling Calendar"
             />
           </div>
-
-          <p className="mt-6 text-sm text-slate-500">
-            Calendar not showing yet? The embed pulls from{" "}
-            <code className="font-mono">MiraMesaWrestling@gmail.com</code>. The
-            calendar owner needs to make it public in Google Calendar settings
-            (Settings &rarr; Calendar &rarr; Access permissions &rarr; &ldquo;Make
-            available to public&rdquo;) for the embed to display.
-          </p>
         </div>
       </section>
 
