@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 // "Wrestling Team" — the public Google Calendar Craig maintains for the program.
 const CALENDAR_EMBED_URL =
-  "https://calendar.google.com/calendar/embed?src=69f7uqmgp62uciabmgdr7cdf14%40group.calendar.google.com&ctz=America%2FLos_Angeles&mode=AGENDA&showTitle=0&showPrint=0&showCalendars=0&showTz=0";
+  "https://calendar.google.com/calendar/embed?src=69f7uqmgp62uciabmgdr7cdf14%40group.calendar.google.com&ctz=America%2FLos_Angeles&mode=MONTH&showTitle=0&showPrint=0&showCalendars=0&showTz=0";
 
 export default function CalendarPage() {
   return (
