@@ -23,7 +23,7 @@ export default function CalendarPage() {
             alt="Mira Mesa Wrestling coaching staff bench-side at the 2024 dual at Valhalla"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-[center_65%]"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20 lg:hidden" />

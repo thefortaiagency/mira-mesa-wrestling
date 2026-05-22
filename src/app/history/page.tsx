@@ -111,24 +111,22 @@ export default function HistoryPage() {
           <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-15% via-slate-950/55 to-slate-950/0" />
         </div>
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
-          <div className="flex flex-col-reverse md:flex-row md:items-center gap-8 md:gap-12">
-            <div className="flex-1 max-w-2xl">
-              <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
-              <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
-                The trophy case.
-              </h1>
-              <p className="mt-5 text-xl text-slate-300 leading-relaxed">
-                Mira Mesa Wrestling has been collecting hardware since 1981. Boys, Girls,
-                CIF, Masters, Conference, League — every banner earned.
-              </p>
-            </div>
+          <div className="max-w-2xl">
+            <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
+            <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
+              The trophy case.
+            </h1>
+            <p className="mt-5 text-xl text-slate-300 leading-relaxed">
+              Mira Mesa Wrestling has been collecting hardware since 1981. Boys, Girls,
+              CIF, Masters, Conference, League — every banner earned.
+            </p>
             <Image
               src="/images/mm-logo.png"
               alt="Mira Mesa Marauders logo"
-              width={240}
-              height={240}
+              width={160}
+              height={160}
               priority
-              className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain shrink-0 drop-shadow-[0_4px_32px_rgba(250,204,21,0.45)]"
+              className="mt-8 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 object-contain drop-shadow-[0_4px_32px_rgba(250,204,21,0.45)]"
             />
           </div>
         </div>
