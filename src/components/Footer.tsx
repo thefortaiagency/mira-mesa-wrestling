@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Facebook, Instagram } from "lucide-react";
 
 const programs = [
   { label: "Boys & Girls HS Wrestling", href: "/about" },
@@ -113,6 +114,29 @@ export function Footer() {
               <li>
                 <span className="text-white/40 text-xs uppercase tracking-wider block mb-1">501(c)(3) Tax ID</span>
                 92-4020180
+              </li>
+              <li className="pt-2">
+                <span className="text-white/40 text-xs uppercase tracking-wider block mb-2">Follow</span>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://www.facebook.com/MiraMesaWrestling"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Mira Mesa Wrestling on Facebook"
+                    className="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline"
+                  >
+                    <Facebook className="w-4 h-4 fill-current" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/miramesawrestling/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Mira Mesa Wrestling on Instagram"
+                    className="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline"
+                  >
+                    <Instagram className="w-4 h-4" />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

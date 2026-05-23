@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { Facebook, Instagram } from "lucide-react";
 
 const navItems = [
   { label: "Coaches", href: "/about" },
@@ -22,21 +23,10 @@ export function Header() {
     <>
       {/* Top utility bar */}
       <div className="bg-slate-950 text-sm hidden md:block">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-2 flex items-center justify-between">
-          <div className="flex items-center gap-6 text-slate-400">
-            <a href="mailto:MiraMesaWrestling@gmail.com" className="hover:text-white transition-colors">
-              MiraMesaWrestling@gmail.com
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="https://www.facebook.com/MiraMesaWrestling" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-xs">
-              Facebook
-            </a>
-            <span className="w-px h-3 bg-slate-700" />
-            <a href="https://www.instagram.com/miramesawrestling/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-xs">
-              Instagram
-            </a>
-          </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-2 flex items-center justify-end text-slate-400">
+          <a href="mailto:MiraMesaWrestling@gmail.com" className="hover:text-white transition-colors">
+            MiraMesaWrestling@gmail.com
+          </a>
         </div>
       </div>
 
@@ -76,8 +66,26 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA + Mobile toggle */}
-          <div className="flex items-center gap-3">
+          {/* CTA + Socials + Mobile toggle */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <a
+              href="https://www.facebook.com/MiraMesaWrestling"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Mira Mesa Wrestling on Facebook"
+              className="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline"
+            >
+              <Facebook className="w-4 h-4 fill-current" />
+            </a>
+            <a
+              href="https://www.instagram.com/miramesawrestling/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Mira Mesa Wrestling on Instagram"
+              className="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
             <Link
               href="/donation"
               className="hidden sm:inline-flex px-6 py-2.5 bg-blue-700 text-white font-heading font-semibold text-sm rounded-lg hover:bg-blue-800 transition-colors"
