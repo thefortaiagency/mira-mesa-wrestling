@@ -92,6 +92,12 @@ const newsArticles = [
     href: "https://miramesalivingblog.wordpress.com/2019/06/14/immense-losses-yield-great-victories-for-father-and-son/",
   },
   {
+    title: "Coast to Coast Champion",
+    source: "Mira Mesa Living Blog",
+    date: "August 31, 2018",
+    href: "https://miramesalivingblog.wordpress.com/2018/08/31/coast-to-coast-champion/",
+  },
+  {
     title: "Additional Mira Mesa wrestling stories",
     source: "Mira Mesa Living Blog (search)",
     date: "",
