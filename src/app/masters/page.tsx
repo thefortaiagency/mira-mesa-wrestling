@@ -167,7 +167,7 @@ export default function MastersPage() {
                   <Row label="Ages" value="18 - 60" />
                   <Row label="Styles" value="Freestyle · Greco-Roman · Folkstyle (Collegiate)" />
                   <Row label="Required" value="Current USA Wrestling card" />
-                  <Row label="Location" value="Mira Mesa High School wrestling room, San Diego" />
+                  <Row label="Location" value="Mira Mesa High School wrestling room" />
                   <Row label="Head Coach" value="Craig VanDyke — Team USA Veteran Co-Head Coach" />
                   <Row label="Coach" value="Isaac Pumarejo" />
                 </dl>
