@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Trophy, Globe, Users, Zap, CheckCircle2, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -45,32 +46,45 @@ const trainingFAQ = [
 export default function MastersPage() {
   return (
     <>
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Adult · Veteran · Masters</span>
-          <h1 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Train under a Team USA coach.
-          </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-2xl">
-            San Diego&apos;s wrestling room for adult competitors, returning athletes, and total beginners — ages 18 to 60.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="px-7 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
-            >
-              Start training
-            </Link>
-            <a
-              href="https://www.usawmembership.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3.5 bg-white/10 text-white font-heading font-medium rounded-lg hover:bg-white/20 transition-colors border border-white/20 inline-flex items-center gap-2"
-            >
-              Get your USA Wrestling card
-              <ExternalLink className="w-4 h-4" />
-            </a>
+      <section className="relative min-h-[60vh] flex items-center bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/adults-hero.jpg"
+            alt="Team USA Veteran medalists at the 2025 Veteran World Championships in Tatabánya"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/30 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-15% via-slate-950/55 to-slate-950/10" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
+          <div className="max-w-2xl">
+            <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Adult · Veteran · Masters</span>
+            <h1 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight">
+              Train under a Team USA coach.
+            </h1>
+            <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
+              San Diego&apos;s wrestling room for adult competitors, returning athletes, and total beginners — ages 18 to 60.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/contact"
+                className="px-7 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
+              >
+                Start training
+              </Link>
+              <a
+                href="https://www.usawmembership.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 py-3.5 bg-white/10 text-white font-heading font-medium rounded-lg hover:bg-white/20 transition-colors border border-white/20 inline-flex items-center gap-2"
+              >
+                Get your USA Wrestling card
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
