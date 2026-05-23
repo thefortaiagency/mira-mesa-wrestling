@@ -33,11 +33,10 @@ export default function CalendarPage() {
           <div className="max-w-2xl">
             <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Calendar</span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
-              Practices, matches, tournaments.
+              Practices, matches, tournaments, camps, clinics, and more.
             </h1>
-            <p className="mt-5 text-lg sm:text-xl text-slate-300 leading-relaxed">
-              Live from Coach Craig&apos;s Google Calendar. Updates here in real-time —
-              no separate website calendar to keep in sync.
+            <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
+              Add this to your Google Calendar to stay up to date.
             </p>
           </div>
         </div>
