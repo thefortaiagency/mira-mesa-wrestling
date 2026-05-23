@@ -74,6 +74,12 @@ const newsArticles = [
     href: "https://www.cbs8.com/article/sports/female-wrestler-mira-mesa-birta-mccaskill/509-83208e0c-3908-451c-a28b-6498c148ba0c",
   },
   {
+    title: "The American Dream: Mira Mesa community helps high school wrestler from Uzbekistan",
+    source: "NBC 7 San Diego",
+    date: "January 4, 2024",
+    href: "https://www.nbcsandiego.com/news/local/the-american-dream-mira-mesa-community-helps-high-school-wrestler-from-uzbekistan/3395629/",
+  },
+  {
     title: "Immense losses yield great victories for father and son",
     source: "Mira Mesa Living Blog",
     date: "June 14, 2019",
