@@ -62,6 +62,12 @@ const newsArticles = [
     href: "https://www.sandiegouniontribune.com/sports/high-school-preps/story/2024-02-10/mira-mesa-captures-first-cif-boys-wrestling-title-in-a-decade",
   },
   {
+    title: "Mira Mesa grapplers win Girls Masters title",
+    source: "San Diego Union-Tribune",
+    date: "February 12, 2022",
+    href: "https://www.sandiegouniontribune.com/2022/02/12/mira-mesa-grapplers-win-girls-masters-title/",
+  },
+  {
     title: "Mira Mesa claims its first CIF championship",
     source: "San Diego Union-Tribune",
     date: "February 22, 2014",
