@@ -3,16 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, Facebook } from "lucide-react";
 
-// Custom wrestling-themed icons (generated). Each entry in the programs
-// list points at a path under /images/icons/. The HS Wrestling card uses
-// the MM circular logo instead of an icon image.
-const PROGRAM_ICON: Record<string, string> = {
-  adult: "/images/icons/adult.png",
-  "fall-guys": "/images/icons/fall-guys.png",
-  mshs: "/images/icons/hs-summer.png",
-  "marauder-machine": "/images/icons/marauder-machine.png",
-};
-
 export const metadata: Metadata = {
   title: "MMWC — Mira Mesa Wrestling Club",
   description:
@@ -118,7 +108,7 @@ export default function MMWCPage() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-12">
           {programs.map((p) => {
-            const iconSrc = p.id === "high-school" ? "/images/mm-logo.png" : PROGRAM_ICON[p.id];
+            const usesMmLogo = p.id === "high-school" || p.id === "marauder-machine";
             return (
               <div
                 key={p.id}
@@ -126,19 +116,16 @@ export default function MMWCPage() {
                 className="grid lg:grid-cols-3 gap-8 items-start p-8 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-lg transition-all scroll-mt-24"
               >
                 <div className="lg:col-span-1">
-                  <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center overflow-hidden">
-                    {iconSrc && (
-                      <Image
-                        src={iconSrc}
-                        alt=""
-                        width={56}
-                        height={56}
-                        className="w-11 h-11 object-contain"
-                      />
-                    )}
-                  </div>
-                  <h2 className="mt-5 text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
-                  {p.id !== "marauder-machine" && p.id !== "high-school" && (
+                  <h2 className="text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
+                  {usesMmLogo ? (
+                    <Image
+                      src="/images/mm-logo.png"
+                      alt=""
+                      width={120}
+                      height={120}
+                      className="mt-3 w-20 h-20 object-contain"
+                    />
+                  ) : (
                     <Image
                       src="/images/mmwc-banner.png"
                       alt="MMWC"
