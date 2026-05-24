@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Dumbbell, Flame, GraduationCap, Sprout, ExternalLink, Sun, Trophy } from "lucide-react";
+import { ExternalLink, Facebook } from "lucide-react";
+
+// Custom wrestling-themed icons (generated). Each entry in the programs
+// list points at a path under /images/icons/. The HS Wrestling card uses
+// the MM circular logo instead of an icon image.
+const PROGRAM_ICON: Record<string, string> = {
+  adult: "/images/icons/adult.png",
+  "fall-guys": "/images/icons/fall-guys.png",
+  mshs: "/images/icons/hs-summer.png",
+  "marauder-machine": "/images/icons/marauder-machine.png",
+};
 
 export const metadata: Metadata = {
   title: "MMWC — Mira Mesa Wrestling Club",
@@ -18,7 +28,6 @@ const programs = [
     cost: "$100 / month",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Current USA Wrestling Membership",
-    icon: Dumbbell,
     extra: {
       label: "Purchase USA Card",
       href: "https://www.usawmembership.com/",
@@ -32,7 +41,6 @@ const programs = [
     cost: "$125 / month · $300 / session",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Contact for current enrollment",
-    icon: Flame,
     extra: { label: "Fall Guys Wrestling", href: "mailto:FallGuysWrestling@gmail.com" },
   },
   {
@@ -43,7 +51,6 @@ const programs = [
     cost: "Fundraisers",
     styles: "Folkstyle (Collegiate)",
     required: "Mira Mesa HS enrollment",
-    icon: Trophy,
     extra: { label: "Boys & Girls varsity teams — try out for a roster spot", href: null },
   },
   {
@@ -54,7 +61,6 @@ const programs = [
     cost: "$220 · includes camp week",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "MMHS enrollment",
-    icon: Sun,
     extra: { label: "Club membership includes USA Wrestling card", href: null },
   },
   {
@@ -65,7 +71,6 @@ const programs = [
     cost: "Free",
     styles: "Folkstyle (Collegiate)",
     required: "Wangenheim or Challenger Middle School enrollment",
-    icon: Sprout,
     extra: { label: "Building the next class of Mira Mesa wrestlers", href: null },
   },
 ];
@@ -113,7 +118,7 @@ export default function MMWCPage() {
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-12">
           {programs.map((p) => {
-            const Icon = p.icon;
+            const iconSrc = p.id === "high-school" ? "/images/mm-logo.png" : PROGRAM_ICON[p.id];
             return (
               <div
                 key={p.id}
@@ -121,17 +126,15 @@ export default function MMWCPage() {
                 className="grid lg:grid-cols-3 gap-8 items-start p-8 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-lg transition-all scroll-mt-24"
               >
                 <div className="lg:col-span-1">
-                  <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center overflow-hidden">
-                    {p.id === "high-school" ? (
+                  <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center overflow-hidden">
+                    {iconSrc && (
                       <Image
-                        src="/images/mm-logo.png"
+                        src={iconSrc}
                         alt=""
                         width={56}
                         height={56}
-                        className="w-12 h-12 object-contain"
+                        className="w-11 h-11 object-contain"
                       />
-                    ) : (
-                      <Icon className="w-7 h-7" />
                     )}
                   </div>
                   <h2 className="mt-5 text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
@@ -181,6 +184,17 @@ export default function MMWCPage() {
                     ) : p.extra?.label ? (
                       <span className="text-slate-600 text-sm italic">{p.extra.label}</span>
                     ) : null}
+                    {p.id === "fall-guys" && (
+                      <a
+                        href="https://www.facebook.com/fallguyswrestling"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Fall Guys Wrestling on Facebook"
+                        className="w-9 h-9 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline"
+                      >
+                        <Facebook className="w-4 h-4 fill-current" />
+                      </a>
+                    )}
                     {p.id === "adult" ? (
                       <Link
                         href="/masters"
