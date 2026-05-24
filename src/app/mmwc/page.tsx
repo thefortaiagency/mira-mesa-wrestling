@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Users, Sparkles, GraduationCap, Heart, ExternalLink, Trophy } from "lucide-react";
+import { Dumbbell, Flame, GraduationCap, Sprout, ExternalLink, Sun, Trophy } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "MMWC — Mira Mesa Wrestling Club",
@@ -18,7 +18,7 @@ const programs = [
     cost: "$100 / month",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Current USA Wrestling Membership",
-    icon: Users,
+    icon: Dumbbell,
     extra: {
       label: "Purchase USA Card",
       href: "https://www.usawmembership.com/",
@@ -32,7 +32,7 @@ const programs = [
     cost: "$125 / month · $300 / session",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Contact for current enrollment",
-    icon: Sparkles,
+    icon: Flame,
     extra: { label: "Fall Guys Wrestling", href: "mailto:FallGuysWrestling@gmail.com" },
   },
   {
@@ -54,7 +54,7 @@ const programs = [
     cost: "$220 · includes camp week",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "MMHS enrollment",
-    icon: GraduationCap,
+    icon: Sun,
     extra: { label: "Club membership includes USA Wrestling card", href: null },
   },
   {
@@ -65,7 +65,7 @@ const programs = [
     cost: "Free",
     styles: "Folkstyle (Collegiate)",
     required: "Wangenheim or Challenger Middle School enrollment",
-    icon: Heart,
+    icon: Sprout,
     extra: { label: "Building the next class of Mira Mesa wrestlers", href: null },
   },
 ];
@@ -102,8 +102,8 @@ export default function MMWCPage() {
                 Mira Mesa Wrestling Club.
               </h1>
               <p className="mt-3 text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
-                The 501(c)(3) supporting wrestling at Mira Mesa — Tax ID 92-4020180.
-                Training opportunities from age 5 to age 60.
+                Supporting wrestling for boys and girls in Mira Mesa, from age 5
+                to age 60. 501(c)(3) &mdash; Tax ID 92-4020180.
               </p>
             </div>
           </div>
@@ -121,8 +121,18 @@ export default function MMWCPage() {
                 className="grid lg:grid-cols-3 gap-8 items-start p-8 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-lg transition-all scroll-mt-24"
               >
                 <div className="lg:col-span-1">
-                  <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
-                    <Icon className="w-7 h-7" />
+                  <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center overflow-hidden">
+                    {p.id === "high-school" ? (
+                      <Image
+                        src="/images/mm-logo.png"
+                        alt=""
+                        width={56}
+                        height={56}
+                        className="w-12 h-12 object-contain"
+                      />
+                    ) : (
+                      <Icon className="w-7 h-7" />
+                    )}
                   </div>
                   <h2 className="mt-5 text-2xl font-heading font-extrabold text-slate-900">{p.name}</h2>
                   {p.id !== "marauder-machine" && p.id !== "high-school" && (
