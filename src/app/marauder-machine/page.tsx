@@ -143,7 +143,7 @@ export default function MarauderMachinePage() {
             <StatTile icon={Trophy} value="6×" label="Dual Meet Champs (B+G, '24-'26)" />
             <StatTile icon={Trophy} value="6×" label="Team Tournament Champs (B+G, '24-'26)" />
             <StatTile icon={Users} value="15" label="Individual Champions in 2026" />
-            <StatTile icon={Calendar} value="20-0 / 20-0" label="2026 Boys / Girls Dual Records" />
+            <StatTile icon={Calendar} value="50-0" label="Combined Dual Meet Record (2024-2026)" />
           </div>
         </div>
       </section>
