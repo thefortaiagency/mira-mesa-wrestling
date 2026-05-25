@@ -4,6 +4,35 @@ import { Trophy, Medal, Award, Star, Crown, ExternalLink } from "lucide-react";
 import { YearLineupRow, type YearLineupData } from "@/components/YearLineupRow";
 
 const lineups: Record<string, YearLineupData> = {
+  "boys-cif-2024": {
+    title: "2024 Boys CIF Championship Team",
+    coaches: {
+      headCoach: "Craig VanDyke",
+      assistants: [
+        "Adam Logue",
+        "Davon Copeland",
+        "Frank Criger",
+        "Eric Velasco",
+        "Alexandra Savage",
+        "Jim Stephens",
+        "Colin Baldwin",
+      ],
+    },
+    lineup: [
+      { name: "Aden Vang", grade: 10 },
+      { name: "Jeremy Tajiri", grade: 11 },
+      { name: "Dongjoon Gin", grade: 12 },
+      { name: "Sardor Usmonov", grade: 12 },
+      { name: "Chris Tran", grade: 12 },
+      { name: "Noah Guro", grade: 10 },
+      { name: "RC Santos", grade: 11 },
+      { name: "William Lam", grade: 12 },
+      { name: "Jorge Salcedo", grade: 11 },
+      { name: "Victor Gore", grade: 12 },
+      { name: "Aavion Bobbit", grade: 11 },
+      { name: "Adam Ballesteros", grade: 12 },
+    ],
+  },
   "boys-cif-2014": {
     title: "2014 Boys CIF Championship Team",
     photoSrc: "/images/teams/2014-cif-boys.jpg",
