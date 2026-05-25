@@ -15,11 +15,11 @@ export default function DonationPage() {
       <section className="relative min-h-[55vh] flex items-center bg-slate-950 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/programs-hero.jpg"
-            alt="Coach Craig coaching a young wrestler in a MMWC singlet at the 2025 California State Games"
+            src="/images/donation-hero.jpg"
+            alt="Mira Mesa wrestlers leaping in joy in front of the Mira Mesa High School Marauders sign"
             fill
             priority
-            className="object-cover object-[center_20%]"
+            className="object-cover object-center"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20 lg:hidden" />
