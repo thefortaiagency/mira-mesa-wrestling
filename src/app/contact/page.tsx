@@ -20,7 +20,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-5 text-xl text-slate-300 max-w-2xl">
             Joining the team, questions about programs, MMWC, donations — drop a
-            note and Coach will get back to you within one business day.
+            note and Coach will get back to you. Emails are usually answered within 72 hours.
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   MiraMesaWrestling@gmail.com
                 </a>
                 <p className="mt-4 text-sm text-slate-500">
-                  Coach responds within one business day.
+                  Emails are usually answered within 72 hours.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 title="Email"
                 primary="MiraMesaWrestling@gmail.com"
                 primaryHref="mailto:MiraMesaWrestling@gmail.com"
-                secondary="Response within one business day"
+                secondary="Emails are usually answered within 72 hours"
               />
               <ContactCard
                 icon={MapPin}
