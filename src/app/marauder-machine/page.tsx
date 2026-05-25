@@ -48,48 +48,79 @@ export default function MarauderMachinePage() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <div className="grid lg:grid-cols-5 gap-12">
-            <div className="lg:col-span-3 space-y-6">
-              <div>
-                <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Program</span>
-                <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-                  Three years in. Undefeated and counting.
-                </h2>
-              </div>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                Marauder Machine wrestles under the SDUSD MSA Program, which
-                started in 2024.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                In that time, the Marauder Machine has won the Boys and Girls
-                Dual Meet Championships in <strong>2024, 2025 and 2026</strong>.
-                They have also won the Individual Team Tournament each year, both
-                boys and girls. The first season, boys and girls team scores and
-                duals were combined, rather than separated.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                In 2026 the Marauder Machine crowned <strong>15 individual
-                champions</strong>. The boys team has a record of <strong>20-0</strong>
-                and the girls also have a record of <strong>20-0</strong>. The
-                combined team from year 1 went <strong>10-0</strong> in duals.
-              </p>
-            </div>
-
-            <div className="lg:col-span-2">
-              <div className="aspect-[4/5] rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 flex flex-col items-center justify-center text-center p-8">
-                <div className="w-14 h-14 rounded-full bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6" />
-                </div>
-                <p className="text-sm font-heading font-semibold text-slate-500 tracking-wider uppercase">Team photo coming</p>
-                <p className="mt-2 text-xs text-slate-500 italic">Reserved space for Marauder Machine team photo</p>
-              </div>
-            </div>
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-6">
+          <div>
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Program</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Three years in. Undefeated and counting.
+            </h2>
           </div>
+          <p className="text-lg text-slate-700 leading-relaxed">
+            Marauder Machine wrestles under the SDUSD MSA Program, which
+            started in 2024.
+          </p>
+          <p className="text-lg text-slate-700 leading-relaxed">
+            In that time, the Marauder Machine has won the Boys and Girls
+            Dual Meet Championships in <strong>2024, 2025 and 2026</strong>.
+            They have also won the Individual Team Tournament each year, both
+            boys and girls. The first season, boys and girls team scores and
+            duals were combined, rather than separated.
+          </p>
+          <p className="text-lg text-slate-700 leading-relaxed">
+            In 2026 the Marauder Machine crowned <strong>15 individual
+            champions</strong>. The boys team has a record of <strong>20-0</strong>
+            and the girls also have a record of <strong>20-0</strong>. The
+            combined team from year 1 went <strong>10-0</strong> in duals.
+          </p>
         </div>
       </section>
 
       <section className="py-16 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="mb-10 text-center">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">2025-2026 Champions</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Western Division — Boys &amp; Girls.
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <figure className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+              <div className="relative aspect-[16/9]">
+                <Image
+                  src="/images/teams/marauder-machine-boys-2026.jpg"
+                  alt="Marauder Machine boys wrestling team holding SDUSD Western Division Champions 2025-2026 banners"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
+              <figcaption className="p-5">
+                <p className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Boys</p>
+                <p className="mt-1 font-heading font-bold text-slate-900">SDUSD Boys Wrestling Western Division Champions · 2025-2026</p>
+                <p className="mt-1 text-sm text-slate-600">20-0 dual record</p>
+              </figcaption>
+            </figure>
+            <figure className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+              <div className="relative aspect-[16/9]">
+                <Image
+                  src="/images/teams/marauder-machine-girls-2026.jpg"
+                  alt="Marauder Machine girls wrestling team holding SDUSD Western Division Champions 2025-2026 banners and trophy"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
+              <figcaption className="p-5">
+                <p className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Girls</p>
+                <p className="mt-1 font-heading font-bold text-slate-900">SDUSD Girls Wrestling Western Division Champions · 2025-2026</p>
+                <p className="mt-1 text-sm text-slate-600">20-0 dual record</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <StatTile icon={Trophy} value="6×" label="Dual Meet Champs (B+G, '24-'26)" />
@@ -100,7 +131,7 @@ export default function MarauderMachinePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="text-slate-700 leading-relaxed">
             Marauder Machine pulls from Wangenheim and Challenger Middle Schools
