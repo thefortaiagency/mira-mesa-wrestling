@@ -32,11 +32,21 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="flex flex-wrap gap-2"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700/15 text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase border border-yellow-400/25">
-              <Trophy className="w-3.5 h-3.5" />
-              2024 Boys CIF Champions
-            </span>
+            {[
+              "2024 Boys CIF Champions",
+              "2014 Boys CIF Champions",
+              "2022 Girls SDS Masters Champions",
+            ].map((title) => (
+              <span
+                key={title}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700/15 text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase border border-yellow-400/25"
+              >
+                <Trophy className="w-3.5 h-3.5" />
+                {title}
+              </span>
+            ))}
           </motion.div>
 
           <motion.h1
