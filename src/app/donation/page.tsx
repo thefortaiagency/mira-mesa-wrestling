@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Heart, CreditCard, Mail, Smartphone, Building } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -11,18 +12,31 @@ export const metadata: Metadata = {
 export default function DonationPage() {
   return (
     <>
-      <section className="relative py-20 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-slate-950 to-slate-950" />
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 relative z-10">
-          <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Donate</span>
-          <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Help young athletes live their dreams.
-          </h1>
-          <p className="mt-5 text-xl text-slate-300 max-w-2xl">
-            Mira Mesa Wrestling Club is a 501(c)(3) (Tax ID 92-4020180). Every
-            contribution is tax-deductible and goes directly to wrestlers — youth,
-            high school, and adult — training at Mira Mesa.
-          </p>
+      <section className="relative min-h-[55vh] flex items-center bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/programs-hero.jpg"
+            alt="Coach Craig coaching a young wrestler in a MMWC singlet at the 2025 California State Games"
+            fill
+            priority
+            className="object-cover object-[center_20%]"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20 lg:hidden" />
+          <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 from-8% via-slate-950/35 to-slate-950/0" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-16 relative z-10 w-full">
+          <div className="max-w-2xl">
+            <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Donate</span>
+            <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
+              Help young athletes live their dreams.
+            </h1>
+            <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
+              Mira Mesa Wrestling Club is a 501(c)(3) (Tax ID 92-4020180). Every
+              contribution is tax-deductible and goes directly to wrestlers —
+              youth, high school, and adult — training at Mira Mesa.
+            </p>
+          </div>
         </div>
       </section>
 
