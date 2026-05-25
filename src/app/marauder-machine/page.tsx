@@ -117,6 +117,23 @@ export default function MarauderMachinePage() {
               </figcaption>
             </figure>
           </div>
+
+          <figure className="mt-12 max-w-xl mx-auto bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <div className="relative aspect-[4/5]">
+              <Image
+                src="/images/teams/marauder-machine-3x-champs.jpg"
+                alt="Khalil and Alexander — first 3-time Marauder Machine MSA individual champions"
+                fill
+                className="object-cover object-top"
+                sizes="(min-width: 768px) 600px, 100vw"
+              />
+            </div>
+            <figcaption className="p-5 text-center">
+              <p className="text-xs font-heading font-semibold text-yellow-600 tracking-wider uppercase">Three-Peat</p>
+              <p className="mt-1 font-heading font-bold text-slate-900 text-lg">Khalil &amp; Alexander</p>
+              <p className="mt-1 text-sm text-slate-600">First 3-time Individual MSA Champions in Marauder Machine history.</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
