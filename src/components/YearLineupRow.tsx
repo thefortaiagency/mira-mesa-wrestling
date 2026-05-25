@@ -12,6 +12,7 @@ export interface Wrestler {
 export interface YearLineupData {
   title: string;
   lineup: Wrestler[];
+  coaches?: { headCoach?: string; assistants?: string[] };
   photoSrc?: string;
   photoAlt?: string;
 }
@@ -129,6 +130,34 @@ export function YearLineupRow({ year, result, tier, data }: Props) {
               ) : (
                 <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-8 text-center text-sm text-slate-500 italic">
                   Team photo coming.
+                </div>
+              )}
+
+              {data.coaches && (data.coaches.headCoach || data.coaches.assistants?.length) && (
+                <div>
+                  <p className="text-xs font-heading font-semibold text-slate-500 tracking-wider uppercase mb-3">
+                    Coaches
+                  </p>
+                  <div className="space-y-2">
+                    {data.coaches.headCoach && (
+                      <div className="flex items-baseline gap-3">
+                        <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase w-20 shrink-0">
+                          Head
+                        </span>
+                        <span className="font-heading font-semibold text-slate-900">{data.coaches.headCoach}</span>
+                      </div>
+                    )}
+                    {data.coaches.assistants && data.coaches.assistants.length > 0 && (
+                      <div className="flex items-baseline gap-3">
+                        <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase w-20 shrink-0">
+                          Assistants
+                        </span>
+                        <span className="font-heading font-semibold text-slate-900">
+                          {data.coaches.assistants.join(", ")}
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
 

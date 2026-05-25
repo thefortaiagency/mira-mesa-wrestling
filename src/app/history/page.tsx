@@ -6,6 +6,10 @@ import { YearLineupRow, type YearLineupData } from "@/components/YearLineupRow";
 const lineups: Record<string, YearLineupData> = {
   "boys-cif-2014": {
     title: "2014 Boys CIF Championship Team",
+    coaches: {
+      headCoach: "Craig VanDyke",
+      assistants: ["Dean Brown", "Armando Sanchez", "Jon Talbott", "Bruce Quinn"],
+    },
     lineup: [
       { name: "Jason Ravarra", grade: 12 },
       { name: "Salazar", grade: 10 },
