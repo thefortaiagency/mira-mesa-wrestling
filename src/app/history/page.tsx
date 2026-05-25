@@ -36,6 +36,23 @@ const lineups: Record<string, YearLineupData> = {
       { name: "Adam Ballesteros", grade: 12 },
     ],
   },
+  "girls-masters-2022": {
+    title: "2022 Girls SDS Masters Championship Team",
+    coaches: {
+      headCoach: "Craig VanDyke",
+      assistants: ["Adam Logue", "Eric Velasco", "J. Bellavia"],
+    },
+    lineup: [
+      { name: "Emma DeGraziano", grade: 10 },
+      { name: "Birta McCaskill", grade: 10 },
+      { name: "Lena Truong", grade: 11 },
+      { name: "Helena Insko", grade: 12 },
+      { name: "Kyla Pattillo", grade: 12 },
+      { name: "Trinity Lagandaon", grade: 10 },
+      { name: "Hannah Mae Catungal", grade: 11 },
+      { name: "Naija Coles", grade: 10 },
+    ],
+  },
   "boys-cif-2014": {
     title: "2014 Boys CIF Championship Team",
     photoSrc: "/images/teams/2014-cif-boys.jpg",
@@ -221,7 +238,15 @@ export default function HistoryPage() {
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls Masters</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {girlsMasters.map((r) => <ResultRow key={r.year} {...r} />)}
+              {girlsMasters.map((r) => (
+                <YearLineupRow
+                  key={r.year}
+                  year={r.year}
+                  result={r.result}
+                  tier={r.tier as "champion" | "runner"}
+                  data={lineups[`girls-masters-${r.year}`]}
+                />
+              ))}
             </div>
           </div>
 
