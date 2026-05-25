@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Trophy, Globe, ShieldCheck } from "lucide-react";
+import { HeadCoachRow } from "@/components/HeadCoachRow";
 
 export const metadata: Metadata = {
   title: "About — Coaches & Program",
@@ -44,10 +45,11 @@ const currentStaff = [
   { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "Education: BA Sociology, MBA", "1998 MMHS Alumni", "Retired US Army Major"] },
 ];
 
-const headCoaches = [
+type HeadCoachEntry = { years: string; name: string; note: string; photo?: { src: string; alt: string; caption?: string } };
+const headCoaches: HeadCoachEntry[] = [
   { years: "1981-1983", name: "Noel Hall", note: "2 League Titles" },
   { years: "1983-1984", name: "Mike Bakewell", note: "" },
-  { years: "1984-2009", name: "Jon Talbott", note: "2007 National Wrestling Hall of Fame · 2025 California Hall of Fame Inductee (Lifetime Service Award) · 7 League · 9 Conference · 1 CIF Runner-up (2005)" },
+  { years: "1984-2009", name: "Jon Talbott", note: "2007 National Wrestling Hall of Fame · 2025 California Hall of Fame Inductee (Lifetime Service Award) · 7 League · 9 Conference · 1 CIF Runner-up (2005)", photo: { src: "/images/staff/jon-talbott.jpg", alt: "Jon Talbott in Mira Mesa pullover", caption: "Coach Talbott — 25 years building Mira Mesa Wrestling" } },
   { years: "2009-2012", name: "Dean Brown", note: "2 League · 2 Conference · Coached State Finalist Gabi Musallam" },
   { years: "2012-Present", name: "Craig VanDyke", note: "15 League · 14 Conference · 1 SDS Masters · 2 CIF Titles · 8 CIF Runner-up (5 Boys, 3 Girls)" },
 ];
@@ -174,13 +176,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-4">
             {headCoaches.map((h) => (
-              <div key={h.name + h.years} className="bg-white rounded-xl border border-slate-200 p-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
-                <div className="text-blue-700 font-heading font-bold text-sm sm:w-32 shrink-0">{h.years}</div>
-                <div className="flex-1">
-                  <h3 className="font-heading font-bold text-slate-900 text-lg">{h.name}</h3>
-                  {h.note && <p className="text-slate-600 text-sm mt-1">{h.note}</p>}
-                </div>
-              </div>
+              <HeadCoachRow key={h.name + h.years} years={h.years} name={h.name} note={h.note} photo={h.photo} />
             ))}
           </div>
         </div>
