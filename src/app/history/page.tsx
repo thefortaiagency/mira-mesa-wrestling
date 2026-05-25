@@ -38,6 +38,8 @@ const lineups: Record<string, YearLineupData> = {
   },
   "girls-masters-2022": {
     title: "2022 Girls SDS Masters Championship Team",
+    photoSrc: "/images/teams/2022-masters-girls.jpg",
+    photoAlt: "2022 Mira Mesa Girls Masters Champions celebrating on the podium with the trophy",
     coaches: {
       headCoach: "Craig VanDyke",
       assistants: ["Adam Logue", "Eric Velasco", "J. Bellavia"],
