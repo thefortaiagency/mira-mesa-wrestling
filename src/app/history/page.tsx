@@ -1,6 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Trophy, Medal, Award, Star, Crown, ExternalLink } from "lucide-react";
+import { YearLineupRow, type YearLineupData } from "@/components/YearLineupRow";
+
+const lineups: Record<string, YearLineupData> = {
+  "boys-cif-2014": {
+    title: "2014 Boys CIF Championship Team",
+    lineup: [
+      { name: "Jason Ravarra", grade: 12 },
+      { name: "Salazar", grade: 10 },
+      { name: "Brandon Rasgaitis", grade: 10 },
+      { name: "Nick Smith", grade: 11 },
+      { name: "Noah Lester", grade: 11 },
+      { name: "Jordan Moon", grade: 11 },
+      { name: "Austin Leuangpasueth", grade: 11 },
+      { name: "Matt Vallebo", grade: 12 },
+      { name: "Chris Jaquilmac", grade: 11 },
+      { name: "Joshua Lacosta", grade: 12 },
+      { name: "Waseem Elhamad", grade: 12 },
+      { name: "Cristian Alba", grade: 12 },
+      { name: "Cody Stewart", grade: 12 },
+      { name: "Ricky Belmontez", grade: 11 },
+    ],
+  },
+};
 
 export const metadata: Metadata = {
   title: "History — Championships & Titles",
@@ -141,7 +164,15 @@ export default function HistoryPage() {
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Boys CIF</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {boysCIF.map((r) => <ResultRow key={r.year} {...r} />)}
+              {boysCIF.map((r) => (
+                <YearLineupRow
+                  key={r.year}
+                  year={r.year}
+                  result={r.result}
+                  tier={r.tier as "champion" | "runner"}
+                  data={lineups[`boys-cif-${r.year}`]}
+                />
+              ))}
             </div>
           </div>
 
