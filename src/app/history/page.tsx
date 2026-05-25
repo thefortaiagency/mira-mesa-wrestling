@@ -6,6 +6,8 @@ import { YearLineupRow, type YearLineupData } from "@/components/YearLineupRow";
 const lineups: Record<string, YearLineupData> = {
   "boys-cif-2024": {
     title: "2024 Boys CIF Championship Team",
+    photoSrc: "/images/teams/2024-cif-boys.jpg",
+    photoAlt: "2024 Mira Mesa Wrestling — SDS Division 2 CIF Champions team photo",
     coaches: {
       headCoach: "Craig VanDyke",
       assistants: [
@@ -14,6 +16,7 @@ const lineups: Record<string, YearLineupData> = {
         "Frank Criger",
         "Eric Velasco",
         "Alexandra Savage",
+        "Jairus Mahoe",
         "Jim Stephens",
         "Colin Baldwin",
       ],
