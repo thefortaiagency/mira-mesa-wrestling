@@ -31,7 +31,7 @@ const programs = [
     cost: "$125 / month · $300 / session",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
     required: "Contact for current enrollment",
-    extra: { label: "Fall Guys Wrestling", href: "mailto:FallGuysWrestling@gmail.com" },
+    extra: { label: "Email about Fall Guys", href: "mailto:MiraMesaWrestling@gmail.com?subject=Fall%20Guys%20Youth%20Wrestling%20inquiry" },
   },
   {
     id: "high-school",

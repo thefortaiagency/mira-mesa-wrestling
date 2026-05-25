@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ContactForm } from "@/components/ContactForm";
 import { Mail, MapPin, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
@@ -30,7 +29,41 @@ export default function ContactPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-5 gap-12">
             <div className="lg:col-span-3">
-              <ContactForm />
+              <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 sm:p-10">
+                <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">
+                  Email Coach Craig
+                </span>
+                <h2 className="mt-3 text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
+                  Send a short email and Coach will get right back to you.
+                </h2>
+                <p className="mt-4 text-slate-700 leading-relaxed">
+                  To help Coach Craig route your message quickly, please include:
+                </p>
+                <ul className="mt-4 space-y-2 text-slate-700">
+                  <li className="flex items-baseline gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 shrink-0 translate-y-[-2px]" />
+                    Your <strong>name</strong>
+                  </li>
+                  <li className="flex items-baseline gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 shrink-0 translate-y-[-2px]" />
+                    Which <strong>program</strong> you&apos;re asking about (HS, MMWC Adults, Fall Guys, Marauder Machine, etc.)
+                  </li>
+                  <li className="flex items-baseline gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 shrink-0 translate-y-[-2px]" />
+                    Wrestler&apos;s <strong>age &amp; grade</strong> (if applicable)
+                  </li>
+                </ul>
+                <a
+                  href="mailto:MiraMesaWrestling@gmail.com?subject=Mira%20Mesa%20Wrestling%20inquiry"
+                  className="mt-8 inline-flex items-center gap-3 px-7 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors"
+                >
+                  <Mail className="w-5 h-5" />
+                  MiraMesaWrestling@gmail.com
+                </a>
+                <p className="mt-4 text-sm text-slate-500">
+                  Coach responds within one business day.
+                </p>
+              </div>
             </div>
             <div className="lg:col-span-2 space-y-6">
               <ContactCard
@@ -54,19 +87,6 @@ export default function ContactPage() {
                 secondary="Required to participate in MMHS wrestling"
                 external
               />
-
-              <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-                <h3 className="font-heading font-bold text-slate-900">Fall Guys Youth Wrestling</h3>
-                <p className="mt-2 text-sm text-slate-700">
-                  Separate intake email for Fall Guys (ages 5-14):
-                </p>
-                <a
-                  href="mailto:FallGuysWrestling@gmail.com"
-                  className="mt-2 inline-block text-blue-700 font-semibold"
-                >
-                  FallGuysWrestling@gmail.com
-                </a>
-              </div>
 
               <div className="text-center pt-2">
                 <Link href="/donation" className="text-blue-700 font-heading font-semibold hover:text-blue-800">
