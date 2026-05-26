@@ -57,6 +57,20 @@ export default function MarauderMachinePage() {
         </div>
       </section>
 
+      <section className="py-10 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <p className="text-xs text-slate-500 font-heading font-semibold tracking-wider uppercase text-center mb-6">
+            Marauder Machine — by the numbers
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <StatTile icon={Trophy} value="6×" label="Dual Meet Champs (B+G, '24-'26)" />
+            <StatTile icon={Trophy} value="6×" label="Team Tournament Champs (B+G, '24-'26)" />
+            <StatTile icon={Users} value="28" label="Individual Tournament Champions (since 2024)" />
+            <StatTile icon={Calendar} value="50-0" label="Combined Dual Meet Record (2024-2026)" />
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-6">
           <div>
@@ -158,17 +172,6 @@ export default function MarauderMachinePage() {
               <p className="mt-1 text-sm text-slate-600">First 3-time Individual MSA Champions in Marauder Machine history.</p>
             </figcaption>
           </figure>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <StatTile icon={Trophy} value="6×" label="Dual Meet Champs (B+G, '24-'26)" />
-            <StatTile icon={Trophy} value="6×" label="Team Tournament Champs (B+G, '24-'26)" />
-            <StatTile icon={Users} value="28" label="Individual Tournament Champions (since 2024)" />
-            <StatTile icon={Calendar} value="50-0" label="Combined Dual Meet Record (2024-2026)" />
-          </div>
         </div>
       </section>
 
