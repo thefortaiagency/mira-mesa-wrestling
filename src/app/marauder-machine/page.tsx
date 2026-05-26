@@ -84,17 +84,18 @@ export default function MarauderMachinePage() {
             have a record of <strong>20-0</strong>. The combined team from year
             1 went <strong>10-0</strong> in duals.
           </p>
-          <p>
+          <div className="pt-2">
             <a
               href="https://docs.google.com/spreadsheets/d/1R-fXOulexK_rqQ0oNvrGGA5NkRAR-JakBP09RFcK__M/edit?gid=1360555423#gid=1360555423"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-700 font-heading font-semibold hover:text-blue-800"
+              className="inline-flex items-center gap-3 px-6 py-3.5 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors shadow-sm hover:shadow-md"
             >
-              See the full list of champions
-              <ExternalLink className="w-4 h-4" />
+              <Trophy className="w-5 h-5 text-yellow-300" />
+              See All 28 Champions
+              <ExternalLink className="w-4 h-4 opacity-80" />
             </a>
-          </p>
+          </div>
         </div>
       </section>
 
