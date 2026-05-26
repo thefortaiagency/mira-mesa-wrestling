@@ -55,6 +55,27 @@ const lineups: Record<string, YearLineupData> = {
       { name: "Naija Coles", grade: 10 },
     ],
   },
+  "girls-cif-2026": {
+    title: "2026 Girls CIF Runner-up Team",
+    photoSrc: "/images/teams/2026-girls-cif-runnerup.jpg",
+    photoAlt: "2026 Mira Mesa Girls Wrestling — CIF Runner-up team selfie with Coach Craig",
+    coaches: {
+      headCoach: "Craig VanDyke",
+    },
+    lineup: [
+      { name: "Mahea Manibusan", grade: 11 },
+      { name: "Carrington Cruz", grade: 10 },
+      { name: "Keiva Tang", grade: 9 },
+      { name: "Mai Nguyen", grade: 12 },
+      { name: "Nevy Aguilar", grade: 11 },
+      { name: "Vytha Sinuon-Pen", grade: 10 },
+      { name: "Keimora Strand", grade: 11 },
+      { name: "Marley Fletcher", grade: 11 },
+      { name: "Vivienne Wright", grade: 10 },
+      { name: "Isabel Manalansan", grade: 11 },
+      { name: "Charisma Lagandaon", grade: 11 },
+    ],
+  },
   "boys-cif-2014": {
     title: "2014 Boys CIF Championship Team",
     photoSrc: "/images/teams/2014-cif-boys.jpg",
@@ -259,7 +280,15 @@ export default function HistoryPage() {
               <h2 className="text-3xl font-heading font-extrabold text-slate-900">Girls CIF</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {girlsCIF.map((r) => <ResultRow key={r.year} {...r} />)}
+              {girlsCIF.map((r) => (
+                <YearLineupRow
+                  key={r.year}
+                  year={r.year}
+                  result={r.result}
+                  tier={r.tier as "champion" | "runner"}
+                  data={lineups[`girls-cif-${r.year}`]}
+                />
+              ))}
             </div>
           </div>
 
