@@ -216,7 +216,7 @@ export default function HistoryPage() {
           <div className="max-w-2xl">
             <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">History</span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
-              The trophy case.
+              The trophy case
             </h1>
             <p className="mt-5 text-xl text-slate-300 leading-relaxed">
               Mira Mesa Wrestling has been collecting hardware since 1981. Boys, Girls,

@@ -94,7 +94,7 @@ export default function MMWCPage() {
             <div>
               <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">MMWC</span>
               <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight">
-                Mira Mesa Wrestling Club.
+                Mira Mesa Wrestling Club
               </h1>
               <p className="mt-3 text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
                 Supporting wrestling for boys and girls in Mira Mesa, from age 5

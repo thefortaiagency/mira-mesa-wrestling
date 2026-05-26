@@ -34,7 +34,7 @@ export function Hero() {
             className="text-5xl sm:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-[1.05]"
           >
             Be part of the{" "}
-            <span className="text-yellow-400">tradition</span>.
+            <span className="text-yellow-400">tradition</span>
           </motion.h1>
 
           <motion.p

@@ -45,7 +45,7 @@ export default function MarauderMachinePage() {
             <div>
               <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">SDUSD MSA Program</span>
               <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight">
-                Marauder Machine.
+                Marauder Machine
               </h1>
               <p className="mt-3 text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
                 Middle school wrestling under the San Diego Unified School District

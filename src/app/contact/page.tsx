@@ -29,7 +29,7 @@ export default function ContactPage() {
           <div className="max-w-2xl">
             <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Contact</span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
-              Reach Coach Craig.
+              Reach Coach Craig
             </h1>
             <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
               Joining the team, questions about programs, MMWC, donations — drop
