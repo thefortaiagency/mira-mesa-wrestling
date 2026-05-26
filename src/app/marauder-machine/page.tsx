@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Trophy, Users, Calendar, ArrowLeft } from "lucide-react";
+import { Trophy, Users, Calendar, ArrowLeft, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Marauder Machine — SDUSD MSA Middle School Wrestling",
@@ -78,9 +78,22 @@ export default function MarauderMachinePage() {
           </p>
           <p className="text-lg text-slate-700 leading-relaxed">
             In 2026 the Marauder Machine crowned <strong>15 individual
-            champions</strong>. The boys team has a record of <strong>20-0</strong>
-            and the girls also have a record of <strong>20-0</strong>. The
-            combined team from year 1 went <strong>10-0</strong> in duals.
+            champions</strong>, bringing the program total to{" "}
+            <strong>28 individual tournament champions</strong> since 2024. The
+            boys team has a record of <strong>20-0</strong> and the girls also
+            have a record of <strong>20-0</strong>. The combined team from year
+            1 went <strong>10-0</strong> in duals.
+          </p>
+          <p>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1R-fXOulexK_rqQ0oNvrGGA5NkRAR-JakBP09RFcK__M/edit?gid=1360555423#gid=1360555423"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-700 font-heading font-semibold hover:text-blue-800"
+            >
+              See the full list of champions
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </p>
         </div>
       </section>
@@ -152,7 +165,7 @@ export default function MarauderMachinePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <StatTile icon={Trophy} value="6×" label="Dual Meet Champs (B+G, '24-'26)" />
             <StatTile icon={Trophy} value="6×" label="Team Tournament Champs (B+G, '24-'26)" />
-            <StatTile icon={Users} value="15" label="Individual Champions in 2026" />
+            <StatTile icon={Users} value="28" label="Individual Tournament Champions (since 2024)" />
             <StatTile icon={Calendar} value="50-0" label="Combined Dual Meet Record (2024-2026)" />
           </div>
         </div>
