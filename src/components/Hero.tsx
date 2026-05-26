@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[78vh] flex flex-col justify-end lg:justify-center overflow-hidden bg-slate-950">
+    <section className="relative min-h-[68vh] flex flex-col justify-end lg:justify-center overflow-hidden bg-slate-950">
       {/* Mobile: image fills the top half, copy stacks underneath.
           Desktop: image is full-bleed background with copy overlaid on the left. */}
       <div className="absolute inset-0">
@@ -25,7 +25,7 @@ export function Hero() {
         <div className="hidden lg:block absolute inset-0 bg-gradient-to-b from-slate-950/30 via-transparent to-slate-950/60" />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 pt-20 pb-12 relative z-10 w-full">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 pt-20 pb-6 relative z-10 w-full">
         <div className="max-w-3xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
