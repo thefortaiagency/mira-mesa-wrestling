@@ -241,103 +241,111 @@ export default function ResourcesPage() {
 
       {/* News & Media */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">News & Media</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-            Marauders in the media.
-          </h2>
-          <p className="mt-4 text-slate-600 leading-relaxed">
-            Articles, results write-ups, and coverage involving Mira Mesa Wrestling and the staff.
-          </p>
-          <ul className="mt-10 space-y-3">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">News & Media</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Marauders in the media.
+            </h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Articles, results write-ups, and coverage involving Mira Mesa Wrestling and the staff.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {newsArticles.map((n) => (
               <a
                 key={n.href}
                 href={n.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-md transition-all hover:no-underline"
+                className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-yellow-300 hover:shadow-md transition-all hover:no-underline"
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 mt-0.5">
-                  <Newspaper className="w-5 h-5" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-heading font-semibold text-slate-900 leading-snug flex items-start gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-md bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
+                    <Newspaper className="w-4 h-4" />
+                  </div>
+                  <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-1.5 leading-snug">
                     <span>{n.title}</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-700 transition-colors shrink-0 mt-1" />
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-yellow-400 transition-colors shrink-0" />
                   </h3>
-                  <p className="mt-1 text-xs text-slate-500">
-                    {n.source}
-                    {n.date && <> &middot; {n.date}</>}
-                  </p>
                 </div>
+                <p className="mt-3 text-slate-600 text-sm leading-relaxed">{n.source}</p>
+                {n.date && <p className="mt-3 text-xs text-slate-400 font-mono">{n.date}</p>}
               </a>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
       {/* Classic Matches */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Watch</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-            Classic matches every wrestler should know.
-          </h2>
-          <p className="mt-4 text-slate-600 leading-relaxed">
-            Film study isn&apos;t just for football. The wrestlers below changed how
-            the sport is wrestled at the highest level.
-          </p>
-
-          <ul className="mt-10 space-y-3">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Watch</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Classic matches every wrestler should know.
+            </h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Film study isn&apos;t just for football. The wrestlers below changed how
+              the sport is wrestled at the highest level.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {classicMatches.map((m) => (
               <a
                 key={m.href}
                 href={m.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-300 hover:shadow-md transition-all hover:no-underline"
+                className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-yellow-300 hover:shadow-md transition-all hover:no-underline"
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
-                  <PlayCircle className="w-5 h-5" />
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-md bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
+                    <PlayCircle className="w-4 h-4" />
+                  </div>
+                  <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-1.5 leading-snug">
+                    <span>{m.title}</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-yellow-400 transition-colors shrink-0" />
+                  </h3>
                 </div>
-                <span className="font-heading font-semibold text-slate-900 flex-1">{m.title}</span>
-                <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-blue-700 transition-colors" />
+                <p className="mt-3 text-xs text-slate-400 font-mono">youtube.com</p>
               </a>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
       {/* Football crossover + community articles */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Reading</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-            Wrestling makes you a better everything.
-          </h2>
-          <ul className="mt-10 space-y-3">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Reading</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Wrestling makes you a better everything.
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {readingLinks.map((r) => (
               <a
                 key={r.href}
                 href={r.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-md transition-all hover:no-underline"
+                className="group p-6 rounded-2xl border border-slate-200 bg-white hover:border-yellow-300 hover:shadow-md transition-all hover:no-underline"
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center shrink-0 mt-0.5">
-                  <Heart className="w-5 h-5" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-heading font-semibold text-slate-900 leading-snug flex items-start gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-md bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
+                    <Heart className="w-4 h-4" />
+                  </div>
+                  <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-1.5 leading-snug">
                     <span>{r.title}</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-700 transition-colors shrink-0 mt-1" />
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-yellow-400 transition-colors shrink-0" />
                   </h3>
-                  <p className="mt-1 text-xs text-slate-500">{r.source}</p>
                 </div>
+                <p className="mt-3 text-slate-600 text-sm leading-relaxed">{r.source}</p>
               </a>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
