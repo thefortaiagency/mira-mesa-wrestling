@@ -60,7 +60,8 @@ const lineups: Record<string, YearLineupData> = {
     photoSrc: "/images/teams/2026-girls-cif-runnerup.jpg",
     photoAlt: "2026 Mira Mesa Girls Wrestling — CIF Runner-up team selfie with Coach Craig",
     coaches: {
-      headCoach: "Craig VanDyke",
+      headCoach: "Craig",
+      assistants: ["Dean", "Adam", "Davon", "Fazil", "Isaac", "Devhante", "Noah", "Waseem", "Eric", "Alexandra", "Jairus", "Frank", "Israel"],
     },
     lineup: [
       { name: "Mahea Manibusan", grade: 11 },
