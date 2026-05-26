@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Trophy } from "lucide-react";
 
 export function Hero() {
   return (
@@ -28,32 +27,11 @@ export function Hero() {
 
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 py-24 relative z-10 w-full">
         <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-wrap gap-2"
-          >
-            {[
-              "2024 Boys CIF Champions",
-              "2014 Boys CIF Champions",
-              "2022 Girls SDS Masters Champions",
-            ].map((title) => (
-              <span
-                key={title}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700/15 text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase border border-yellow-400/25"
-              >
-                <Trophy className="w-3.5 h-3.5" />
-                {title}
-              </span>
-            ))}
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-8 text-5xl sm:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-[1.05]"
+            className="text-5xl sm:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-[1.05]"
           >
             Be part of the{" "}
             <span className="text-yellow-400">tradition</span>.
