@@ -63,7 +63,7 @@ export default function MastersPage() {
           <div className="max-w-2xl">
             <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Adult · Veteran · Masters</span>
             <h1 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight">
-              Train under a Team USA coach.
+              Train under a Team USA coach
             </h1>
             <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
               San Diego&apos;s wrestling room for adult competitors, returning athletes, and total beginners — ages 18 to 60.

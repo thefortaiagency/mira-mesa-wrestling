@@ -29,7 +29,7 @@ export default function DonationPage() {
           <div className="max-w-2xl">
             <span className="text-yellow-300 text-sm font-heading font-semibold tracking-wider uppercase">Donate</span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-white leading-tight">
-              Help young athletes live their dreams.
+              Help young athletes live their dreams
             </h1>
             <p className="mt-5 text-lg sm:text-xl text-slate-200 leading-relaxed">
               Mira Mesa Wrestling Club is a 501(c)(3) (Tax ID 92-4020180). Every
