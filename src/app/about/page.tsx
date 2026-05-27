@@ -46,7 +46,7 @@ const currentStaff = [
   { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "Education: BA Economics", "2011 MMHS Alumni", "SDS CIF Finalist", "2024 CIF Championship Team"] },
   { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4", "Education: Doctor of Pharmacy, MBA, BS Pharmacy Studies, BA Economics", "2024 CIF Championship Team"] },
   { name: "Frank Criger", role: "Assistant Coach", photo: "/images/staff/frank.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 3", "Education: BS Biomedical Engineering, MBA", "SDS Masters Placer", "2024 CIF Championship Team"] },
-  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "Education: AA Liberal Arts, BA Sociology, MBA", "1998 MMHS Alumni", "Retired US Army Major"] },
+  { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/israel.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "Education: AA Liberal Arts, BA Sociology, MBA", "1998 MMHS Alumni", "Retired US Army Major"] },
 ];
 
 type HeadCoachEntry = { years: string; name: string; note: string; photo?: { src: string; alt: string; caption?: string } };
