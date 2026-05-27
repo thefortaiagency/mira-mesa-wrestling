@@ -107,7 +107,7 @@ const lineups: Record<string, YearLineupData> = {
 export const metadata: Metadata = {
   title: "History — Championships & Titles",
   description:
-    "Mira Mesa Wrestling championship history. Boys CIF Champions 2014 & 2024. Girls Masters Champions 2022. 15 consecutive Boys League titles. 2026 Boys League + Conference, Girls League + Conference + CIF Runner-up. Full record by team, year, and event.",
+    "Mira Mesa Wrestling championship history. Boys CIF Champions 2014 & 2024. Girls Masters Champions 2022. 26 Boys League titles (15 consecutive). 5 Middle School Championships through Marauder Machine. 2026 Boys League + Conference, Girls League + Conference + CIF Runner-up. Full record by team, year, and event.",
 };
 
 const boysCIF = [
@@ -142,6 +142,14 @@ const girlsLeague = ["2026","2025","2024"];
 
 const boysLeague = [
   "2026","2025","2024","2023","2022","2021","2020","2019","2018","2017","2016","2015","2014","2013","2012","2010","2009","2003","1996","1995","1993","1988","1986","1983","1980","1978",
+];
+
+const msChampionships: { year: string; team: "Combined" | "Boys" | "Girls" }[] = [
+  { year: "2026", team: "Girls" },
+  { year: "2026", team: "Boys" },
+  { year: "2025", team: "Girls" },
+  { year: "2025", team: "Boys" },
+  { year: "2024", team: "Combined" },
 ];
 
 const individualResults: { label: string; href?: string }[] = [
@@ -336,6 +344,31 @@ export default function HistoryPage() {
             <TitleStrip years={boysLeague} />
             <p className="mt-3 text-xs text-slate-500">
               Mira Mesa has competed in both leagues over time — Western (1978), Eastern (1980-2018), then Western again (2019-present).
+            </p>
+          </div>
+
+          {/* Middle School (Marauder Machine) */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Trophy className="w-7 h-7 text-blue-700" />
+              <h2 className="text-3xl font-heading font-extrabold text-slate-900">Middle School Championships</h2>
+              <span className="text-sm text-slate-500 ml-2">{msChampionships.length} titles</span>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {msChampionships.map((m) => (
+                <div
+                  key={`${m.year}-${m.team}`}
+                  className="flex items-center justify-between gap-4 p-4 rounded-lg border bg-blue-50 border-blue-200"
+                >
+                  <span className="font-heading font-bold text-lg text-blue-800">{m.year}</span>
+                  <span className="font-heading font-semibold text-sm tracking-wider uppercase text-blue-800">
+                    {m.team} Champions
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-xs text-slate-500">
+              Marauder Machine — SDUSD Middle School Athletics program. Year 1 (2024) team scores were combined boys + girls; 2025+ separated.
             </p>
           </div>
         </div>
