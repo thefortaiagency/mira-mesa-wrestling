@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Trophy, Users, Calendar, ArrowLeft, ExternalLink } from "lucide-react";
+import { LightboxImage } from "@/components/LightboxImage";
 
 export const metadata: Metadata = {
   title: "Marauder Machine — SDUSD MSA Middle School Wrestling",
@@ -124,7 +125,7 @@ export default function MarauderMachinePage() {
           <div className="grid md:grid-cols-2 gap-8">
             <figure className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
               <div className="relative aspect-[16/9]">
-                <Image
+                <LightboxImage
                   src="/images/teams/marauder-machine-boys-2026.jpg"
                   alt="Marauder Machine boys wrestling team holding SDUSD Western Division Champions 2025-2026 banners"
                   fill
@@ -140,7 +141,7 @@ export default function MarauderMachinePage() {
             </figure>
             <figure className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
               <div className="relative aspect-[16/9]">
-                <Image
+                <LightboxImage
                   src="/images/teams/marauder-machine-girls-2026.jpg"
                   alt="Marauder Machine girls wrestling team holding SDUSD Western Division Champions 2025-2026 banners and trophy"
                   fill
@@ -158,7 +159,7 @@ export default function MarauderMachinePage() {
 
           <figure className="mt-12 max-w-xl mx-auto bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
             <div className="relative aspect-[4/5]">
-              <Image
+              <LightboxImage
                 src="/images/teams/marauder-machine-3x-champs.jpg"
                 alt="Khalil and Alexander — first 3-time Marauder Machine MSA individual champions"
                 fill
