@@ -63,8 +63,8 @@ export default function MarauderMachinePage() {
             Marauder Machine — by the numbers
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <StatTile icon={Trophy} value="6×" label="Dual Meet Champs (B+G, '24-'26)" />
-            <StatTile icon={Trophy} value="6×" label="Team Tournament Champs (B+G, '24-'26)" />
+            <StatTile icon={Trophy} value="5×" label="Dual Meet Champs (1 combined + 2 B + 2 G, '24-'26)" />
+            <StatTile icon={Trophy} value="5×" label="Team Tournament Champs (1 combined + 2 B + 2 G, '24-'26)" />
             <StatTile icon={Users} value="28" label="Individual Tournament Champions (since 2024)" />
             <StatTile icon={Calendar} value="50-0" label="Combined Dual Meet Record (2024-2026)" />
           </div>
