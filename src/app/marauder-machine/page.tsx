@@ -157,7 +157,7 @@ export default function MarauderMachinePage() {
             </figure>
           </div>
 
-          <figure className="mt-12 max-w-xl mx-auto bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+          <figure className="mt-12 max-w-sm mx-auto bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
             <div className="relative aspect-[4/5]">
               <LightboxImage
                 src="/images/teams/marauder-machine-3x-champs.jpg"
