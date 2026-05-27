@@ -56,6 +56,12 @@ const newsArticles = [
     href: "https://www.themat.com/news/2025/october/09/precin-nunn-earn-gold-u-s-tops-freestyle-team-ranking-at-veteran-world-championships",
   },
   {
+    title: "KUSI Sports — Mira Mesa Wrestling feature",
+    source: "KUSI Sports (Instagram · @kusisports)",
+    date: "",
+    href: "https://www.instagram.com/p/BthlDC8H07G/",
+  },
+  {
     title: "Mira Mesa captures first CIF boys wrestling title in a decade",
     source: "San Diego Union-Tribune",
     date: "February 10, 2024",
