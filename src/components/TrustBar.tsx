@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { Trophy, Medal, Award, Crown, Star, Flame, Shield, GraduationCap } from "lucide-react";
 
 const stats = [
-  { value: "15×", label: "Boys League Titles", icon: Trophy },
-  { value: "14×", label: "Boys Conference Titles", icon: Crown },
+  { value: "26×", label: "Boys League Titles", icon: Trophy },
+  { value: "22×", label: "Boys Conference Titles", icon: Crown },
   { value: "2×", label: "Boys CIF Champions", icon: Medal },
   { value: "75–0", label: "Boys League Dual Streak", icon: Award },
   { value: "4×", label: "Girls Conference Titles", icon: Star },
