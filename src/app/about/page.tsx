@@ -43,7 +43,7 @@ const currentStaff = [
   { name: "Noah Lester", role: "Assistant Coach", photo: "/images/staff/noah.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 2", "2015 MMHS Alumni", "SDS Masters Placer", "CIF Finalist", "Team Member, 2014 CIF Championship Team"] },
   { name: "Waseem Elhamad", role: "Assistant Coach", photo: "/images/staff/waseem.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "2014 MMHS Alumni", "SDS Masters Champion", "2× CIF Champion", "Team Member, 2014 CIF Championship Team"] },
   { name: "Eric Velasco", role: "Assistant Coach", photo: "/images/staff/eric.jpg", bullets: ["Years coaching: 23", "Education: BS Criminal Justice", "1994 MMHS Alumni", "Fall Guys Head Coach 2010-2024", "CIF Placer", "2022 Girls SDS Masters Championship Team", "2024 CIF Championship Team"] },
-  { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "2011 MMHS Alumni", "SDS CIF Finalist", "2024 CIF Championship Team"] },
+  { name: "Alexandra Savage", role: "Assistant Coach", photo: "/images/staff/alex.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 4", "Education: BA Economics", "2011 MMHS Alumni", "SDS CIF Finalist", "2024 CIF Championship Team"] },
   { name: "Jairus Mahoe", role: "Assistant Coach", photo: "/images/staff/jai.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 4", "Education: Doctor of Pharmacy, MBA, BS Pharmacy Studies, BA Economics", "2024 CIF Championship Team"] },
   { name: "Frank Criger", role: "Assistant Coach", photo: "/images/staff/frank.jpg", bullets: ["Years coaching: 5", "Years at Mira Mesa: 3", "Education: BS Biomedical Engineering, MBA", "SDS Masters Placer", "2024 CIF Championship Team"] },
   { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/placeholder.jpg", bullets: ["Years coaching: 1", "Years at Mira Mesa: 1", "Education: BA Sociology, MBA", "1998 MMHS Alumni", "Retired US Army Major"] },
@@ -203,7 +203,7 @@ export default function AboutPage() {
   );
 }
 
-const BOLD_LABELS = ["Education", "Years at Mira Mesa"];
+const BOLD_LABELS = ["Education", "Years at Mira Mesa", "Years coaching"];
 function renderBulletText(text: string) {
   const colonIdx = text.indexOf(":");
   if (colonIdx === -1) return text;
