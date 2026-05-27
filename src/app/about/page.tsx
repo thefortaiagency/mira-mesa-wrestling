@@ -154,7 +154,7 @@ export default function AboutPage() {
                               {b.text}
                             </a>
                           ) : (
-                            <span>{b}</span>
+                            <span>{renderBulletText(b)}</span>
                           )}
                         </li>
                       );
@@ -199,6 +199,20 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
+    </>
+  );
+}
+
+const BOLD_LABELS = ["Education", "Years at Mira Mesa"];
+function renderBulletText(text: string) {
+  const colonIdx = text.indexOf(":");
+  if (colonIdx === -1) return text;
+  const label = text.slice(0, colonIdx);
+  if (!BOLD_LABELS.includes(label)) return text;
+  return (
+    <>
+      <strong className="font-heading font-bold text-slate-900">{label}:</strong>
+      {text.slice(colonIdx + 1)}
     </>
   );
 }
