@@ -368,7 +368,13 @@ export default function HistoryPage() {
               ))}
             </div>
             <p className="mt-3 text-xs text-slate-500">
-              Marauder Machine — SDUSD Middle School Athletics program. Year 1 (2024) team scores were combined boys + girls; 2025+ separated.
+              Marauder Machine — SDUSD Middle School Athletics program. Year 1 (2024) team scores were combined boys + girls; 2025+ separated.{" "}
+              <a
+                href="/marauder-machine"
+                className="text-blue-700 font-semibold hover:text-blue-900 underline decoration-yellow-400 decoration-2 underline-offset-2"
+              >
+                Visit Marauder Machine →
+              </a>
             </p>
           </div>
         </div>
