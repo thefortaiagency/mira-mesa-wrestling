@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Camera, ExternalLink } from "lucide-react";
+import { Camera, ExternalLink, Facebook, Instagram } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Photos",
@@ -46,25 +46,35 @@ export default function PhotosPage() {
           <h2 className="text-2xl font-heading font-bold text-slate-900">
             Album links coming back soon.
           </h2>
-          <div className="mt-8 flex flex-wrap gap-3 justify-center">
+          <p className="mt-4 text-slate-600 leading-relaxed">
+            For more photos right now, follow Mira Mesa Wrestling on Facebook and Instagram —
+            that&apos;s where match shots, podium pics, and team moments land first.
+          </p>
+          <div className="mt-8 flex items-center justify-center gap-5">
             <a
               href="https://www.facebook.com/MiraMesaWrestling"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-heading font-semibold rounded-lg hover:bg-slate-800 transition-colors text-sm"
+              aria-label="Mira Mesa Wrestling on Facebook"
+              className="w-16 h-16 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline shadow-md hover:shadow-lg"
             >
-              Facebook
-              <ExternalLink className="w-4 h-4" />
+              <Facebook className="w-8 h-8 fill-current" />
             </a>
             <a
               href="https://www.instagram.com/miramesawrestling/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-heading font-semibold rounded-lg hover:bg-slate-800 transition-colors text-sm"
+              aria-label="Mira Mesa Wrestling on Instagram"
+              className="w-16 h-16 rounded-full text-white flex items-center justify-center hover:opacity-85 transition-opacity hover:no-underline shadow-md hover:shadow-lg"
+              style={{
+                background:
+                  "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+              }}
             >
-              Instagram
-              <ExternalLink className="w-4 h-4" />
+              <Instagram className="w-8 h-8" />
             </a>
+          </div>
+          <div className="mt-8">
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 bg-blue-700 text-white font-heading font-semibold rounded-lg hover:bg-blue-800 transition-colors text-sm"
