@@ -46,16 +46,6 @@ export default function PhotosPage() {
           <h2 className="text-2xl font-heading font-bold text-slate-900">
             Album links coming back soon.
           </h2>
-          <p className="mt-4 text-slate-600 leading-relaxed">
-            The original site had season galleries from 2016&ndash;2019. We&apos;re
-            transitioning to a Google Drive / Photos album system that Coach
-            VanDyke can update directly without touching the website — same
-            flexibility, no admin overhead.
-          </p>
-          <p className="mt-4 text-slate-500 text-sm">
-            <em>Coach: drop the Google Drive folder share link with Craig and we&apos;ll
-            wire each season as a clickable album card.</em>
-          </p>
           <div className="mt-8 flex flex-wrap gap-3 justify-center">
             <a
               href="https://www.facebook.com/MiraMesaWrestling"
