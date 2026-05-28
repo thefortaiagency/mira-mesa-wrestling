@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Camera, ExternalLink, Facebook, Instagram } from "lucide-react";
+import { LightboxImage } from "@/components/LightboxImage";
 
 export const metadata: Metadata = {
   title: "Photos",
@@ -35,6 +36,27 @@ export default function PhotosPage() {
               Match photos, team shots, championship moments. New albums each season.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-3xl mx-auto px-6">
+          <figure className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md">
+            <div className="relative aspect-[4/3]">
+              <LightboxImage
+                src="/images/photos-feature.jpg"
+                alt="Coach Craig crowned king of Mira Mesa Wrestling, surrounded by his Marauders and a stack of trophies"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 720px, 100vw"
+              />
+            </div>
+            <figcaption className="p-5 text-center">
+              <p className="text-xs font-heading font-semibold text-yellow-600 tracking-wider uppercase">Featured</p>
+              <p className="mt-1 font-heading font-bold text-slate-900 text-lg">Long live the king.</p>
+              <p className="mt-1 text-sm text-slate-600">Coach Craig &amp; the Marauders with the spoils.</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
