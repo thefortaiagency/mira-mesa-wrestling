@@ -45,16 +45,14 @@ export default function PhotosPage() {
             <div className="relative aspect-[4/3]">
               <LightboxImage
                 src="/images/photos-feature.jpg"
-                alt="Coach Craig crowned king of Mira Mesa Wrestling, surrounded by his Marauders and a stack of trophies"
+                alt="Mira Mesa Wrestling senior class of 2026 with Coach Craig and a stack of trophies"
                 fill
                 className="object-cover"
                 sizes="(min-width: 768px) 720px, 100vw"
               />
             </div>
             <figcaption className="p-5 text-center">
-              <p className="text-xs font-heading font-semibold text-yellow-600 tracking-wider uppercase">Featured</p>
-              <p className="mt-1 font-heading font-bold text-slate-900 text-lg">Long live the king.</p>
-              <p className="mt-1 text-sm text-slate-600">Coach Craig &amp; the Marauders with the spoils.</p>
+              <p className="font-heading font-bold text-slate-900 text-lg">Mira Mesa Wrestling Senior Class 2026</p>
             </figcaption>
           </figure>
         </div>
