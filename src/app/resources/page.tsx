@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
+  BadgeCheck,
+  ClipboardCheck,
   ExternalLink,
   ShieldAlert,
   PlayCircle,
@@ -17,6 +19,16 @@ export const metadata: Metadata = {
 };
 
 const healthSection = [
+  {
+    icon: ClipboardCheck,
+    title: "Athletic Clearance — Register to Compete",
+    href: "https://www.athleticclearance.com/",
+  },
+  {
+    icon: BadgeCheck,
+    title: "USA Wrestling Membership",
+    href: "https://www.usawmembership.com/",
+  },
   {
     icon: Stethoscope,
     title: "Skin Infection — Doctor Form",
@@ -174,10 +186,10 @@ export default function ResourcesPage() {
           <div className="max-w-3xl mb-8">
             <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Health & Hygiene</span>
             <h2 className="mt-3 text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">
-              Stay on the mat — clean skin, intact ears.
+              Stay on the mat — clean skin, intact ears, cleared to compete.
             </h2>
           </div>
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {healthSection.map((h) => {
               const Icon = h.icon;
               return (
