@@ -183,12 +183,12 @@ export default function MastersPage() {
         </div>
       </section>
 
-      {/* MMWC Adult Program History */}
+      {/* MMWC Adult Recent History */}
       <section className="py-16 bg-white border-t border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">History</span>
+          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Recent History</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-            MMWC Adult Program History
+            MMWC Adult Recent History
           </h2>
           <div className="mt-10 grid md:grid-cols-2 gap-6">
             <div className="bg-gradient-to-br from-blue-700 to-blue-900 text-white rounded-2xl p-8 shadow-lg">
@@ -210,6 +210,16 @@ export default function MastersPage() {
               <div className="mt-6 pt-4 border-t border-blue-400/30">
                 <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">All Americans</p>
                 <p className="mt-1 text-sm text-blue-50">Steve Vaughan (2×)</p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-blue-400/30">
+                <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">2026 State Placers</p>
+                <ul className="mt-2 space-y-1 text-sm text-blue-50">
+                  <li>Devhante Hayes — 2nd Freestyle</li>
+                  <li>Devhante Hayes — 3rd Greco-Roman</li>
+                  <li>Ryan Pearl — 4th Greco-Roman</li>
+                  <li>Joseph Delgado — 5th Freestyle</li>
+                  <li>Ryan Pearl — 7th Freestyle</li>
+                </ul>
               </div>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
