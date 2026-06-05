@@ -158,6 +158,7 @@ const individualResults: { label: string; href?: string }[] = [
   { label: "State Placers", href: "https://docs.google.com/spreadsheets/d/1X8akDsIvI1y-cNP5zwXM7tq1utSACxwvP-RlszvNcLQ/edit?gid=1360555423#gid=1360555423" },
   { label: "CIF Placers", href: "https://docs.google.com/spreadsheets/d/1VkYn176SvsAloL9L30MFchDgUdzby5DdUHjqAPC8tlY/edit?gid=567104251#gid=567104251" },
   { label: "SD City Conference Champions", href: "https://docs.google.com/spreadsheets/d/1OWj5mReKdLsAII9rGBTCRA9o620f9oSpu77E9KiCH7A/edit?gid=1360555423#gid=1360555423" },
+  { label: "National Qualifiers", href: "https://docs.google.com/spreadsheets/d/1VIZqkUNVw1mEZnQFlOqFSjqLi5yHK-jVZiVzwqbTFYM/edit?gid=1360555423#gid=1360555423" },
 ];
 
 function ResultRow({ year, result, tier }: { year: string; result: string; tier: string }) {
