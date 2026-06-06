@@ -10,6 +10,8 @@ import {
   Stethoscope,
   Heart,
   Newspaper,
+  Facebook,
+  Instagram,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -130,6 +132,27 @@ const classicMatches = [
   { title: "Freestyle: Cael Sanderson — Olympic Title Match", href: "https://www.youtube.com/watch?v=0y7SQ8_nwpg" },
   { title: "Freestyle: Tom Brands — Olympic Title Match", href: "https://www.youtube.com/watch?v=HB9-018lX7s" },
   { title: "Dan Gable Documentary", href: "https://www.youtube.com/watch?v=TZyz4Jk1LrY" },
+];
+
+const socialLinks = [
+  {
+    label: "Mira Mesa Wrestling",
+    handle: "Facebook",
+    href: "https://www.facebook.com/MiraMesaWrestling",
+    Icon: Facebook,
+  },
+  {
+    label: "Mira Mesa Wrestling",
+    handle: "Instagram",
+    href: "https://www.instagram.com/miramesawrestling/",
+    Icon: Instagram,
+  },
+  {
+    label: "Fall Guys Wrestling",
+    handle: "Facebook",
+    href: "https://www.facebook.com/fallguyswrestling",
+    Icon: Facebook,
+  },
 ];
 
 const readingLinks = [
@@ -361,6 +384,36 @@ export default function ResourcesPage() {
                   </h3>
                 </div>
                 <p className="mt-3 text-slate-600 text-sm leading-relaxed">{r.source}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media */}
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Social Media</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Follow the program.
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-4">
+            {socialLinks.map((s) => (
+              <a
+                key={s.href}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-6 py-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-300 hover:shadow-md transition-all hover:no-underline"
+              >
+                <s.Icon className="w-5 h-5 text-blue-700 fill-current" />
+                <div>
+                  <p className="font-heading font-bold text-slate-900 text-sm">{s.label}</p>
+                  <p className="text-xs text-slate-500">{s.handle}</p>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-700 transition-colors" />
               </a>
             ))}
           </div>
