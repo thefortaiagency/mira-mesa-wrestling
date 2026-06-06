@@ -54,7 +54,7 @@ const healthSection = [
 const wrestlingLinks = [
   { title: "Grit n Gut", description: "Mindset, nutrition, and conditioning for combat athletes.", href: "https://gritngut.com", domain: "gritngut.com" },
   { title: "Aether VTC", description: "Virtual training and visualization for wrestlers.", href: "https://www.aethervtc.ai", domain: "aethervtc.ai" },
-  { title: "Pin 'em 4-6", description: "Wrestling community + training resources.", href: "https://pinem46.com/", domain: "pinem46.com" },
+  { title: "Pin 'em 4-6", description: "Wrestling community + training resources. By Coach Brown.", href: "https://pinem46.com/", domain: "pinem46.com" },
   { title: "USA Wrestling", description: "National governing body for amateur wrestling in the US.", href: "https://www.themat.com/", domain: "themat.com" },
   { title: "FloWrestling", description: "Live streaming, news, and rankings for all levels of wrestling.", href: "https://www.flowrestling.org/", domain: "flowrestling.org" },
   { title: "CIF San Diego Section", description: "Section governing body for San Diego high school athletics.", href: "https://www.cifsds.org/", domain: "cifsds.org" },
