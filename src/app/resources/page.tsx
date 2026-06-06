@@ -54,7 +54,7 @@ const healthSection = [
 ];
 
 const wrestlingLinks = [
-  { title: "Grit n Gut", description: "Mindset, nutrition, and conditioning for combat athletes.", href: "https://gritngut.com", domain: "gritngut.com" },
+  { title: "Grit n Gut", description: "Coach Craig and Mike discuss all things wrestling: all styles, predictions, summaries, history and news.", href: "https://gritngut.com", domain: "gritngut.com" },
   { title: "Aether VTC", description: "Virtual training and visualization for wrestlers. Get 20% off at Coach Craig's link.", href: "https://aethervtc.ai/join/coach-craig", domain: "aethervtc.ai" },
   { title: "Pin 'em 4-6", description: "Wrestling community + training resources. By Coach Brown.", href: "https://pinem46.com/", domain: "pinem46.com" },
   { title: "USA Wrestling", description: "National governing body for amateur wrestling in the US.", href: "https://www.themat.com/", domain: "themat.com" },
