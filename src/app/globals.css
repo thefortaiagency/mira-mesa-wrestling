@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: "Sofachrome";
+  src: url("/fonts/sofachrome.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
@@ -11,6 +19,7 @@
   --color-foreground: var(--foreground);
   --font-heading: var(--font-jakarta);
   --font-body: var(--font-inter);
+  --font-sofachrome: "Sofachrome", system-ui, sans-serif;
 
   /* Marauder Royal Blue palette — overrides Tailwind's default blue scale so
      every bg-blue-* / text-blue-* utility ties back to the school's official
@@ -77,4 +86,8 @@
 
 .font-heading {
   font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+.font-sofachrome {
+  font-family: var(--font-sofachrome);
 }

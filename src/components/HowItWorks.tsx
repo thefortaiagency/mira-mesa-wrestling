@@ -43,7 +43,7 @@ export function HowItWorks() {
           <span className="text-blue-700 text-sm font-heading font-semibold tracking-wider uppercase">
             Philosophy
           </span>
-          <h2 className="mt-3 text-4xl sm:text-5xl font-heading font-extrabold text-slate-900 leading-tight">
+          <h2 className="mt-3 text-4xl sm:text-5xl font-sofachrome text-slate-900 leading-tight tracking-wide">
             G&middot;R&middot;A&middot;C&middot;E
           </h2>
           <p className="mt-4 text-slate-600 text-lg">
@@ -63,7 +63,7 @@ export function HowItWorks() {
               transition={{ delay: i * 0.08 }}
               className="relative bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow ring-1 ring-black/5 text-center"
             >
-              <div className="w-16 h-16 rounded-2xl bg-blue-700 text-white flex items-center justify-center font-heading font-extrabold text-3xl mx-auto">
+              <div className="w-16 h-16 rounded-2xl bg-blue-700 text-white flex items-center justify-center font-sofachrome text-4xl mx-auto">
                 {l.letter}
               </div>
               <h3 className="mt-5 text-lg font-heading font-bold text-slate-900">{l.title}</h3>
