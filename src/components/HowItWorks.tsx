@@ -63,7 +63,7 @@ export function HowItWorks() {
               transition={{ delay: i * 0.08 }}
               className="relative bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow ring-1 ring-black/5 text-center"
             >
-              <div className="w-16 h-16 rounded-2xl bg-blue-700 text-white flex items-center justify-center font-sofachrome mx-auto" style={{ fontSize: "2rem", lineHeight: 1 }}>
+              <div className="w-16 h-16 rounded-2xl bg-blue-700 text-white flex items-center justify-center font-sofachrome mx-auto" style={{ fontSize: "2rem", lineHeight: 1, paddingRight: "8px" }}>
                 {l.letter}
               </div>
               <h3 className="mt-5 text-lg font-heading font-bold text-slate-900">{l.title}</h3>
