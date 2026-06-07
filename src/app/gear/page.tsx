@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import GearCard from "@/components/GearCard";
 
 export const metadata: Metadata = {
   title: "Gear — Mira Mesa Wrestling",
@@ -13,15 +13,19 @@ const gearItems = [
     name: "Mira Mesa Wrestling Sunglasses",
     description: "Blue and black frames with the Mira Mesa Wrestling logo. Available while supplies last.",
     price: "$8",
-    image: "/images/gear-sunglasses.jpg",
-    alt: "Mira Mesa Wrestling branded sunglasses — blue and black frames with MM logo",
+    images: [
+      { src: "/images/gear-sunglasses.jpg", alt: "Mira Mesa Wrestling sunglasses — blue and black frames with MM logo on arm" },
+      { src: "/images/gear-sunglasses-2.jpg", alt: "Mira Mesa Wrestling sunglasses — logo detail on frame" },
+    ],
   },
   {
     name: "Marauder Logo Sticker",
     description: "Reusable MM Marauder logo sticker. Sticks to water bottles, tumblers, laptops, and more.",
     price: "$5",
-    image: "/images/gear-sticker.jpg",
-    alt: "Mira Mesa Wrestling reusable MM logo sticker on a tumbler",
+    images: [
+      { src: "/images/gear-sticker.jpg", alt: "Mira Mesa Wrestling reusable MM logo sticker on a tumbler" },
+    ],
+    containImage: true,
   },
 ];
 
@@ -46,31 +50,7 @@ export default function GearPage() {
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {gearItems.map((item) => (
-              <div
-                key={item.name}
-                className="rounded-2xl border border-slate-200 overflow-hidden bg-white hover:shadow-lg transition-shadow"
-              >
-                <div className="relative aspect-[4/3] bg-slate-100">
-                  <Image
-                    src={item.image}
-                    alt={item.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-start justify-between gap-4">
-                    <h2 className="font-heading font-extrabold text-slate-900 text-lg leading-snug">
-                      {item.name}
-                    </h2>
-                    <span className="text-blue-700 font-heading font-extrabold text-xl shrink-0">
-                      {item.price}
-                    </span>
-                  </div>
-                  <p className="mt-3 text-slate-600 text-sm leading-relaxed">{item.description}</p>
-                </div>
-              </div>
+              <GearCard key={item.name} {...item} />
             ))}
           </div>
 
