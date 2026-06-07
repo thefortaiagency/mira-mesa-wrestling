@@ -19,6 +19,24 @@ const gearItems = [
     containImage: true,
   },
   {
+    name: "MM T-Shirt",
+    description: "Navy blue tee with the Marauder MM logo in blue and gold.",
+    price: "$30",
+    images: [
+      { src: "/images/gear-mm-tshirt.jpg", alt: "Mira Mesa Wrestling navy blue t-shirt with MM logo in blue and gold" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "MM Hoodie",
+    description: "Black pullover hoodie with the Marauder MM logo in blue and gold.",
+    price: "$40",
+    images: [
+      { src: "/images/gear-mm-hoodie.jpg", alt: "Mira Mesa Wrestling black hoodie with MM logo in blue and gold" },
+    ],
+    containImage: true,
+  },
+  {
     name: "2014 CIF Championship Challenge Coin",
     description: "Commemorative challenge coin from the 2014 Boys CIF San Diego Section Division I Championship. MM logo on the front, CIF Champions on the back. A piece of program history.",
     price: "$10",
