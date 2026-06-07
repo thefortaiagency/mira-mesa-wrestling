@@ -19,6 +19,15 @@ const gearItems = [
     containImage: true,
   },
   {
+    name: "2014 CIF Championship Challenge Coin",
+    description: "Commemorative challenge coin from the 2014 Boys CIF San Diego Section Division I Championship. MM logo on the front, CIF Champions on the back. A piece of program history.",
+    price: "$10",
+    images: [
+      { src: "/images/gear-coin.jpg", alt: "2014 Mira Mesa Wrestling CIF Championship challenge coin — front and back" },
+    ],
+    containImage: true,
+  },
+  {
     name: "MMWC Towel",
     description: "Mira Mesa Wrestling Club towel with MMWC logo, navy and gold, USA Wrestling branding along the bottom.",
     price: "$10",
