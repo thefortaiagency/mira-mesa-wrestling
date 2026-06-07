@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const gearItems = [
   {
+    name: "MMWC T-Shirt",
+    description: "Royal blue MMWC logo tee with California outline on the left sleeve and Mira Mesa Wrestling on the right. Some sizes also available in white.",
+    price: "$30",
+    images: [
+      { src: "/images/gear-tshirt.jpg", alt: "MMWC royal blue t-shirt with MMWC logo and California outline" },
+    ],
+    containImage: true,
+  },
+  {
     name: "Mira Mesa Wrestling Sunglasses",
     description: "Blue and black frames with the Mira Mesa Wrestling logo. Available while supplies last.",
     price: "$8",
