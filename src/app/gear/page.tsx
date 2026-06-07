@@ -15,6 +15,7 @@ const gearItems = [
     price: "$30",
     images: [
       { src: "/images/gear-tshirt.jpg", alt: "MMWC royal blue t-shirt with MMWC logo and California outline" },
+      { src: "/images/gear-tshirt-white.jpg", alt: "MMWC white t-shirt with MMWC logo and California outline" },
     ],
     containImage: true,
   },
