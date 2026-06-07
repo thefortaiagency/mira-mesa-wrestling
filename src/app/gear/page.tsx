@@ -20,7 +20,7 @@ const gearItems = [
   },
   {
     name: "MM T-Shirt",
-    description: "Navy blue tee with the Marauder MM logo in blue and gold.",
+    description: "Royal blue tee with the Marauder MM logo in blue and gold.",
     price: "$30",
     images: [
       { src: "/images/gear-mm-tshirt.jpg", alt: "Mira Mesa Wrestling navy blue t-shirt with MM logo in blue and gold" },
