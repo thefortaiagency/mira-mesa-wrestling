@@ -19,6 +19,15 @@ const gearItems = [
     containImage: true,
   },
   {
+    name: "MMWC Towel",
+    description: "Mira Mesa Wrestling Club towel with MMWC logo, navy and gold, USA Wrestling branding along the bottom.",
+    price: "$10",
+    images: [
+      { src: "/images/gear-towel.jpg", alt: "MMWC white towel with navy and gold MMWC logo and USA Wrestling branding" },
+    ],
+    containImage: true,
+  },
+  {
     name: "Mira Mesa Wrestling Sunglasses",
     description: "Blue and black frames with the Mira Mesa Wrestling logo. Available while supplies last.",
     price: "$8",
