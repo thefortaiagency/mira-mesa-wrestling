@@ -203,6 +203,25 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <section className="py-8 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <Link
+            href="/gear"
+            className="flex items-center justify-between px-8 py-6 bg-blue-700 hover:bg-blue-800 transition-colors rounded-2xl hover:no-underline"
+          >
+            <div>
+              <p className="text-blue-200 text-sm font-heading font-semibold tracking-wide">
+                All purchases help support the Mira Mesa Wrestling Programs.
+              </p>
+              <span className="mt-1 block text-white font-heading font-extrabold text-xl sm:text-2xl">
+                Mira Mesa Wrestling Gear
+              </span>
+            </div>
+            <ExternalLink className="w-5 h-5 text-white/70 shrink-0 ml-6" />
+          </Link>
+        </div>
+      </section>
+
       {/* Health & Hygiene */}
       <section className="py-14 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
@@ -417,25 +436,6 @@ export default function ResourcesPage() {
               </a>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-white border-t border-slate-200">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <Link
-            href="/gear"
-            className="flex items-center justify-between px-8 py-6 bg-blue-700 hover:bg-blue-800 transition-colors rounded-2xl hover:no-underline"
-          >
-            <div>
-              <p className="text-blue-200 text-sm font-heading font-semibold tracking-wide">
-                All purchases help support the Mira Mesa Wrestling Programs.
-              </p>
-              <span className="mt-1 block text-white font-heading font-extrabold text-xl sm:text-2xl">
-                Mira Mesa Wrestling Gear
-              </span>
-            </div>
-            <ExternalLink className="w-5 h-5 text-white/70 shrink-0 ml-6" />
-          </Link>
         </div>
       </section>
 
