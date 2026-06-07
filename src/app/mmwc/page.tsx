@@ -107,6 +107,16 @@ export default function MMWCPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-12">
+          <Link
+            href="/gear"
+            className="flex items-center justify-between px-8 py-5 bg-blue-700 hover:bg-blue-800 transition-colors rounded-2xl hover:no-underline"
+          >
+            <span className="text-white font-heading font-extrabold text-xl sm:text-2xl">
+              Mira Mesa Wrestling Gear
+            </span>
+            <ExternalLink className="w-5 h-5 text-white/70 shrink-0" />
+          </Link>
+
           {programs.map((p) => {
             const usesMmLogo = p.id === "high-school" || p.id === "marauder-machine";
             return (
