@@ -10,6 +10,46 @@ export const metadata: Metadata = {
 
 const gearItems = [
   {
+    name: "MM Hoodie",
+    description: "Black pullover hoodie with the Marauder MM circular logo in blue and gold, USA flag on the left sleeve.",
+    price: "$40",
+    images: [
+      { src: "/images/gear-mm-hoodie.jpg", alt: "Mira Mesa Wrestling black hoodie with MM logo in blue and gold" },
+      { src: "/images/gear-mm-hoodie-flag.jpg", alt: "Mira Mesa Wrestling black hoodie — MM logo on chest, USA flag on sleeve" },
+      { src: "/images/gear-mm-hoodie-sleeve.jpg", alt: "Mira Mesa Wrestling black hoodie — M Wrestling logo on sleeve in blue and gold" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "MMWC Fall Guys Hoodie",
+    description: "Gold and blue pullover hoodie. Large MMWC circular logo on the front, 'Wrestlers Are a Different Breed. Fall Guys' on the back. San Diego CA USA on the kangaroo pocket.",
+    price: "$35",
+    images: [
+      { src: "/images/gear-fall-guys-hoodie-front.jpg", alt: "MMWC Fall Guys hoodie front — gold body, blue sleeves, MMWC logo" },
+      { src: "/images/gear-fall-guys-hoodie-back.jpg", alt: "MMWC Fall Guys hoodie back — Wrestlers Are a Different Breed. Fall Guys." },
+    ],
+    containImage: true,
+  },
+  {
+    name: "Embroidered Polo Shirt",
+    description: "Black polo with the Marauder horseman embroidered on the chest and the MM logo embroidered on the back.",
+    price: "$25",
+    images: [
+      { src: "/images/gear-polo-front.jpg", alt: "Mira Mesa Wrestling black polo — embroidered Marauder horseman on chest" },
+      { src: "/images/gear-polo-back.jpg", alt: "Mira Mesa Wrestling black polo — embroidered MM logo on back" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "Quarter-Zip Pullover",
+    description: "Dark charcoal quarter-zip with sublimated Mira Mesa Wrestling graphics, 'Mira Mesa Wrestling' on the chest, and USA flag on the sleeve.",
+    price: "$20",
+    images: [
+      { src: "/images/gear-quarter-zip.jpg", alt: "Mira Mesa Wrestling dark charcoal quarter-zip pullover with sublimated graphics" },
+    ],
+    containImage: true,
+  },
+  {
     name: "MMWC T-Shirt",
     description: "Royal blue MMWC logo tee with California outline on the left sleeve and Mira Mesa Wrestling on the right. Some sizes also available in white.",
     price: "$30",
@@ -29,11 +69,47 @@ const gearItems = [
     containImage: true,
   },
   {
-    name: "MM Hoodie",
-    description: "Black pullover hoodie with the Marauder MM logo in blue and gold.",
-    price: "$40",
+    name: "M Wrestling T-Shirt",
+    description: "Charcoal tee with the winged M Wrestling logo in blue.",
+    price: "$20",
     images: [
-      { src: "/images/gear-mm-hoodie.jpg", alt: "Mira Mesa Wrestling black hoodie with MM logo in blue and gold" },
+      { src: "/images/gear-m-wrestling-tee.jpg", alt: "Mira Mesa Wrestling charcoal t-shirt with winged M Wrestling logo in blue" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "Mira Mesa Wrestling T-Shirt",
+    description: "White tee with 'Mira Mesa Wrestling' in navy and gold, California state outline below.",
+    price: "$20",
+    images: [
+      { src: "/images/gear-california-tee.jpg", alt: "Mira Mesa Wrestling white t-shirt with navy and gold text and California outline" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "Women's V-Neck T-Shirt",
+    description: "Royal blue women's v-neck with 'Mira Mesa Wrestling' in gold.",
+    price: "$15",
+    images: [
+      { src: "/images/gear-female-vneck.jpg", alt: "Mira Mesa Wrestling royal blue women's v-neck t-shirt with gold text" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "Mira Mesa Wrestling Joggers",
+    description: "Black fleece joggers with 'Mira Mesa Wrestling' down the left leg and the MM logo on the right hip.",
+    price: "$20",
+    images: [
+      { src: "/images/gear-joggers.jpg", alt: "Mira Mesa Wrestling black fleece joggers with program name down the leg and MM logo" },
+    ],
+    containImage: true,
+  },
+  {
+    name: "USA Wrestling Shorts",
+    description: "Black athletic shorts with the official USA Wrestling logo.",
+    price: "$10",
+    images: [
+      { src: "/images/gear-usa-shorts.jpg", alt: "Black athletic shorts with USA Wrestling logo" },
     ],
     containImage: true,
   },
