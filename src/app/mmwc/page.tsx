@@ -30,7 +30,7 @@ const programs = [
     season: "Year-round · 4 sessions annually",
     cost: "$125 / month · $300 / session",
     styles: "Freestyle, Greco-Roman, Folkstyle (Collegiate)",
-    required: "Contact for current enrollment",
+    required: "USA Wrestling Membership",
     extra: { label: "Email about Fall Guys", href: "mailto:MiraMesaWrestling@gmail.com?subject=Fall%20Guys%20Youth%20Wrestling%20inquiry" },
   },
   {
@@ -150,7 +150,7 @@ export default function MMWCPage() {
                       sizes="160px"
                     />
                   )}
-                  <p className="mt-2 text-blue-700 font-heading font-medium">{p.age}</p>
+                  <p className="mt-2 text-lg text-blue-700 font-heading font-medium">{p.age}</p>
                 </div>
                 <div className="lg:col-span-2">
                   <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm">
