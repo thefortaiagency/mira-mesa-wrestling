@@ -71,6 +71,12 @@ export function Hero() {
             >
               Donate to MMWC
             </Link>
+            <Link
+              href="/gear"
+              className="px-8 py-4 bg-yellow-400 text-blue-900 font-heading font-semibold rounded-lg hover:bg-yellow-300 transition-colors"
+            >
+              Purchase Gear
+            </Link>
           </motion.div>
 
           <motion.div
