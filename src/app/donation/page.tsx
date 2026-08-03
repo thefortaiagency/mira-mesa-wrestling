@@ -48,7 +48,7 @@ export default function DonationPage() {
               title="GiveButter (recommended)"
               description="Multiple options through one form: Google Pay, PayPal, Venmo, bank transfer, or bank check."
               cta="Donate via GiveButter"
-              href="https://givebutter.com/"
+              href="https://givebutter.com/6F1wsf"
               external
               featured
             />
