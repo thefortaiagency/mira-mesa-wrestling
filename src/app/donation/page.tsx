@@ -63,6 +63,9 @@ export default function DonationPage() {
               title="Venmo"
               description="Send via Venmo to:"
               detail="@MMwrestlingclub"
+              cta="Open Venmo"
+              href="https://venmo.com/u/MMwrestlingclub"
+              external
             />
             <DonateCard
               icon={Mail}
