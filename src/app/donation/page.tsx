@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Heart, CreditCard, Mail, Smartphone, Building } from "lucide-react";
+import CopyButton from "@/components/CopyButton";
 
 export const metadata: Metadata = {
   title: "Donate to Mira Mesa Wrestling Club",
@@ -57,6 +58,8 @@ export default function DonationPage() {
               title="Zelle (preferred direct method)"
               description="Send directly via Zelle to:"
               detail="MiraMesaWrestlingClub@gmail.com"
+              copyValue="MiraMesaWrestlingClub@gmail.com"
+              copyLabel="Copy Zelle email"
             />
             <DonateCard
               icon={CreditCard}
@@ -122,6 +125,8 @@ function DonateCard({
   href,
   external,
   featured,
+  copyValue,
+  copyLabel,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
@@ -131,6 +136,8 @@ function DonateCard({
   href?: string;
   external?: boolean;
   featured?: boolean;
+  copyValue?: string;
+  copyLabel?: string;
 }) {
   return (
     <div
@@ -161,6 +168,7 @@ function DonateCard({
           </svg>
         </a>
       )}
+      {copyValue && <CopyButton value={copyValue} label={copyLabel} />}
     </div>
   );
 }
