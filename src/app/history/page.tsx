@@ -242,6 +242,43 @@ export default function HistoryPage() {
         </div>
       </section>
 
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
+          <div className="max-w-2xl mb-10">
+            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+              Individual Results
+            </h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Full Marauder individual results, year by year, by event.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {individualResults.map((r) =>
+              r.href ? (
+                <a
+                  key={r.label}
+                  href={r.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-3 p-5 bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all"
+                >
+                  <span className="font-heading font-bold text-slate-900 text-lg">{r.label}</span>
+                  <ExternalLink className="w-5 h-5 text-blue-700 group-hover:translate-x-0.5 transition-transform" />
+                </a>
+              ) : (
+                <div
+                  key={r.label}
+                  className="flex items-center justify-between gap-3 p-5 bg-white rounded-xl border border-dashed border-slate-300"
+                >
+                  <span className="font-heading font-bold text-slate-700 text-lg">{r.label}</span>
+                  <span className="text-xs font-heading font-semibold text-slate-400 tracking-wider uppercase">Link coming</span>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20 space-y-20">
           {/* Boys CIF */}
@@ -376,43 +413,6 @@ export default function HistoryPage() {
                 Visit Marauder Machine →
               </a>
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <div className="max-w-2xl mb-10">
-            <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              Individual Results
-            </h2>
-            <p className="mt-4 text-slate-600 leading-relaxed">
-              Full Marauder individual results, year by year, by event.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {individualResults.map((r) =>
-              r.href ? (
-                <a
-                  key={r.label}
-                  href={r.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center justify-between gap-3 p-5 bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all"
-                >
-                  <span className="font-heading font-bold text-slate-900 text-lg">{r.label}</span>
-                  <ExternalLink className="w-5 h-5 text-blue-700 group-hover:translate-x-0.5 transition-transform" />
-                </a>
-              ) : (
-                <div
-                  key={r.label}
-                  className="flex items-center justify-between gap-3 p-5 bg-white rounded-xl border border-dashed border-slate-300"
-                >
-                  <span className="font-heading font-bold text-slate-700 text-lg">{r.label}</span>
-                  <span className="text-xs font-heading font-semibold text-slate-400 tracking-wider uppercase">Link coming</span>
-                </div>
-              )
-            )}
           </div>
         </div>
       </section>
