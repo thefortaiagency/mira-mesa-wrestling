@@ -96,7 +96,7 @@ export default function MastersPage() {
             {[
               { icon: Users, label: "Age range", value: "18 - 60" },
               { icon: Zap, label: "Cost", value: "$100 / month" },
-              { icon: Globe, label: "Schedule", value: "Sun & Wed · (Thu Open Mat)" },
+              { icon: Globe, label: "Schedule", value: "Sun 12:45 PM & Wed 6:30 PM · (Thu Open Mat)" },
               { icon: Trophy, label: "Styles", value: "Freestyle · Greco-Roman · Folkstyle (Collegiate)" },
             ].map((s) => {
               const Icon = s.icon;
@@ -162,7 +162,7 @@ export default function MastersPage() {
                 </span>
                 <h3 className="mt-3 text-2xl font-heading font-extrabold">MMWC Adult Training</h3>
                 <dl className="mt-6 space-y-4">
-                  <Row label="Schedule" value="Year-round · Sundays & Wednesdays — Technique & Tactics · (Thursday Open Mat)" />
+                  <Row label="Schedule" value="Year-round · Sundays 12:45 PM & Wednesdays 6:30 PM — Technique & Tactics · (Thursday Open Mat)" />
                   <Row label="Tuition" value="$100 / month" />
                   <Row label="Ages" value="18 - 60" />
                   <Row label="Styles" value="Freestyle · Greco-Roman · Folkstyle (Collegiate)" />
