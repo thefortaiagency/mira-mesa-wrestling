@@ -222,7 +222,7 @@ export default function MastersPage() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <Globe className="w-7 h-7 text-blue-700" />
                 <span className="text-blue-700 text-xs font-heading font-semibold tracking-wider uppercase">Team USA</span>
@@ -235,11 +235,20 @@ export default function MastersPage() {
                 href="https://docs.google.com/spreadsheets/d/1ZH3lkpdzPuQppYZyBvBTwUUz7DhbNm7fmab1rU9UdDc/edit?pli=1&gid=0#gid=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center justify-between gap-3 px-5 py-3 bg-white rounded-lg border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all text-blue-700 text-sm font-heading font-semibold"
+                className="mt-5 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 hover:shadow-md transition-all text-white text-sm font-heading font-semibold"
               >
                 <span>Open the history sheet</span>
                 <ExternalLink className="w-4 h-4" />
               </a>
+              <div className="relative mt-6 flex-1 min-h-[220px] rounded-xl overflow-hidden border border-slate-200">
+                <Image
+                  src="/images/veteran-team-usa-tatabanya-2025.jpg"
+                  alt="Team USA Veteran wrestlers on the podium at the 2025 UWW Veteran World Championships in Tatabánya, Hungary"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
             </div>
           </div>
         </div>
