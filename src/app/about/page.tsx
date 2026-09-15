@@ -36,9 +36,9 @@ const currentStaff = [
   },
   { name: "Dean Brown", role: "Assistant Coach", photo: "/images/staff/dean.jpg", bullets: ["Years coaching: 21", "Years at Mira Mesa: 9", "Education: BS HPER, MS Educational Technology, Secondary Teaching Credential", "Former MMHS Head Coach 2009-2012", "2× League Champion Coach", "2× City Conference Champion Coach", "2014 CIF Championship Team", "Former Head Coach SR: 4 league titles, 4 city conference titles", "Coached 5 state placers", { text: "Pin 'em 4-6", href: "https://pinem46.com/" }, { text: "Published Author", href: "https://www.amazon.com/Huh-what-Dean-F-Brown/dp/B0DBGXVDMB" }] },
   { name: "Adam Logue", role: "Head Assistant Coach", photo: "/images/staff/adam.jpg", bullets: ["Years coaching: 19", "Years at Mira Mesa: 11.5", "Education: BA English Literature, Secondary Teaching Credential", "Fall Guys Wrestling Coach", "Former Head Coach (Indiana)", "Coached state finalist", "2022 Girls SDS Masters Championship Team", "2024 CIF Championship Team"] },
+  { name: "Isaac Pumarejo", role: "Fall Guys Head Coach", photo: "/images/staff/isaac.jpg", bullets: ["Years coaching: 31", "Years at Mira Mesa: 1", "Fall Guys Head Coach 2025-present", "Team Puma Head Coach", "2× CA State Placer", "Coached at Fresno City College", "Coached at Menlo College", "Club Coach — Fresno State", "Club Coach — Fresno Pacific", "Coached 7 future Cadet World Team members"] },
   { name: "Davon Copeland", role: "Assistant Coach", photo: "/images/staff/davon.jpg", bullets: ["Years coaching: 16", "Education: BS Psychology, Master Human Service Counseling, MBA", "Fall Guys Coach", "1999 MMHS Alumni", "SDS Masters Placer", "2024 CIF Championship Team", "3× IBJJF Heavyweight/Absolute Champion", "IBJJF Pans Runner-Up", "3rd Place IBJJF World Championship", "Multiple World League Heavyweight/Absolute Champion", "US Navy Retired Gunner Mate Senior Chief"] },
   { name: "Fazil Bagirov", role: "Assistant Coach", photo: "/images/staff/fazil.jpg", bullets: ["Years coaching: 4", "Years at Mira Mesa: 3", "Education: Bachelor of Mechanical Engineering", "MMWC Freestyle Coach", "2× International Tana Cup Silver Medalist", "2× Northwestern Federal District Bronze Medalist", "5× Petrozavodsk City Champion"] },
-  { name: "Isaac Pumarejo", role: "Fall Guys Head Coach", photo: "/images/staff/isaac.jpg", bullets: ["Years coaching: 31", "Years at Mira Mesa: 1", "Fall Guys Head Coach 2025-present", "Team Puma Head Coach", "2× CA State Placer", "Coached at Fresno City College", "Coached at Menlo College", "Club Coach — Fresno State", "Club Coach — Fresno Pacific", "Coached 7 future Cadet World Team members"] },
   { name: "Devhante Hayes", role: "Assistant Coach", photo: "/images/staff/devhante.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 2", "2022 MMHS Alumni", "2× CIF Champion", "SDS Masters Finalist", "3× State Qualifier", "CA State Placer"] },
   { name: "Noah Lester", role: "Assistant Coach", photo: "/images/staff/noah.jpg", bullets: ["Years coaching: 3", "Years at Mira Mesa: 3", "2015 MMHS Alumni", "SDS Masters Placer", "CIF Finalist", "Team Member, 2014 CIF Championship Team"] },
   { name: "Waseem Elhamad", role: "Assistant Coach", photo: "/images/staff/waseem.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 2", "2014 MMHS Alumni", "SDS Masters Champion", "2× CIF Champion", "Team Member, 2014 CIF Championship Team"] },
@@ -48,6 +48,10 @@ const currentStaff = [
   { name: "Frank Criger", role: "Assistant Coach", photo: "/images/staff/frank.jpg", bullets: ["Years coaching: 6", "Years at Mira Mesa: 4", "Education: BS Biomedical Engineering, MBA", "SDS Masters Placer", "2024 CIF Championship Team"] },
   { name: "Israel Manalansan", role: "Assistant Coach", photo: "/images/staff/israel.jpg", bullets: ["Years coaching: 2", "Years at Mira Mesa: 2", "Education: AA Liberal Arts, BA Sociology, MBA", "1998 MMHS Alumni", "Retired US Army Major"] },
 ];
+
+type StaffMember = (typeof currentStaff)[number];
+const leadStaff = currentStaff.slice(0, 6);
+const additionalStaff = currentStaff.slice(6);
 
 type HeadCoachEntry = { years: string; name: string; note: string; photo?: { src: string; alt: string; caption?: string } };
 const headCoaches: HeadCoachEntry[] = [
@@ -124,44 +128,17 @@ export default function AboutPage() {
             <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">Coaches</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {currentStaff.map((c) => (
-              <div key={c.name} className="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <div className="relative aspect-[4/5] bg-slate-200">
-                  <Image
-                    src={c.photo}
-                    alt={`${c.name} — ${c.role}`}
-                    fill
-                    className="object-cover object-top"
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading font-bold text-slate-900 text-lg">{c.name}</h3>
-                  <p className="text-blue-700 font-heading font-medium text-sm mt-1">{c.role}</p>
-                  <ul className="mt-4 space-y-1.5 text-slate-700 text-sm">
-                    {c.bullets.map((b, i) => {
-                      const isLink = typeof b !== "string";
-                      return (
-                        <li key={i} className="flex gap-2">
-                          <span className="text-yellow-400 shrink-0">•</span>
-                          {isLink ? (
-                            <a
-                              href={b.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-700 hover:text-blue-800"
-                            >
-                              {b.text}
-                            </a>
-                          ) : (
-                            <span>{renderBulletText(b)}</span>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+            {leadStaff.map((c) => (
+              <StaffCard key={c.name} c={c} />
+            ))}
+          </div>
+
+          <div className="mt-16 mb-8 max-w-3xl">
+            <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900">Additional Staff</h3>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {additionalStaff.map((c) => (
+              <StaffCard key={c.name} c={c} />
             ))}
           </div>
         </div>
@@ -200,6 +177,48 @@ export default function AboutPage() {
         </div>
       </section>
     </>
+  );
+}
+
+function StaffCard({ c }: { c: StaffMember }) {
+  return (
+    <div className="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
+      <div className="relative aspect-[4/5] bg-slate-200">
+        <Image
+          src={c.photo}
+          alt={`${c.name} — ${c.role}`}
+          fill
+          className="object-cover object-top"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="font-heading font-bold text-slate-900 text-lg">{c.name}</h3>
+        <p className="text-blue-700 font-heading font-medium text-sm mt-1">{c.role}</p>
+        <ul className="mt-4 space-y-1.5 text-slate-700 text-sm">
+          {c.bullets.map((b, i) => {
+            const isLink = typeof b !== "string";
+            return (
+              <li key={i} className="flex gap-2">
+                <span className="text-yellow-400 shrink-0">•</span>
+                {isLink ? (
+                  <a
+                    href={b.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 hover:text-blue-800"
+                  >
+                    {b.text}
+                  </a>
+                ) : (
+                  <span>{renderBulletText(b)}</span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
   );
 }
 
