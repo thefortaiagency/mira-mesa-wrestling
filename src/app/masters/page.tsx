@@ -236,11 +236,11 @@ export default function MastersPage() {
                 <ul className="mt-5 space-y-2 text-blue-50">
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
-                    Ryan Pearl — Freestyle
+                    Ryan Pearl - Freestyle
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
-                    Ron Dombkowski — Greco-Roman
+                    Ron Dombkowski - Greco-Roman
                   </li>
                 </ul>
               </div>
