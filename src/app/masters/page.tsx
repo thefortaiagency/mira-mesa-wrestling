@@ -186,18 +186,14 @@ export default function MastersPage() {
       {/* MMWC Adult Recent History */}
       <section className="py-16 bg-white border-t border-slate-200">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-20">
-          <span className="text-xs font-heading font-semibold text-blue-700 tracking-wider uppercase">Recent History</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
-            MMWC Adult Recent History
-          </h2>
-          <div className="mt-10 grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden grid md:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-4">
                   <Globe className="w-7 h-7 text-blue-700" />
                   <span className="text-blue-700 text-xs font-heading font-semibold tracking-wider uppercase">Team USA</span>
                 </div>
-                <p className="font-heading font-extrabold text-2xl text-slate-900 leading-tight">Veteran Team USA history</p>
+                <p className="font-heading font-extrabold text-2xl text-slate-900 leading-tight">Veteran World Results</p>
                 <p className="mt-3 text-slate-600 text-sm leading-relaxed">
                   Full Veteran Team USA results, year by year — World Championships, roster history.
                 </p>
@@ -234,7 +230,7 @@ export default function MastersPage() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <Trophy className="w-7 h-7 text-yellow-300" />
-                  <span className="text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase">Masters Nationals</span>
+                  <span className="text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase">MMWC Adult Recent History</span>
                 </div>
                 <p className="font-heading font-extrabold text-3xl leading-tight">2 Masters National Champions</p>
                 <ul className="mt-5 space-y-2 text-blue-50">
