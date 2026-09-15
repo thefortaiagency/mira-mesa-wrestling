@@ -190,82 +190,82 @@ export default function MastersPage() {
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
             MMWC Adult Recent History
           </h2>
-          <div className="mt-10 grid md:grid-cols-2 gap-6 items-start">
-            <div className="bg-gradient-to-br from-blue-700 to-blue-900 text-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Trophy className="w-7 h-7 text-yellow-300" />
-                <span className="text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase">Masters Nationals</span>
+          <div className="mt-10 grid grid-cols-1 gap-6">
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden grid md:grid-cols-2">
+              <div className="p-8 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <Globe className="w-7 h-7 text-blue-700" />
+                  <span className="text-blue-700 text-xs font-heading font-semibold tracking-wider uppercase">Team USA</span>
+                </div>
+                <p className="font-heading font-extrabold text-2xl text-slate-900 leading-tight">Veteran Team USA history</p>
+                <p className="mt-3 text-slate-600 text-sm leading-relaxed">
+                  Full Veteran Team USA results, year by year — World Championships, roster history.
+                </p>
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1ZH3lkpdzPuQppYZyBvBTwUUz7DhbNm7fmab1rU9UdDc/edit?pli=1&gid=0#gid=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 self-start inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 hover:shadow-md transition-all text-white text-sm font-heading font-semibold"
+                >
+                  <span>Open the history sheet</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
-              <p className="font-heading font-extrabold text-3xl leading-tight">2 Masters National Champions</p>
-              <ul className="mt-5 space-y-2 text-blue-50">
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
-                  Ryan Pearl
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
-                  Ron Dombkowski
-                </li>
-              </ul>
-              <div className="mt-6 pt-4 border-t border-blue-400/30">
-                <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">All Americans</p>
-                <p className="mt-1 text-sm text-blue-50">Steve Vaughan (2×)</p>
+              <div className="relative min-h-[300px] md:min-h-[420px] overflow-hidden bg-blue-950">
+                <Image
+                  src="/images/veteran-team-usa-tatabanya-2025.jpg"
+                  alt=""
+                  aria-hidden="true"
+                  fill
+                  className="object-cover scale-110 blur-2xl"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-blue-950/40" />
+                <Image
+                  src="/images/veteran-team-usa-tatabanya-2025.jpg"
+                  alt="Team USA Veteran wrestlers on the podium at the 2025 UWW Veteran World Championships in Tatabánya, Hungary"
+                  fill
+                  className="object-contain"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
               </div>
-              <div className="mt-6 pt-4 border-t border-blue-400/30">
-                <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">2026 State Placers</p>
-                <ul className="mt-2 space-y-1 text-sm text-blue-50">
-                  <li>Devhante Hayes — 2nd Freestyle</li>
-                  <li>Devhante Hayes — 3rd Greco-Roman</li>
-                  <li>Ryan Pearl — 4th Greco-Roman</li>
-                  <li>Joseph Delgado — 5th Freestyle</li>
-                  <li>Ryan Pearl — 7th Freestyle</li>
+            </div>
+            <div className="bg-gradient-to-br from-blue-700 to-blue-900 text-white rounded-2xl p-8 shadow-lg grid md:grid-cols-2 gap-8 md:items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <Trophy className="w-7 h-7 text-yellow-300" />
+                  <span className="text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase">Masters Nationals</span>
+                </div>
+                <p className="font-heading font-extrabold text-3xl leading-tight">2 Masters National Champions</p>
+                <ul className="mt-5 space-y-2 text-blue-50">
+                  <li className="flex items-center gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
+                    Ryan Pearl
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
+                    Ron Dombkowski
+                  </li>
                 </ul>
               </div>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Globe className="w-7 h-7 text-blue-700" />
-                <span className="text-blue-700 text-xs font-heading font-semibold tracking-wider uppercase">Team USA</span>
+              <div className="grid sm:grid-cols-2 gap-6 md:border-l md:border-blue-400/30 md:pl-8">
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">All Americans</p>
+                  <p className="mt-1 text-sm text-blue-50">Steve Vaughan (2×)</p>
+                </div>
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-yellow-300 font-heading font-semibold">2026 State Placers</p>
+                  <ul className="mt-2 space-y-1 text-sm text-blue-50">
+                    <li>Devhante Hayes — 2nd Freestyle</li>
+                    <li>Devhante Hayes — 3rd Greco-Roman</li>
+                    <li>Ryan Pearl — 4th Greco-Roman</li>
+                    <li>Joseph Delgado — 5th Freestyle</li>
+                    <li>Ryan Pearl — 7th Freestyle</li>
+                  </ul>
+                </div>
               </div>
-              <p className="font-heading font-extrabold text-2xl text-slate-900 leading-tight">Veteran Team USA history</p>
-              <p className="mt-3 text-slate-600 text-sm leading-relaxed">
-                Full Veteran Team USA results, year by year — World Championships, roster history.
-              </p>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1ZH3lkpdzPuQppYZyBvBTwUUz7DhbNm7fmab1rU9UdDc/edit?pli=1&gid=0#gid=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 hover:shadow-md transition-all text-white text-sm font-heading font-semibold"
-              >
-                <span>Open the history sheet</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
             </div>
           </div>
-
-          <figure className="mt-6">
-            <div className="relative w-full h-[360px] sm:h-[440px] md:h-[540px] overflow-hidden rounded-2xl border border-slate-200">
-              <Image
-                src="/images/veteran-team-usa-tatabanya-2025.jpg"
-                alt=""
-                aria-hidden="true"
-                fill
-                className="object-cover scale-110 blur-2xl"
-                sizes="100vw"
-              />
-              <div className="absolute inset-0 bg-blue-950/40" />
-              <Image
-                src="/images/veteran-team-usa-tatabanya-2025.jpg"
-                alt="Team USA Veteran wrestlers on the podium at the 2025 UWW Veteran World Championships in Tatabánya, Hungary"
-                fill
-                className="object-contain"
-                sizes="100vw"
-              />
-            </div>
-            <figcaption className="mt-3 text-center text-sm text-slate-500 font-heading">
-              Team USA Veterans on the podium — 2025 UWW Veteran World Championships, Tatabánya, Hungary
-            </figcaption>
-          </figure>
         </div>
       </section>
 
