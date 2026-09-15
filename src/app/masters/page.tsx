@@ -232,15 +232,15 @@ export default function MastersPage() {
                   <Trophy className="w-7 h-7 text-yellow-300" />
                   <span className="text-yellow-300 text-xs font-heading font-semibold tracking-wider uppercase">MMWC Adult Recent History</span>
                 </div>
-                <p className="font-heading font-extrabold text-3xl leading-tight">2 Masters National Champions</p>
+                <p className="font-heading font-extrabold text-3xl leading-tight">Masters US National Champions</p>
                 <ul className="mt-5 space-y-2 text-blue-50">
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
-                    Ryan Pearl
+                    Ryan Pearl — Freestyle
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-300 shrink-0" />
-                    Ron Dombkowski
+                    Ron Dombkowski — Greco-Roman
                   </li>
                 </ul>
               </div>
